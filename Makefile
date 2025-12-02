@@ -20,3 +20,7 @@ fmt:
 	ruff --version
 	ruff format
 	ruff check --fix
+
+.PHONY: test
+test:
+	pytest tests/ -v

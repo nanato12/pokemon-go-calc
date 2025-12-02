@@ -11,6 +11,7 @@ from pokemon_go_calc.services import (
     calculate_stat_product,
     calculate_stats,
     check_evolution_exceeds_cap,
+    extract_from_screenshot,
     find_best_iv_for_league,
     get_all_pokemon_names,
     get_iv_rank,
@@ -29,6 +30,8 @@ __all__ = [
     "find_best_iv_for_league",
     "get_iv_rank",
     "rank_all_ivs_for_league",
+    # Image extraction
+    "extract_from_screenshot",
     # CPM functions
     "get_cpm",
     "get_all_levels",

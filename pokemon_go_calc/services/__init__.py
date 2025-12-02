@@ -10,6 +10,11 @@ from pokemon_go_calc.services.calculator import (
     get_iv_rank,
     rank_all_ivs_for_league,
 )
+from pokemon_go_calc.services.image_extractor import (
+    extract_from_screenshot,
+    extract_pokemon_iv,
+    extract_pokemon_name,
+)
 from pokemon_go_calc.services.pokemon_repository import (
     get_all_pokemon_names,
     get_evolution_chain_pokemon,
@@ -32,4 +37,7 @@ __all__ = [
     "get_evolution_chain_pokemon",
     "search_pokemon",
     "get_all_pokemon_names",
+    "extract_from_screenshot",
+    "extract_pokemon_iv",
+    "extract_pokemon_name",
 ]
