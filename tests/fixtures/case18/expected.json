@@ -1,0 +1,8 @@
+{
+  "pokemon": "ココドラ",
+  "iv": {
+    "attack": 12,
+    "defense": 15,
+    "stamina": 15
+  }
+}
