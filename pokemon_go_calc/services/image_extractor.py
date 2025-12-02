@@ -59,8 +59,8 @@ def extract_pokemon_iv(image: np.ndarray) -> IV:
     """
     h, w = image.shape[:2]
 
-    # 個体値バー領域を切り出し
-    y1, y2 = int(h * 0.72), int(h * 0.87)
+    # 個体値バー領域を切り出し（広めに取る）
+    y1, y2 = int(h * 0.65), int(h * 0.87)
     x1, x2 = int(w * 0.12), int(w * 0.48)
     bar_region = image[y1:y2, x1:x2]
     bar_hsv = cv2.cvtColor(bar_region, cv2.COLOR_BGR2HSV)
@@ -80,7 +80,7 @@ def extract_pokemon_iv(image: np.ndarray) -> IV:
     )
     pink_mask = cv2.bitwise_or(pink_mask1, pink_mask2)
 
-    # 灰色マスク
+    # 灰色マスク（バー背景）
     gray_diff = np.maximum(
         np.abs(r.astype(int) - g.astype(int)),
         np.abs(g.astype(int) - b.astype(int)),
@@ -88,10 +88,13 @@ def extract_pokemon_iv(image: np.ndarray) -> IV:
     is_gray = (gray_diff < 20) & (r > 200) & (r < 245)
     gray_mask = is_gray.astype(np.uint8) * 255
 
-    # バー位置を検出（彩度プロファイルで）
-    sat_profile = np.sum(bar_hsv[:, :, 1], axis=1)
-    threshold = np.max(sat_profile) * 0.5
-    bar_rows = np.where(sat_profile > threshold)[0]
+    # バー位置を検出（色マスクの合計で）
+    combined_mask = cv2.bitwise_or(
+        orange_mask, cv2.bitwise_or(pink_mask, gray_mask)
+    )
+    bar_profile = np.sum(combined_mask, axis=1)
+    threshold = np.max(bar_profile) * 0.3
+    bar_rows = np.where(bar_profile > threshold)[0]
 
     if len(bar_rows) == 0:
         return IV(attack=0, defense=0, stamina=0)
@@ -100,10 +103,13 @@ def extract_pokemon_iv(image: np.ndarray) -> IV:
     bar_groups: list[tuple[int, int]] = []
     start = int(bar_rows[0])
     for i in range(1, len(bar_rows)):
-        if bar_rows[i] - bar_rows[i - 1] > 20:
+        if bar_rows[i] - bar_rows[i - 1] > 15:
             bar_groups.append((start, int(bar_rows[i - 1])))
             start = int(bar_rows[i])
     bar_groups.append((start, int(bar_rows[-1])))
+
+    # バー高さでフィルタ（15-50ピクセル）
+    bar_groups = [(s, e) for s, e in bar_groups if 15 <= (e - s) <= 50]
 
     results = {"attack": 0, "defense": 0, "stamina": 0}
     stat_names = ["attack", "defense", "stamina"]
@@ -125,17 +131,17 @@ def extract_pokemon_iv(image: np.ndarray) -> IV:
         orange_cols = np.where(orange_mask[bar_y, :] > 0)[0]
         gray_cols = np.where(gray_mask[bar_y, :] > 0)[0]
 
-        # オレンジがない、または連続したバー形状でない場合は0
+        # オレンジも灰色もない場合は0
+        if len(orange_cols) == 0 and len(gray_cols) == 0:
+            results[stat] = 0
+            continue
+
+        # 灰色のみの場合（0/0/0個体値）は0
         if len(orange_cols) == 0:
             results[stat] = 0
             continue
 
-        # バー形状の判定：オレンジピクセルが50以上連続している
-        orange_width = orange_cols[-1] - orange_cols[0]
-        if orange_width < 50 or len(orange_cols) < 30:
-            results[stat] = 0
-            continue
-
+        # バー形状の判定：灰色が後続する場合は有効なバー
         bar_left = orange_cols[0]
         colored_right = orange_cols[-1]
 
@@ -144,8 +150,18 @@ def extract_pokemon_iv(image: np.ndarray) -> IV:
             if len(gray_after) > 0:
                 bar_right = gray_after[-1]
             else:
+                # 灰色がオレンジの後にない場合、テキスト等の可能性
+                orange_width = colored_right - bar_left
+                if orange_width < 50 or len(orange_cols) < 30:
+                    results[stat] = 0
+                    continue
                 bar_right = colored_right
         else:
+            # 灰色がない場合、テキスト等の可能性
+            orange_width = colored_right - bar_left
+            if orange_width < 50 or len(orange_cols) < 30:
+                results[stat] = 0
+                continue
             bar_right = colored_right
 
         total_length = bar_right - bar_left
