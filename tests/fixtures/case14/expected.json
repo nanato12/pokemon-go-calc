@@ -1,0 +1,8 @@
+{
+  "pokemon": "ニンフィア",
+  "iv": {
+    "attack": 5,
+    "defense": 15,
+    "stamina": 13
+  }
+}
