@@ -1,0 +1,29 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "build"
+      - "-t"
+      - "${_IMAGE}"
+      - "."
+
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "push"
+      - "${_IMAGE}"
+
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      - "run"
+      - "deploy"
+      - "${_SERVICE_NAME}"
+      - "--image=${_IMAGE}"
+      - "--region=${_REGION}"
+      - "--platform=managed"
+
+substitutions:
+  _REGION: asia-northeast1
+  _SERVICE_NAME: pokemon-go-calc
+  _IMAGE: "asia-northeast1-docker.pkg.dev/${PROJECT_ID}/pokemon-go-calc/app:${COMMIT_SHA}"
+
+options:
+  logging: CLOUD_LOGGING_ONLY
