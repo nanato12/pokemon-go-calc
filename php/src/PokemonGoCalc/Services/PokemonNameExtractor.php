@@ -12,19 +12,19 @@ use thiagoalessio\TesseractOCR\TesseractOCR;
 final class PokemonNameExtractor
 {
     /** テキスト領域の開始位置（画像上部からの比率） */
-    private const float TEXT_REGION_TOP_RATIO = 0.80;
+    private const TEXT_REGION_TOP_RATIO = 0.80;
 
     /** 二値化の閾値 */
-    private const int THRESHOLD_VALUE = 200;
+    private const THRESHOLD_VALUE = 200;
 
     /** 白ピクセル値 */
-    private const int WHITE = 255;
+    private const WHITE = 255;
 
     /** 黒ピクセル値 */
-    private const int BLACK = 0;
+    private const BLACK = 0;
 
     /** ポケモン名抽出パターン */
-    private const string NAME_PATTERN = '/この(.+?)[をは]/u';
+    private const NAME_PATTERN = '/この(.+?)[をは]/u';
 
     /**
      * 画像からポケモン名を抽出する.

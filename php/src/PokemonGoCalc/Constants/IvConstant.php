@@ -9,8 +9,8 @@ namespace PokemonGoCalc\Constants;
  */
 final class IvConstant
 {
-    public const int IV_MIN = 0;
-    public const int IV_MAX = 15;
-    public const int MAX_TOTAL = 45;
-    public const float PERCENTAGE_MULTIPLIER = 100.0;
+    public const IV_MIN = 0;
+    public const IV_MAX = 15;
+    public const MAX_TOTAL = 45;
+    public const PERCENTAGE_MULTIPLIER = 100.0;
 }

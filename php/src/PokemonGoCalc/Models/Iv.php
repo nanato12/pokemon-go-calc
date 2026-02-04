@@ -10,12 +10,12 @@ use PokemonGoCalc\Constants\IvConstant;
 /**
  * 個体値（Individual Values）.
  */
-final readonly class Iv
+final class Iv
 {
     public function __construct(
-        public int $attack,
-        public int $defense,
-        public int $stamina,
+        public readonly int $attack,
+        public readonly int $defense,
+        public readonly int $stamina,
     ) {
         self::validate($attack, 'attack');
         self::validate($defense, 'defense');
