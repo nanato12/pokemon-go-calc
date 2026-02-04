@@ -14,43 +14,43 @@ use PokemonGoCalc\Support\HsvConverter;
 final class PokemonIvExtractor
 {
     // バー領域クロップ比率
-    private const float BAR_Y1_RATIO = 0.65;
-    private const float BAR_Y2_RATIO = 0.87;
-    private const float BAR_X1_RATIO = 0.12;
-    private const float BAR_X2_RATIO = 0.48;
+    private const BAR_Y1_RATIO = 0.65;
+    private const BAR_Y2_RATIO = 0.87;
+    private const BAR_X1_RATIO = 0.12;
+    private const BAR_X2_RATIO = 0.48;
 
     // オレンジマスク HSV範囲
     /** @var array{int, int, int} */
-    private const array ORANGE_LOW = [10, 80, 150];
+    private const ORANGE_LOW = [10, 80, 150];
     /** @var array{int, int, int} */
-    private const array ORANGE_HIGH = [30, 255, 255];
+    private const ORANGE_HIGH = [30, 255, 255];
 
     // ピンクマスク HSV範囲（Hueが0付近で折り返す）
     /** @var array{int, int, int} */
-    private const array PINK1_LOW = [0, 40, 150];
+    private const PINK1_LOW = [0, 40, 150];
     /** @var array{int, int, int} */
-    private const array PINK1_HIGH = [10, 200, 255];
+    private const PINK1_HIGH = [10, 200, 255];
     /** @var array{int, int, int} */
-    private const array PINK2_LOW = [160, 40, 150];
+    private const PINK2_LOW = [160, 40, 150];
     /** @var array{int, int, int} */
-    private const array PINK2_HIGH = [180, 200, 255];
+    private const PINK2_HIGH = [180, 200, 255];
 
     // グレー判定閾値
-    private const int GRAY_CHANNEL_DIFF_MAX = 20;
-    private const int GRAY_VALUE_MIN = 200;
-    private const int GRAY_VALUE_MAX = 245;
+    private const GRAY_CHANNEL_DIFF_MAX = 20;
+    private const GRAY_VALUE_MIN = 200;
+    private const GRAY_VALUE_MAX = 245;
 
     // バー検出パラメータ
-    private const float PROFILE_THRESHOLD_RATIO = 0.3;
-    private const int BAR_ROW_GAP = 15;
-    private const int BAR_HEIGHT_MIN = 15;
-    private const int BAR_HEIGHT_MAX = 50;
-    private const int PINK_COUNT_THRESHOLD = 50;
-    private const int ORANGE_WIDTH_MIN = 50;
-    private const int ORANGE_COUNT_MIN = 30;
+    private const PROFILE_THRESHOLD_RATIO = 0.3;
+    private const BAR_ROW_GAP = 15;
+    private const BAR_HEIGHT_MIN = 15;
+    private const BAR_HEIGHT_MAX = 50;
+    private const PINK_COUNT_THRESHOLD = 50;
+    private const ORANGE_WIDTH_MIN = 50;
+    private const ORANGE_COUNT_MIN = 30;
 
     /** @var list<string> */
-    private const array STAT_NAMES = ['attack', 'defense', 'stamina'];
+    private const STAT_NAMES = ['attack', 'defense', 'stamina'];
 
     /**
      * 画像から個体値を抽出する.

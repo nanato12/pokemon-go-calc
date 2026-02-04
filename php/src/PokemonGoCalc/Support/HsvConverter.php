@@ -11,8 +11,8 @@ namespace PokemonGoCalc\Support;
  */
 final class HsvConverter
 {
-    private const int SV_MAX = 255;
-    private const float H_SCALE = 360.0;
+    private const SV_MAX = 255;
+    private const H_SCALE = 360.0;
 
     /**
      * RGB→HSV変換（OpenCV互換スケール）.
