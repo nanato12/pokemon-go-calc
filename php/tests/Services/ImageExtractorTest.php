@@ -16,7 +16,7 @@ use PokemonGoCalc\Services\PokemonNameExtractor;
  */
 final class ImageExtractorTest extends TestCase
 {
-    private const string FIXTURES_DIR = __DIR__
+    private const FIXTURES_DIR = __DIR__
         . '/../../../tests/fixtures';
 
     /**
