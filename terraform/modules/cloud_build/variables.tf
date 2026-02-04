@@ -16,7 +16,7 @@ variable "repository" {
 variable "branch" {
   description = "トリガー対象ブランチ（正規表現）"
   type        = string
-  default     = "^develop$"
+  default     = "^main$"
 }
 
 variable "cloudbuild_yaml" {
