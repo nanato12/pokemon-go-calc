@@ -23,7 +23,7 @@ steps:
 substitutions:
   _REGION: asia-northeast1
   _SERVICE_NAME: pokemon-go-calc
-  _IMAGE: "asia-northeast1-docker.pkg.dev/${PROJECT_ID}/pokemon-go-calc/app:${COMMIT_SHA}"
+  _IMAGE: "asia-northeast1-docker.pkg.dev/${PROJECT_ID}/pokemon-go-calc/app:${TAG_NAME}"
 
 options:
   logging: CLOUD_LOGGING_ONLY

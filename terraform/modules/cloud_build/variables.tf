@@ -13,10 +13,10 @@ variable "repository" {
   type        = string
 }
 
-variable "branch" {
-  description = "トリガー対象ブランチ（正規表現）"
+variable "tag" {
+  description = "トリガー対象タグ（正規表現）"
   type        = string
-  default     = "^main$"
+  default     = "^v.*"
 }
 
 variable "cloudbuild_yaml" {

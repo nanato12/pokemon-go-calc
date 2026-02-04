@@ -5,7 +5,7 @@ resource "google_cloudbuild_trigger" "this" {
   repository_event_config {
     repository = var.repository
     push {
-      branch = var.branch
+      tag = var.tag
     }
   }
 
