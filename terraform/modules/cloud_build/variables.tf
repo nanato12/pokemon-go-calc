@@ -22,7 +22,7 @@ variable "tag" {
 variable "cloudbuild_yaml" {
   description = "cloudbuild.yamlのパス"
   type        = string
-  default     = "cloudbuild.yaml"
+  default     = "deploy/cloudbuild.yaml"
 }
 
 variable "substitutions" {
