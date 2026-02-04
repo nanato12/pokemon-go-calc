@@ -1,0 +1,39 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use PokemonGoCalc\Services\ImageExtractor;
+use PokemonGoCalc\Services\PokemonIvExtractor;
+use PokemonGoCalc\Services\PokemonNameExtractor;
+
+if ($argc < 2) {
+    fwrite(
+        STDERR,
+        "Usage: extract-pokemon-iv <image_path>\n",
+    );
+    exit(1);
+}
+
+$imagePath = $argv[1];
+
+$extractor = new ImageExtractor(
+    new PokemonNameExtractor(),
+    new PokemonIvExtractor(),
+);
+
+$result = $extractor->extractFromScreenshot($imagePath);
+
+$separator = str_repeat('=', 50);
+fwrite(STDERR, "{$separator}\n");
+fwrite(STDERR, "抽出結果\n");
+fwrite(STDERR, "{$separator}\n");
+fwrite(STDERR, sprintf(
+    "ポケモン名: %s\n",
+    $result['name'] ?? '（抽出失敗）',
+));
+fwrite(STDERR, sprintf("こうげき: %d\n", $result['iv']->attack));
+fwrite(STDERR, sprintf("ぼうぎょ: %d\n", $result['iv']->defense));
+fwrite(STDERR, sprintf("HP: %d\n", $result['iv']->stamina));

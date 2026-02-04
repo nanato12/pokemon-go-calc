@@ -1,0 +1,8 @@
+{
+  "pokemon": "コバルオン",
+  "iv": {
+    "attack": 13,
+    "defense": 11,
+    "stamina": 15
+  }
+}

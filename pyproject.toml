@@ -1,3 +1,19 @@
+[project]
+name = "pokemon-go-calc"
+version = "0.1.0"
+description = "Pokemon GO IV Calculator"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["pokemon_go_calc*"]
+
 [tool.ruff]
 line-length = 79
 show-fixes = true
@@ -14,6 +30,7 @@ unfixable = []
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["E402"]
+"pokemon_go_calc/services/pokemon_db.py" = ["E501"]
 
 [tool.mypy]
 explicit_package_bases = true

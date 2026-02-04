@@ -1,0 +1,8 @@
+{
+  "pokemon": "ランターン",
+  "iv": {
+    "attack": 1,
+    "defense": 12,
+    "stamina": 12
+  }
+}

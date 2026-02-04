@@ -1,0 +1,8 @@
+{
+  "pokemon": "ルギア",
+  "iv": {
+    "attack": 12,
+    "defense": 10,
+    "stamina": 12
+  }
+}
