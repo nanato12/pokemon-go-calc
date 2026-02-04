@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "gcs" {
-    bucket = "sandbox-haruto-horinouchi-terraform-state"
+    bucket = "sandbox-haruto-horinouchi-tf-state"
     prefix = "pokemon-go-calc/prod"
   }
 }
