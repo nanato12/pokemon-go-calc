@@ -4,25 +4,26 @@ on:
   pull_request:
     paths:
       - .github/workflows/lint_python.yaml
-      - "**.py"
-      - pyproject.toml
-      - requirements-dev.txt
-      - requirements.txt
-      - setup.cfg
+      - "api/**.py"
+      - api/pyproject.toml
+      - api/requirements-dev.txt
+      - api/requirements.txt
   push:
     branches:
       - develop
     paths:
       - .github/workflows/lint_python.yaml
-      - "**.py"
-      - pyproject.toml
-      - requirements-dev.txt
-      - requirements.txt
-      - setup.cfg
+      - "api/**.py"
+      - api/pyproject.toml
+      - api/requirements-dev.txt
+      - api/requirements.txt
 
 jobs:
   python-lint:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api
     strategy:
       matrix:
         python-version: ["3.10", "3.11", "3.12", "3.13"]
@@ -43,11 +44,14 @@ jobs:
 
       - name: Lint with Ruff check
         uses: chartboost/ruff-action@v1
+        with:
+          src: api
 
       - name: Lint with Ruff format --check
         uses: chartboost/ruff-action@v1
         with:
           args: 'format --check'
+          src: api
 
       - name: Lint with mypy
         run: |
