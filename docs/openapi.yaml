@@ -1,0 +1,113 @@
+openapi: "3.0.3"
+info:
+  title: Pokemon GO IV Extractor API
+  description: Pokemon GO スクリーンショットからポケモン名と個体値を抽出する API
+  version: "1.0.0"
+
+servers:
+  - url: https://pokemon-go-calc-4xmmm5azxa-an.a.run.app
+    description: Production (Cloud Run)
+
+paths:
+  /:
+    get:
+      operationId: healthCheck
+      summary: ヘルスチェック
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
+
+  /extract:
+    post:
+      operationId: extractIv
+      summary: スクリーンショットからポケモン名と個体値を抽出
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required:
+                - image
+              properties:
+                image:
+                  type: string
+                  format: binary
+                  description: Pokemon GO スクリーンショット画像
+      responses:
+        "200":
+          description: 抽出成功
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ExtractResponse"
+        "400":
+          description: リクエスト不正
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+components:
+  schemas:
+    HealthResponse:
+      type: object
+      required:
+        - status
+      properties:
+        status:
+          type: string
+          example: "ok"
+
+    ExtractResponse:
+      type: object
+      required:
+        - pokemon
+        - iv
+      properties:
+        pokemon:
+          type: string
+          description: ポケモン名
+          example: "デデンネ"
+        iv:
+          $ref: "#/components/schemas/IV"
+
+    IV:
+      type: object
+      required:
+        - attack
+        - defense
+        - stamina
+      properties:
+        attack:
+          type: integer
+          minimum: 0
+          maximum: 15
+          description: 攻撃個体値
+          example: 11
+        defense:
+          type: integer
+          minimum: 0
+          maximum: 15
+          description: 防御個体値
+          example: 15
+        stamina:
+          type: integer
+          minimum: 0
+          maximum: 15
+          description: HP個体値
+          example: 11
+
+    ErrorResponse:
+      type: object
+      required:
+        - error
+      properties:
+        error:
+          type: string
+          description: エラーメッセージ
+          example: "imageフィールドが必要です"

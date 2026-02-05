@@ -13,6 +13,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY pokemon_go_calc/ pokemon_go_calc/
-COPY api.py .
+COPY api/ api/
 
-CMD exec gunicorn --bind :${PORT:-8080} --workers 1 --threads 8 api:app
+CMD exec gunicorn --bind :${PORT:-8080} --workers 1 --threads 8 api.main:app

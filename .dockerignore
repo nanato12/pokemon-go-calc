@@ -4,9 +4,6 @@ __pycache__/
 .git/
 .github/
 tests/
-php/
-scripts/
-test/
 .mise.toml
 .pytest_cache/
 *.egg-info/
