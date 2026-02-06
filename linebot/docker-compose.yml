@@ -1,0 +1,12 @@
+services:
+  linebot:
+    build: .
+    ports:
+      - "8081:80"
+    environment:
+      - LINE_CHANNEL_ACCESS_TOKEN=${LINE_CHANNEL_ACCESS_TOKEN}
+      - LINE_CHANNEL_SECRET=${LINE_CHANNEL_SECRET}
+      - IV_EXTRACTOR_API_URL=${IV_EXTRACTOR_API_URL}
+    volumes:
+      - ./src:/var/www/html/src:ro
+      - ./public:/var/www/html/public:ro
