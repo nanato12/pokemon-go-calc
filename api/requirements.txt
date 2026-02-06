@@ -1,6 +1,6 @@
-pydantic==2.10.6
-opencv-python==4.10.0.84
+pydantic==2.12.5
+opencv-python==4.13.0.92
 pytesseract==0.3.13
-numpy==2.2.3
+numpy==2.4.2
 connexion[flask,swagger-ui]==3.1.0
-gunicorn==23.0.0
+gunicorn==25.0.1
