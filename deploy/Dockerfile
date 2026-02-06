@@ -9,10 +9,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY api/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY pokemon_go_calc/ pokemon_go_calc/
-COPY api.py .
+COPY api/src/ src/
+COPY api/main.py .
+COPY docs/openapi.yaml docs/openapi.yaml
 
-CMD exec gunicorn --bind :${PORT:-8080} --workers 1 --threads 8 api:app
+CMD exec gunicorn --bind :${PORT:-8080} --workers 1 --threads 8 main:app
