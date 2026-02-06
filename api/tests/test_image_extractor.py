@@ -5,7 +5,13 @@ from pathlib import Path
 
 import pytest
 
-from pokemon_go_calc import IV, extract_from_screenshot
+from src.application.usecases.extract_iv_usecase import ExtractIvUseCase
+from src.domain.value_objects.iv import IV
+from src.infrastructure.image.opencv_image_reader import OpenCvImageReader
+from src.infrastructure.ocr.bar_iv_extractor import BarIvExtractor
+from src.infrastructure.ocr.tesseract_name_extractor import (
+    TesseractNameExtractor,
+)
 
 # テストケースディレクトリを動的に取得
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
@@ -25,6 +31,15 @@ def load_expected(case_dir: Path) -> tuple[str, IV]:
     )
 
 
+def create_usecase() -> ExtractIvUseCase:
+    """テスト用ユースケースを生成."""
+    return ExtractIvUseCase(
+        image_reader=OpenCvImageReader(),
+        name_extractor=TesseractNameExtractor(),
+        iv_extractor=BarIvExtractor(),
+    )
+
+
 @pytest.mark.parametrize(
     "case_dir",
     CASE_DIRS,
@@ -35,7 +50,15 @@ def test_extract_from_screenshot(case_dir: Path) -> None:
     image_path = case_dir / "image.png"
     expected_name, expected_iv = load_expected(case_dir)
 
-    name, iv = extract_from_screenshot(str(image_path))
+    usecase = create_usecase()
+    result = usecase.execute(str(image_path))
 
-    assert name == expected_name, f"名前不一致: {name} != {expected_name}"
-    assert iv == expected_iv, f"IV不一致: {iv} != {expected_iv}"
+    assert result.pokemon_name == expected_name, (
+        f"名前不一致: {result.pokemon_name} != {expected_name}"
+    )
+    actual_iv = IV(
+        attack=result.attack,
+        defense=result.defense,
+        stamina=result.stamina,
+    )
+    assert actual_iv == expected_iv, f"IV不一致: {actual_iv} != {expected_iv}"

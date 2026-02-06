@@ -12,7 +12,7 @@ paths:
   /:
     get:
       operationId: healthCheck
-      x-openapi-router-controller: controllers.default_controller
+      x-openapi-router-controller: src.presentation.controllers.default_controller
       summary: ヘルスチェック
       responses:
         "200":
@@ -25,7 +25,7 @@ paths:
   /extract:
     post:
       operationId: extractIv
-      x-openapi-router-controller: controllers.default_controller
+      x-openapi-router-controller: src.presentation.controllers.default_controller
       summary: スクリーンショットからポケモン名と個体値を抽出
       requestBody:
         required: true

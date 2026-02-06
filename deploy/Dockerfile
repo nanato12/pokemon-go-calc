@@ -12,8 +12,7 @@ WORKDIR /app
 COPY api/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY api/pokemon_go_calc/ pokemon_go_calc/
-COPY api/controllers/ controllers/
+COPY api/src/ src/
 COPY api/main.py .
 COPY docs/openapi.yaml docs/openapi.yaml
 
