@@ -45,7 +45,7 @@ final class IvExtractorApiClient implements IvExtractorInterface
                 iv: new IV(
                     attack: $iv->getAttack(),
                     defense: $iv->getDefense(),
-                    stamina: $iv->getStamina(),
+                    hp: $iv->getStamina(),
                 ),
             );
         } finally {
