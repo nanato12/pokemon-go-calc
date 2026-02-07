@@ -29,7 +29,7 @@ final class ExtractResult
             $percentage,
             $this->iv->attack,
             $this->iv->defense,
-            $this->iv->stamina
+            $this->iv->hp
         );
     }
 }

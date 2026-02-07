@@ -15,11 +15,11 @@ final class IV
     public function __construct(
         public readonly int $attack,
         public readonly int $defense,
-        public readonly int $stamina,
+        public readonly int $hp,
     ) {
         $this->validate($attack, 'attack');
         $this->validate($defense, 'defense');
-        $this->validate($stamina, 'stamina');
+        $this->validate($hp, 'hp');
     }
 
     private function validate(int $value, string $name): void
@@ -33,12 +33,12 @@ final class IV
 
     public function __toString(): string
     {
-        return sprintf('%d/%d/%d', $this->attack, $this->defense, $this->stamina);
+        return sprintf('%d/%d/%d', $this->attack, $this->defense, $this->hp);
     }
 
     public function total(): int
     {
-        return $this->attack + $this->defense + $this->stamina;
+        return $this->attack + $this->defense + $this->hp;
     }
 
     public function percentage(): float
@@ -50,6 +50,6 @@ final class IV
     {
         return $this->attack === self::MAX
             && $this->defense === self::MAX
-            && $this->stamina === self::MAX;
+            && $this->hp === self::MAX;
     }
 }
