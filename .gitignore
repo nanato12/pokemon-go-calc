@@ -137,3 +137,6 @@ docker/mysql/data/
 
 # PHPUnit
 .phpunit.cache/
+
+# SSH keys
+keys/

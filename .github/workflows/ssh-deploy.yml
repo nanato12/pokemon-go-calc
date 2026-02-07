@@ -1,0 +1,53 @@
+name: SSH Deploy
+
+on:
+  # push:
+  #   branches:
+  #     - develop
+
+  release:
+    types:
+      - published
+
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Choose environment to deploy'
+        required: true
+        type: choice
+        options:
+          # - staging
+          - production
+
+env:
+  STAGING_CMD: "git pull && make deploy-stg"
+  PRODUCTION_CMD: "git pull && make deploy"
+
+jobs:
+  # staging:
+  #   if: github.ref == 'refs/heads/develop' || (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'staging')
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Install SSH key
+  #       uses: shimataro/ssh-key-action@v2
+  #       with:
+  #         key: ${{ secrets.SSH_KEY }}
+  #         name: id_rsa
+  #         known_hosts: ${{ secrets.KNOWN_HOSTS }}
+
+  #     - name: Deploy to staging
+  #       run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -p ${{ secrets.SSH_PORT }} "cd ${{ secrets.STAGING_DIR }} && ${{ env.STAGING_CMD }}"
+
+  production:
+    if: github.event_name == 'release' && github.event.action == 'published' || (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'production')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          name: id_rsa
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+
+      - name: Deploy to production
+        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -p ${{ secrets.SSH_PORT }} "cd ${{ secrets.PRODUCTION_DIR }} && ${{ env.PRODUCTION_CMD }}"
