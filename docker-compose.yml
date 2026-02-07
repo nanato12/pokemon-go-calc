@@ -1,0 +1,31 @@
+services:
+  php:
+    build: ./docker/php
+    ports:
+      - "38000:8000"
+    volumes:
+      - ./server:/var/www/html
+    working_dir: /var/www/html
+    depends_on:
+      - mysql
+    command: >
+      sh -c '
+        test -f .env || cp .env.example .env &&
+        composer install &&
+        php artisan key:generate --force &&
+        php artisan migrate --force &&
+        php artisan serve --host 0.0.0.0
+      '
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: pokemon_go_calc
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: secret
+      TZ: Asia/Tokyo
+    ports:
+      - "33060:3306"
+    volumes:
+      - ./docker/mysql/data:/var/lib/mysql
