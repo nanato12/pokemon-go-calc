@@ -131,3 +131,9 @@ dmypy.json
 # app logs
 /logs
 logs/
+
+# Docker
+docker/mysql/data/
+
+# PHPUnit
+.phpunit.cache/
