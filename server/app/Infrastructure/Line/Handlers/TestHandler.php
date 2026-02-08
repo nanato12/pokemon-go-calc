@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace App\Infrastructure\Line\Handlers;
 
 use LINE\Webhook\Model\Event;
+use LINE\Webhook\Model\MessageEvent;
+use LINE\Webhook\Model\TextMessageContent;
 use Phine\Client;
 use Phine\Handlers\BaseCommandHandler;
 use Phine\Helpers\MessageBuilders\TextMessageBuilder;
@@ -24,8 +26,18 @@ final class TestHandler extends BaseCommandHandler
 
     public function handle(Client $client, Event $event): void
     {
+        $quoteToken = null;
+
+        if ($event instanceof MessageEvent) {
+            $message = $event->getMessage();
+
+            if ($message instanceof TextMessageContent) {
+                $quoteToken = $message->getQuoteToken();
+            }
+        }
+
         $client->reply([
-            new TextMessageBuilder('ok'),
+            new TextMessageBuilder('ok', [], $quoteToken),
         ]);
     }
 }
