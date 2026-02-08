@@ -1,12 +1,12 @@
 <?php
 
+use App\Logging\CreateDiscordLogger;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
 use Monolog\Processor\PsrLogMessageProcessor;
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | SQL Log
@@ -62,7 +62,6 @@ return [
     */
 
     'channels' => [
-
         'stack' => [
             'driver' => 'stack',
             'channels' => ['daily', 'discord'],
@@ -86,7 +85,7 @@ return [
 
         'discord' => [
             'driver' => 'custom',
-            'via' => App\Logging\CreateDiscordLogger::class,
+            'via' => CreateDiscordLogger::class,
             'url' => env('LOG_DISCORD_WEBHOOK_URL'),
             'username' => env('LOG_DISCORD_USERNAME', 'Laravel Log'),
             'level' => env('LOG_DISCORD_LEVEL', 'error'),
@@ -115,7 +114,7 @@ return [
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
                 'port' => env('PAPERTRAIL_PORT'),
-                'connectionString' => 'tls://'.env('PAPERTRAIL_URL').':'.env('PAPERTRAIL_PORT'),
+                'connectionString' => 'tls://' . env('PAPERTRAIL_URL') . ':' . env('PAPERTRAIL_PORT'),
             ],
             'processors' => [PsrLogMessageProcessor::class],
         ],
@@ -152,7 +151,5 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
-
     ],
-
 ];

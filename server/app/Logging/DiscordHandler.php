@@ -16,7 +16,7 @@ class DiscordHandler extends AbstractProcessingHandler
     public function __construct(
         string $webhookUrl,
         string $username = 'Laravel Log',
-        int|string|Level $level = Level::Error,
+        int|Level|string $level = Level::Error,
         bool $bubble = true
     ) {
         parent::__construct($level, $bubble);
@@ -54,9 +54,15 @@ class DiscordHandler extends AbstractProcessingHandler
             ],
         ];
 
+        $json = json_encode($payload);
+
+        if ($json === false) {
+            return;
+        }
+
         $ch = curl_init($this->webhookUrl);
         curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
         curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_exec($ch);
