@@ -5,20 +5,21 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\UseCases\Bot\HandleWebhookUseCase;
+use App\Infrastructure\Line\LineEventDispatcher;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use LINE\Constants\HTTPHeader;
 use LINE\Parser\Exception\InvalidEventRequestException;
 use LINE\Parser\Exception\InvalidSignatureException;
+use Phine\Client;
 
 /**
- * Webhook Controller.
+ * LINE Webhook Controller.
  */
 class WebhookController extends Controller
 {
     public function __construct(
-        private readonly HandleWebhookUseCase $handleWebhookUseCase,
+        private readonly Client $client,
     ) {}
 
     public function __invoke(Request $request): Response
@@ -30,7 +31,11 @@ class WebhookController extends Controller
         }
 
         try {
-            $this->handleWebhookUseCase->execute($request->getContent(), $signature);
+            $events = $this->client->parseEventRequest($request->getContent(), $signature);
+
+            foreach ($events as $event) {
+                LineEventDispatcher::dispatch($this->client, $event);
+            }
         } catch (InvalidSignatureException) {
             return response('Invalid signature', 400);
         } catch (InvalidEventRequestException) {

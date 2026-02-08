@@ -1,0 +1,31 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Infrastructure\Line\Handlers;
+
+use LINE\Webhook\Model\Event;
+use Phine\Client;
+use Phine\Handlers\BaseCommandHandler;
+use Phine\Helpers\MessageBuilders\TextMessageBuilder;
+
+/**
+ * テストハンドラ.
+ */
+final class TestHandler extends BaseCommandHandler
+{
+    /**
+     * @return string[]
+     */
+    public static function commands(): array
+    {
+        return ['test'];
+    }
+
+    public function handle(Client $client, Event $event): void
+    {
+        $client->reply([
+            new TextMessageBuilder('ok'),
+        ]);
+    }
+}
