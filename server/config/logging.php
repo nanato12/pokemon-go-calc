@@ -10,6 +10,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | SQL Log
+    |--------------------------------------------------------------------------
+    */
+
+    'sql' => [
+        'enable' => env('LOG_SQL_ENABLE', false),
+        'slow_query_time' => env('LOG_SQL_SLOW_QUERY_TIME', 2000), // ms
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Default Log Channel
     |--------------------------------------------------------------------------
     |
@@ -80,6 +91,13 @@ return [
             'webhook_url' => env('LOG_DISCORD_WEBHOOK_URL'),
             'username' => env('LOG_DISCORD_USERNAME', 'Laravel Log'),
             'level' => env('LOG_DISCORD_LEVEL', 'error'),
+        ],
+
+        'sql' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/sql.log'),
+            'level' => env('LOG_LEVEL_SQL', 'debug'),
+            'days' => 7,
         ],
 
         'slack' => [
