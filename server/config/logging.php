@@ -85,9 +85,9 @@ return [
         ],
 
         'discord' => [
-            'driver' => 'discord',
+            'driver' => 'custom',
+            'via' => MarvinLabs\DiscordLogger\Logger::class,
             'url' => env('LOG_DISCORD_WEBHOOK_URL'),
-            'username' => env('LOG_DISCORD_USERNAME', 'Laravel Log'),
             'level' => env('LOG_DISCORD_LEVEL', 'error'),
         ],
 
