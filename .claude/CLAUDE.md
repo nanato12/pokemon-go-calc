@@ -2,6 +2,22 @@
 
 このファイルはClaude Code (claude.ai/code) がこのリポジトリで作業する際のガイダンスを提供します。
 
+## ワークフロールール
+
+### プランニング
+
+計画を立てる際は、必ず以下の形式でファイルを作成すること:
+
+```
+docs/plan/yyyymmdd_description.md
+```
+
+例: `docs/plan/20260209_vue_setup.md`
+
+### タスク管理
+
+ユーザーからの指示で修正を行う場合は、必ず `docs/tasks/` ディレクトリにタスクファイルを作成すること。
+
 ## プロジェクト概要
 
 Pokemon GO個体値計算ライブラリ。pokemongo-get.com/cpcal/のロジックをPythonで実装。

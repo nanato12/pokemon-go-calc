@@ -3,12 +3,24 @@ name: Lint
 on:
   push:
     branches:
-      - main
       - develop
+    paths:
+      - 'server/**/*.php'
+      - 'server/composer.json'
+      - 'server/composer.lock'
+      - 'server/phpstan.neon'
+      - 'server/.php-cs-fixer.dist.php'
+      - '.github/workflows/lint.yml'
   pull_request:
     branches:
-      - main
       - develop
+    paths:
+      - 'server/**/*.php'
+      - 'server/composer.json'
+      - 'server/composer.lock'
+      - 'server/phpstan.neon'
+      - 'server/.php-cs-fixer.dist.php'
+      - '.github/workflows/lint.yml'
 
 jobs:
   php-cs-fixer:
