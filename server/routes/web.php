@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sample', function () {
-    return view('sample');
-});
+if (app()->environment('local')) {
+    Route::get('/sample', fn () => view('sample'));
+}
