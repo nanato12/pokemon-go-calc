@@ -9,6 +9,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | SQL Log
+    |--------------------------------------------------------------------------
+    */
+
+    'sql' => [
+        'enable' => env('LOG_SQL_ENABLE', false),
+        'slow_query_time' => env('LOG_SQL_SLOW_QUERY_TIME', 2000), // ms
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Default Log Channel
     |--------------------------------------------------------------------------
     |
@@ -54,7 +65,7 @@ return [
 
         'stack' => [
             'driver' => 'stack',
-            'channels' => explode(',', (string) env('LOG_STACK', 'single')),
+            'channels' => ['daily', 'discord'],
             'ignore_exceptions' => false,
         ],
 
@@ -71,6 +82,21 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => env('LOG_DAILY_DAYS', 14),
             'replace_placeholders' => true,
+        ],
+
+        'discord' => [
+            'driver' => 'custom',
+            'via' => App\Logging\CreateDiscordLogger::class,
+            'url' => env('LOG_DISCORD_WEBHOOK_URL'),
+            'username' => env('LOG_DISCORD_USERNAME', 'Laravel Log'),
+            'level' => env('LOG_DISCORD_LEVEL', 'error'),
+        ],
+
+        'sql' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/sql.log'),
+            'level' => env('LOG_LEVEL_SQL', 'debug'),
+            'days' => 7,
         ],
 
         'slack' => [
