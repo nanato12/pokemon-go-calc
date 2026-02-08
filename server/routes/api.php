@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\LineBotController;
+use App\Http\Controllers\Api\WebhookController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('/webhook', [LineBotController::class, 'callback']);
+Route::post('/webhook', WebhookController::class);
