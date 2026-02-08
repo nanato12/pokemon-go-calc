@@ -6,6 +6,8 @@ namespace App\Logging;
 
 use Monolog\Logger;
 
+use function is_string;
+
 class CreateDiscordLogger
 {
     /**
@@ -17,10 +19,14 @@ class CreateDiscordLogger
     {
         $logger = new Logger('discord');
 
+        $url = $config['url'] ?? '';
+        $username = $config['username'] ?? 'Laravel Log';
+        $level = $config['level'] ?? 'error';
+
         $logger->pushHandler(new DiscordHandler(
-            webhookUrl: $config['url'] ?? '',
-            username: $config['username'] ?? 'Laravel Log',
-            level: $config['level'] ?? 'error',
+            webhookUrl: is_string($url) ? $url : '',
+            username: is_string($username) ? $username : 'Laravel Log',
+            level: is_string($level) ? $level : 'error',
         ));
 
         return $logger;

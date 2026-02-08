@@ -1,6 +1,9 @@
 <?php
 
+use App\Providers\AppServiceProvider;
+use App\Providers\DatabaseQueryServiceProvider;
+
 return [
-    App\Providers\AppServiceProvider::class,
-    App\Providers\DatabaseQueryServiceProvider::class,
+    AppServiceProvider::class,
+    DatabaseQueryServiceProvider::class,
 ];

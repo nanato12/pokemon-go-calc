@@ -1,0 +1,29 @@
+includes:
+    - ./vendor/larastan/larastan/extension.neon
+
+parameters:
+    # The level 9 is the highest level
+    level: 9
+
+    paths:
+        - ./app
+        - ./config
+        - ./database
+        - ./routes
+        - ./tests
+
+    excludePaths:
+        - ./database/factories/**.php
+        - ./routes/console.php
+        - ./config/database.php
+        - ./config/filesystems.php
+        - ./tests/Unit/ExampleTest.php
+        - ./tests/Feature/ExampleTest.php
+
+    ignoreErrors:
+        - message: '#Parameter \$level of class App\\Logging\\DiscordHandler constructor expects#'
+          path: app/Logging/CreateDiscordLogger.php
+
+    checkModelProperties: true
+    checkPhpDocMissingReturn: true
+    checkUnusedViews: true
