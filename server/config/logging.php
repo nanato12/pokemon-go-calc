@@ -1,6 +1,5 @@
 <?php
 
-use App\Logging\CreateDiscordLogger;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
@@ -86,9 +85,8 @@ return [
         ],
 
         'discord' => [
-            'driver' => 'custom',
-            'via' => CreateDiscordLogger::class,
-            'webhook_url' => env('LOG_DISCORD_WEBHOOK_URL'),
+            'driver' => 'discord',
+            'url' => env('LOG_DISCORD_WEBHOOK_URL'),
             'username' => env('LOG_DISCORD_USERNAME', 'Laravel Log'),
             'level' => env('LOG_DISCORD_LEVEL', 'error'),
         ],
