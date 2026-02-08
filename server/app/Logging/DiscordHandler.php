@@ -7,6 +7,7 @@ namespace App\Logging;
 use Monolog\Handler\AbstractProcessingHandler;
 use Monolog\Level;
 use Monolog\LogRecord;
+use Throwable;
 
 class DiscordHandler extends AbstractProcessingHandler
 {
@@ -39,19 +40,43 @@ class DiscordHandler extends AbstractProcessingHandler
             default => 0x95A5A6,
         };
 
+        $embed = [
+            'title' => $record->level->name,
+            'description' => substr($record->message, 0, 2000),
+            'color' => $color,
+            'timestamp' => $record->datetime->format('c'),
+            'footer' => [
+                'text' => config('app.name', 'Laravel'),
+            ],
+        ];
+
+        // 例外のスタックトレースを追加
+        if (isset($record->context['exception']) && $record->context['exception'] instanceof Throwable) {
+            $exception = $record->context['exception'];
+            $trace = $exception->getTraceAsString();
+
+            $embed['fields'] = [
+                [
+                    'name' => 'Exception',
+                    'value' => substr(get_class($exception) . ': ' . $exception->getMessage(), 0, 1024),
+                    'inline' => false,
+                ],
+                [
+                    'name' => 'File',
+                    'value' => substr($exception->getFile() . ':' . $exception->getLine(), 0, 1024),
+                    'inline' => false,
+                ],
+                [
+                    'name' => 'Stack Trace',
+                    'value' => '```' . substr($trace, 0, 1000) . '```',
+                    'inline' => false,
+                ],
+            ];
+        }
+
         $payload = [
             'username' => $this->username,
-            'embeds' => [
-                [
-                    'title' => $record->level->name,
-                    'description' => substr($record->message, 0, 2000),
-                    'color' => $color,
-                    'timestamp' => $record->datetime->format('c'),
-                    'footer' => [
-                        'text' => config('app.name', 'Laravel'),
-                    ],
-                ],
-            ],
+            'embeds' => [$embed],
         ];
 
         $json = json_encode($payload);
