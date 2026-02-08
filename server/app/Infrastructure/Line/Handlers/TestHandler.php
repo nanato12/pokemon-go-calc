@@ -26,18 +26,12 @@ final class TestHandler extends BaseCommandHandler
 
     public function handle(Client $client, Event $event): void
     {
-        $quoteToken = null;
-
-        if ($event instanceof MessageEvent) {
-            $message = $event->getMessage();
-
-            if ($message instanceof TextMessageContent) {
-                $quoteToken = $message->getQuoteToken();
-            }
-        }
+        /** @var MessageEvent $event */
+        /** @var TextMessageContent $message */
+        $message = $event->getMessage();
 
         $client->reply([
-            new TextMessageBuilder('ok', [], $quoteToken),
+            new TextMessageBuilder('ok', [], $message->getQuoteToken()),
         ]);
     }
 }
