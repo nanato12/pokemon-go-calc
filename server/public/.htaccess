@@ -1,3 +1,7 @@
+# Xserver PHP version (php.fcgi required on server)
+Action myphp-script /php.fcgi
+AddHandler myphp-script .php
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
