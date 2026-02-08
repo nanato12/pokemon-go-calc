@@ -1,5 +1,6 @@
 <?php
 
+use App\Logging\CreateDiscordLogger;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
@@ -54,7 +55,7 @@ return [
 
         'stack' => [
             'driver' => 'stack',
-            'channels' => explode(',', (string) env('LOG_STACK', 'single')),
+            'channels' => ['daily', 'discord'],
             'ignore_exceptions' => false,
         ],
 
@@ -71,6 +72,14 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => env('LOG_DAILY_DAYS', 14),
             'replace_placeholders' => true,
+        ],
+
+        'discord' => [
+            'driver' => 'custom',
+            'via' => CreateDiscordLogger::class,
+            'webhook_url' => env('LOG_DISCORD_WEBHOOK_URL'),
+            'username' => env('LOG_DISCORD_USERNAME', 'Laravel Log'),
+            'level' => env('LOG_DISCORD_LEVEL', 'error'),
         ],
 
         'slack' => [
