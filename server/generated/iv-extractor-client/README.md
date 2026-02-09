@@ -1,4 +1,4 @@
-# OpenAPIClient-php
+# ivextractorclient
 
 Pokemon GO スクリーンショットからポケモン名と個体値を抽出する API
 
@@ -35,7 +35,7 @@ Download the files and include `autoload.php`:
 
 ```php
 <?php
-require_once('/path/to/OpenAPIClient-php/vendor/autoload.php');
+require_once('/path/to/ivextractorclient/vendor/autoload.php');
 ```
 
 ## Getting Started
