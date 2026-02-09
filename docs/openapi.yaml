@@ -2,7 +2,7 @@ openapi: "3.0.3"
 info:
   title: Pokemon GO IV Extractor API
   description: Pokemon GO スクリーンショットからポケモン名と個体値を抽出する API
-  version: "1.0.0"
+  version: "1.1.0"
 
 servers:
   - url: https://pokemon-go-calc-4xmmm5azxa-an.a.run.app
@@ -69,12 +69,25 @@ components:
       type: object
       required:
         - pokemon
+        - pokemon_en
+        - dex
         - iv
       properties:
         pokemon:
           type: string
-          description: ポケモン名
+          nullable: true
+          description: ポケモン名（日本語）
           example: "デデンネ"
+        pokemon_en:
+          type: string
+          nullable: true
+          description: ポケモン名（英語）
+          example: "Dedenne"
+        dex:
+          type: integer
+          nullable: true
+          description: 図鑑番号
+          example: 702
         iv:
           $ref: "#/components/schemas/IV"
 
