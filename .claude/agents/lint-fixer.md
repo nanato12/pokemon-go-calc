@@ -24,14 +24,14 @@ make fmt
 - ruff (linter + formatter)
 - mypy (type checker)
 
-### PHP - Laravel (server/)
+### PHP - Laravel (web/)
 
 ```bash
 # チェック
-cd server && vendor/bin/phpstan analyse
+cd web && vendor/bin/phpstan analyse
 
 # 自動修正
-cd server && vendor/bin/pint
+cd web && vendor/bin/pint
 ```
 
 **ツール:**

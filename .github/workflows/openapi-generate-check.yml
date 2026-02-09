@@ -6,14 +6,14 @@ on:
       - develop
     paths:
       - 'docs/openapi.yaml'
-      - 'server/generated/iv-extractor-client/lib/**'
+      - 'web/generated/iv-extractor-client/lib/**'
       - '.github/workflows/openapi-generate-check.yml'
   pull_request:
     branches:
       - develop
     paths:
       - 'docs/openapi.yaml'
-      - 'server/generated/iv-extractor-client/lib/**'
+      - 'web/generated/iv-extractor-client/lib/**'
       - '.github/workflows/openapi-generate-check.yml'
 
 jobs:
@@ -30,13 +30,13 @@ jobs:
             openapitools/openapi-generator-cli generate \
             -i /local/docs/openapi.yaml \
             -g php \
-            -o /local/server/generated/iv-extractor-client \
+            -o /local/web/generated/iv-extractor-client \
             --additional-properties=invokerPackage=IvExtractorClient,packageName=ivextractorclient,composerPackageName=ivextractorclient/ivextractorclient \
             --global-property=models,apis,supportingFiles
 
       - name: Check for differences
         run: |
-          if git diff --exit-code server/generated/iv-extractor-client/; then
+          if git diff --exit-code web/generated/iv-extractor-client/; then
             echo "No differences found. Generated client is up to date."
           else
             echo "::error::Generated client is out of date. Run openapi-generator and commit the changes."

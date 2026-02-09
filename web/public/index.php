@@ -19,15 +19,15 @@ if (file_exists($maintenance = __DIR__ . '/../storage/framework/maintenance.php'
 // Register the Composer autoloader...
 switch ($_SERVER['HTTP_HOST'] ?? '') {
     case PRODUCTION_HOST:
-        require PRODUCTION_PATH . '/server/vendor/autoload.php';
+        require PRODUCTION_PATH . '/web/vendor/autoload.php';
         /** @var Application $app */
-        $app = require_once PRODUCTION_PATH . '/server/bootstrap/app.php';
+        $app = require_once PRODUCTION_PATH . '/web/bootstrap/app.php';
         break;
 
     case STAGING_HOST:
-        require STAGING_PATH . '/server/vendor/autoload.php';
+        require STAGING_PATH . '/web/vendor/autoload.php';
         /** @var Application $app */
-        $app = require_once STAGING_PATH . '/server/bootstrap/app.php';
+        $app = require_once STAGING_PATH . '/web/bootstrap/app.php';
         break;
 
     default:

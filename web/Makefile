@@ -4,7 +4,7 @@ generate-client:
 	docker run --rm -v $(PWD)/..:/local openapitools/openapi-generator-cli:latest generate \
 		-i /local/docs/openapi.yaml \
 		-g php \
-		-o /local/server/generated/iv-extractor-client \
+		-o /local/web/generated/iv-extractor-client \
 		--additional-properties=invokerPackage=IvExtractorClient
 
 lint:
