@@ -1,19 +1,17 @@
 <?php
-
 /**
- * ModelInterface.
+ * ModelInterface
  *
  * PHP version 8.1
  *
  * @category Class
- *
+ * @package  IvExtractorClient\Model
  * @author   OpenAPI Generator team
- *
- * @see     https://openapi-generator.tech
+ * @link     https://openapi-generator.tech
  */
 
 /**
- * Pokemon GO IV Extractor API.
+ * Pokemon GO IV Extractor API
  *
  * Pokemon GO スクリーンショットからポケモン名と個体値を抽出する API
  *
@@ -33,6 +31,7 @@ namespace IvExtractorClient\Model;
 /**
  * Interface abstracting model access.
  *
+ * @package IvExtractorClient\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface
@@ -45,35 +44,35 @@ interface ModelInterface
     public function getModelName();
 
     /**
-     * Array of property to type mappings. Used for (de)serialization.
+     * Array of property to type mappings. Used for (de)serialization
      *
      * @return array
      */
     public static function openAPITypes();
 
     /**
-     * Array of property to format mappings. Used for (de)serialization.
+     * Array of property to format mappings. Used for (de)serialization
      *
      * @return array
      */
     public static function openAPIFormats();
 
     /**
-     * Array of attributes where the key is the local name, and the value is the original name.
+     * Array of attributes where the key is the local name, and the value is the original name
      *
      * @return array
      */
     public static function attributeMap();
 
     /**
-     * Array of attributes to setter functions (for deserialization of responses).
+     * Array of attributes to setter functions (for deserialization of responses)
      *
      * @return array
      */
     public static function setters();
 
     /**
-     * Array of attributes to getter functions (for serialization of requests).
+     * Array of attributes to getter functions (for serialization of requests)
      *
      * @return array
      */
@@ -88,19 +87,25 @@ interface ModelInterface
 
     /**
      * Validate all the properties in the model
-     * return true if all passed.
+     * return true if all passed
      *
      * @return bool
      */
     public function valid();
 
     /**
-     * Checks if a property is nullable.
+     * Checks if a property is nullable
+     *
+     * @param string $property
+     * @return bool
      */
     public static function isNullable(string $property): bool;
 
     /**
      * Checks if a nullable property is set to null.
+     *
+     * @param string $property
+     * @return bool
      */
     public function isNullableSetToNull(string $property): bool;
 }

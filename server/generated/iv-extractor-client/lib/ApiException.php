@@ -1,18 +1,16 @@
 <?php
-
 /**
  * ApiException
- * PHP version 8.1.
+ * PHP version 8.1
  *
  * @category Class
- *
+ * @package  IvExtractorClient
  * @author   OpenAPI Generator team
- *
- * @see     https://openapi-generator.tech
+ * @link     https://openapi-generator.tech
  */
 
 /**
- * Pokemon GO IV Extractor API.
+ * Pokemon GO IV Extractor API
  *
  * Pokemon GO スクリーンショットからポケモン名と個体値を抽出する API
  *
@@ -29,50 +27,48 @@
 
 namespace IvExtractorClient;
 
-use Exception;
-use stdClass;
+use \Exception;
 
 /**
- * ApiException Class Doc Comment.
+ * ApiException Class Doc Comment
  *
  * @category Class
- *
+ * @package  IvExtractorClient
  * @author   OpenAPI Generator team
- *
- * @see     https://openapi-generator.tech
+ * @link     https://openapi-generator.tech
  */
 class ApiException extends Exception
 {
     /**
      * The HTTP body of the server response either as Json or string.
      *
-     * @var null|stdClass|string
+     * @var \stdClass|string|null
      */
     protected $responseBody;
 
     /**
      * The HTTP header of the server response.
      *
-     * @var null|string[][]
+     * @var string[][]|null
      */
     protected $responseHeaders;
 
     /**
-     * The deserialized response object.
+     * The deserialized response object
      *
-     * @var null|stdClass|string
+     * @var \stdClass|string|null
      */
     protected $responseObject;
 
     /**
-     * Constructor.
+     * Constructor
      *
-     * @param string               $message         Error message
-     * @param int                  $code            HTTP status code
-     * @param null|string[][]      $responseHeaders HTTP response header
-     * @param null|stdClass|string $responseBody    HTTP decoded body of the server response either as \stdClass or string
+     * @param string                $message         Error message
+     * @param int                   $code            HTTP status code
+     * @param string[][]|null       $responseHeaders HTTP response header
+     * @param \stdClass|string|null $responseBody    HTTP decoded body of the server response either as \stdClass or string
      */
-    public function __construct($message = '', $code = 0, $responseHeaders = [], $responseBody = null)
+    public function __construct($message = "", $code = 0, $responseHeaders = [], $responseBody = null)
     {
         parent::__construct($message, $code);
         $this->responseHeaders = $responseHeaders;
@@ -80,9 +76,9 @@ class ApiException extends Exception
     }
 
     /**
-     * Gets the HTTP response header.
+     * Gets the HTTP response header
      *
-     * @return null|string[][] HTTP response header
+     * @return string[][]|null HTTP response header
      */
     public function getResponseHeaders()
     {
@@ -90,9 +86,9 @@ class ApiException extends Exception
     }
 
     /**
-     * Gets the HTTP body of the server response either as Json or string.
+     * Gets the HTTP body of the server response either as Json or string
      *
-     * @return null|stdClass|string HTTP body of the server response either as \stdClass or string
+     * @return \stdClass|string|null HTTP body of the server response either as \stdClass or string
      */
     public function getResponseBody()
     {
@@ -100,7 +96,7 @@ class ApiException extends Exception
     }
 
     /**
-     * Sets the deserialized response object (during deserialization).
+     * Sets the deserialized response object (during deserialization)
      *
      * @param mixed $obj Deserialized response object
      *
@@ -112,7 +108,7 @@ class ApiException extends Exception
     }
 
     /**
-     * Gets the deserialized response object (during deserialization).
+     * Gets the deserialized response object (during deserialization)
      *
      * @return mixed the deserialized response object
      */
