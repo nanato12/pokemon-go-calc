@@ -1,0 +1,44 @@
+name: OpenAPI Generate Check
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - 'docs/openapi.yaml'
+      - 'server/generated/iv-extractor-client/lib/**'
+      - '.github/workflows/openapi-generate-check.yml'
+  pull_request:
+    branches:
+      - develop
+    paths:
+      - 'docs/openapi.yaml'
+      - 'server/generated/iv-extractor-client/lib/**'
+      - '.github/workflows/openapi-generate-check.yml'
+
+jobs:
+  openapi-generate-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate OpenAPI client
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/local \
+            openapitools/openapi-generator-cli generate \
+            -i /local/docs/openapi.yaml \
+            -g php \
+            -o /local/server/generated/iv-extractor-client \
+            --additional-properties=invokerPackage=IvExtractorClient,packageName=ivextractorclient,composerPackageName=ivextractorclient/ivextractorclient \
+            --global-property=models,apis,supportingFiles
+
+      - name: Check for differences
+        run: |
+          if git diff --exit-code server/generated/iv-extractor-client/; then
+            echo "No differences found. Generated client is up to date."
+          else
+            echo "::error::Generated client is out of date. Run openapi-generator and commit the changes."
+            exit 1
+          fi

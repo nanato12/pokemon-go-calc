@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Infrastructure\Line;
 
+use App\Infrastructure\Line\Handlers\ImageHandler;
 use App\Infrastructure\Line\Handlers\TestHandler;
 use Phine\Handlers\EventDispatcher;
 
@@ -18,6 +19,7 @@ final class LineEventDispatcher extends EventDispatcher
     public function getHandlerClasses(): array
     {
         return [
+            ImageHandler::class,
             TestHandler::class,
         ];
     }

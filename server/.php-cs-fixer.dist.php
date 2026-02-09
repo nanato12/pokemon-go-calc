@@ -3,6 +3,7 @@
 $finder = PhpCsFixer\Finder::create()
     ->exclude([
         'bootstrap/cache',
+        'generated',
         'storage',
         'vendor',
     ])
