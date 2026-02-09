@@ -31,7 +31,7 @@ jobs:
             -i /local/docs/openapi.yaml \
             -g php \
             -o /local/server/generated/iv-extractor-client \
-            --additional-properties=invokerPackage=IvExtractorClient,packageName=ivextractorclient \
+            --additional-properties=invokerPackage=IvExtractorClient,packageName=ivextractorclient,composerPackageName=ivextractorclient/ivextractorclient \
             --global-property=models,apis,supportingFiles
 
       - name: Check for differences
