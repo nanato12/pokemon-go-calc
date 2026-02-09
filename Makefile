@@ -1,4 +1,4 @@
-PROJECT_NAME := server
+PROJECT_NAME := web
 PRODUCTION_PUBLISH_PATH := /home/nanato12/line-bot.jp/public_html/go-pilot.line-bot.jp
 STAGING_PUBLISH_PATH := /home/nanato12/line-bot.jp/public_html/go-pilot-stg.line-bot.jp
 
