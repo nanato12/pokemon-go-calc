@@ -1,16 +1,18 @@
 <?php
+
 /**
  * Configuration
- * PHP version 8.1
+ * PHP version 8.1.
  *
  * @category Class
- * @package  IvExtractorClient
+ *
  * @author   OpenAPI Generator team
- * @link     https://openapi-generator.tech
+ *
+ * @see     https://openapi-generator.tech
  */
 
 /**
- * Pokemon GO IV Extractor API
+ * Pokemon GO IV Extractor API.
  *
  * Pokemon GO スクリーンショットからポケモン名と個体値を抽出する API
  *
@@ -27,14 +29,17 @@
 
 namespace IvExtractorClient;
 
+use InvalidArgumentException;
+
 /**
  * Configuration Class Doc Comment
- * PHP version 8.1
+ * PHP version 8.1.
  *
  * @category Class
- * @package  IvExtractorClient
+ *
  * @author   OpenAPI Generator team
- * @link     https://openapi-generator.tech
+ *
+ * @see     https://openapi-generator.tech
  */
 class Configuration
 {
@@ -42,103 +47,103 @@ class Configuration
     public const BOOLEAN_FORMAT_STRING = 'string';
 
     /**
-     * @var Configuration
-     */
-    private static $defaultConfiguration;
-
-    /**
-     * Associate array to store API key(s)
+     * Associate array to store API key(s).
      *
      * @var string[]
      */
     protected $apiKeys = [];
 
     /**
-     * Associate array to store API prefix (e.g. Bearer)
+     * Associate array to store API prefix (e.g. Bearer).
      *
      * @var string[]
      */
     protected $apiKeyPrefixes = [];
 
     /**
-     * Access token for OAuth/Bearer authentication
+     * Access token for OAuth/Bearer authentication.
      *
      * @var string
      */
     protected $accessToken = '';
 
     /**
-     * Boolean format for query string
+     * Boolean format for query string.
      *
      * @var string
      */
     protected $booleanFormatForQueryString = self::BOOLEAN_FORMAT_INT;
 
     /**
-     * Username for HTTP basic authentication
+     * Username for HTTP basic authentication.
      *
      * @var string
      */
     protected $username = '';
 
     /**
-     * Password for HTTP basic authentication
+     * Password for HTTP basic authentication.
      *
      * @var string
      */
     protected $password = '';
 
     /**
-     * The host
+     * The host.
      *
      * @var string
      */
     protected $host = 'https://pokemon-go-calc-4xmmm5azxa-an.a.run.app';
 
     /**
-     * User agent of the HTTP request, set to "OpenAPI-Generator/{version}/PHP" by default
+     * User agent of the HTTP request, set to "OpenAPI-Generator/{version}/PHP" by default.
      *
      * @var string
      */
     protected $userAgent = 'OpenAPI-Generator/1.0.0/PHP';
 
     /**
-     * Debug switch (default set to false)
+     * Debug switch (default set to false).
      *
      * @var bool
      */
     protected $debug = false;
 
     /**
-     * Debug file location (log to STDOUT by default)
+     * Debug file location (log to STDOUT by default).
      *
      * @var string
      */
     protected $debugFile = 'php://output';
 
     /**
-     * Debug file location (log to STDOUT by default)
+     * Debug file location (log to STDOUT by default).
      *
      * @var string
      */
     protected $tempFolderPath;
 
     /**
-     * Path to a certificate file, for mTLS
+     * Path to a certificate file, for mTLS.
      *
      * @var string
      */
     protected $certFile;
 
     /**
-     * Path to a key file, for mTLS
+     * Path to a key file, for mTLS.
      *
      * @var string
      */
     protected $keyFile;
 
     /**
-     * Constructor
+     * @var Configuration
+     */
+    private static $defaultConfiguration;
+
+    /**
+     * Constructor.
      */
     public function __construct()
     {
@@ -146,7 +151,7 @@ class Configuration
     }
 
     /**
-     * Sets API key
+     * Sets API key.
      *
      * @param string $apiKeyIdentifier API key identifier (authentication scheme)
      * @param string $key              API key or token
@@ -156,11 +161,12 @@ class Configuration
     public function setApiKey($apiKeyIdentifier, $key)
     {
         $this->apiKeys[$apiKeyIdentifier] = $key;
+
         return $this;
     }
 
     /**
-     * Gets API key
+     * Gets API key.
      *
      * @param string $apiKeyIdentifier API key identifier (authentication scheme)
      *
@@ -172,7 +178,7 @@ class Configuration
     }
 
     /**
-     * Sets the prefix for API key (e.g. Bearer)
+     * Sets the prefix for API key (e.g. Bearer).
      *
      * @param string $apiKeyIdentifier API key identifier (authentication scheme)
      * @param string $prefix           API key prefix, e.g. Bearer
@@ -182,11 +188,12 @@ class Configuration
     public function setApiKeyPrefix($apiKeyIdentifier, $prefix)
     {
         $this->apiKeyPrefixes[$apiKeyIdentifier] = $prefix;
+
         return $this;
     }
 
     /**
-     * Gets API key prefix
+     * Gets API key prefix.
      *
      * @param string $apiKeyIdentifier API key identifier (authentication scheme)
      *
@@ -198,7 +205,7 @@ class Configuration
     }
 
     /**
-     * Sets the access token for OAuth
+     * Sets the access token for OAuth.
      *
      * @param string $accessToken Token for OAuth
      *
@@ -207,11 +214,12 @@ class Configuration
     public function setAccessToken($accessToken)
     {
         $this->accessToken = $accessToken;
+
         return $this;
     }
 
     /**
-     * Gets the access token for OAuth
+     * Gets the access token for OAuth.
      *
      * @return string Access token for OAuth
      */
@@ -245,7 +253,7 @@ class Configuration
     }
 
     /**
-     * Sets the username for HTTP basic authentication
+     * Sets the username for HTTP basic authentication.
      *
      * @param string $username Username for HTTP basic authentication
      *
@@ -254,11 +262,12 @@ class Configuration
     public function setUsername($username)
     {
         $this->username = $username;
+
         return $this;
     }
 
     /**
-     * Gets the username for HTTP basic authentication
+     * Gets the username for HTTP basic authentication.
      *
      * @return string Username for HTTP basic authentication
      */
@@ -268,7 +277,7 @@ class Configuration
     }
 
     /**
-     * Sets the password for HTTP basic authentication
+     * Sets the password for HTTP basic authentication.
      *
      * @param string $password Password for HTTP basic authentication
      *
@@ -277,11 +286,12 @@ class Configuration
     public function setPassword($password)
     {
         $this->password = $password;
+
         return $this;
     }
 
     /**
-     * Gets the password for HTTP basic authentication
+     * Gets the password for HTTP basic authentication.
      *
      * @return string Password for HTTP basic authentication
      */
@@ -291,7 +301,7 @@ class Configuration
     }
 
     /**
-     * Sets the host
+     * Sets the host.
      *
      * @param string $host Host
      *
@@ -300,11 +310,12 @@ class Configuration
     public function setHost($host)
     {
         $this->host = $host;
+
         return $this;
     }
 
     /**
-     * Gets the host
+     * Gets the host.
      *
      * @return string Host
      */
@@ -314,25 +325,27 @@ class Configuration
     }
 
     /**
-     * Sets the user agent of the api client
+     * Sets the user agent of the api client.
      *
      * @param string $userAgent the user agent of the api client
      *
-     * @throws \InvalidArgumentException
      * @return $this
+     *
+     * @throws InvalidArgumentException
      */
     public function setUserAgent($userAgent)
     {
         if (!is_string($userAgent)) {
-            throw new \InvalidArgumentException('User-agent must be a string.');
+            throw new InvalidArgumentException('User-agent must be a string.');
         }
 
         $this->userAgent = $userAgent;
+
         return $this;
     }
 
     /**
-     * Gets the user agent of the api client
+     * Gets the user agent of the api client.
      *
      * @return string user agent
      */
@@ -342,7 +355,7 @@ class Configuration
     }
 
     /**
-     * Sets debug flag
+     * Sets debug flag.
      *
      * @param bool $debug Debug flag
      *
@@ -351,11 +364,12 @@ class Configuration
     public function setDebug($debug)
     {
         $this->debug = $debug;
+
         return $this;
     }
 
     /**
-     * Gets the debug flag
+     * Gets the debug flag.
      *
      * @return bool
      */
@@ -365,7 +379,7 @@ class Configuration
     }
 
     /**
-     * Sets the debug file
+     * Sets the debug file.
      *
      * @param string $debugFile Debug file
      *
@@ -374,11 +388,12 @@ class Configuration
     public function setDebugFile($debugFile)
     {
         $this->debugFile = $debugFile;
+
         return $this;
     }
 
     /**
-     * Gets the debug file
+     * Gets the debug file.
      *
      * @return string
      */
@@ -388,7 +403,7 @@ class Configuration
     }
 
     /**
-     * Sets the temp folder path
+     * Sets the temp folder path.
      *
      * @param string $tempFolderPath Temp folder path
      *
@@ -397,11 +412,12 @@ class Configuration
     public function setTempFolderPath($tempFolderPath)
     {
         $this->tempFolderPath = $tempFolderPath;
+
         return $this;
     }
 
     /**
-     * Gets the temp folder path
+     * Gets the temp folder path.
      *
      * @return string Temp folder path
      */
@@ -411,18 +427,21 @@ class Configuration
     }
 
     /**
-     * Sets the certificate file path, for mTLS
+     * Sets the certificate file path, for mTLS.
+     *
+     * @param mixed $certFile
      *
      * @return $this
      */
-     public function setCertFile($certFile)
-     {
+    public function setCertFile($certFile)
+    {
         $this->certFile = $certFile;
+
         return $this;
-     }
+    }
 
     /**
-     * Gets the certificate file path, for mTLS
+     * Gets the certificate file path, for mTLS.
      *
      * @return string Certificate file path
      */
@@ -432,18 +451,21 @@ class Configuration
     }
 
     /**
-     * Sets the certificate key path, for mTLS
+     * Sets the certificate key path, for mTLS.
+     *
+     * @param mixed $keyFile
      *
      * @return $this
      */
-     public function setKeyFile($keyFile)
-     {
+    public function setKeyFile($keyFile)
+    {
         $this->keyFile = $keyFile;
+
         return $this;
-     }
+    }
 
     /**
-     * Gets the certificate key path, for mTLS
+     * Gets the certificate key path, for mTLS.
      *
      * @return string Certificate key path
      */
@@ -451,10 +473,9 @@ class Configuration
     {
         return $this->keyFile;
     }
-    
 
     /**
-     * Gets the default configuration instance
+     * Gets the default configuration instance.
      *
      * @return Configuration
      */
@@ -468,7 +489,7 @@ class Configuration
     }
 
     /**
-     * Sets the default configuration instance
+     * Sets the default configuration instance.
      *
      * @param Configuration $config An instance of the Configuration Object
      *
@@ -480,13 +501,13 @@ class Configuration
     }
 
     /**
-     * Gets the essential information for debugging
+     * Gets the essential information for debugging.
      *
      * @return string The report for debugging
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (IvExtractorClient) Debug Report:' . PHP_EOL;
+        $report = 'PHP SDK (IvExtractorClient) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    The version of the OpenAPI document: 1.0.0' . PHP_EOL;
@@ -496,9 +517,9 @@ class Configuration
     }
 
     /**
-     * Get API key (with prefix if set)
+     * Get API key (with prefix if set).
      *
-     * @param  string $apiKeyIdentifier name of apikey
+     * @param string $apiKeyIdentifier name of apikey
      *
      * @return null|string API key with the prefix
      */
@@ -521,7 +542,7 @@ class Configuration
     }
 
     /**
-     * Returns an array of host settings
+     * Returns an array of host settings.
      *
      * @return array an array of host settings
      */
@@ -529,45 +550,46 @@ class Configuration
     {
         return [
             [
-                "url" => "https://pokemon-go-calc-4xmmm5azxa-an.a.run.app",
-                "description" => "Production (Cloud Run)",
-            ]
+                'url' => 'https://pokemon-go-calc-4xmmm5azxa-an.a.run.app',
+                'description' => 'Production (Cloud Run)',
+            ],
         ];
     }
 
     /**
-    * Returns URL based on host settings, index and variables
-    *
-    * @param array      $hostSettings array of host settings, generated from getHostSettings() or equivalent from the API clients
-    * @param int        $hostIndex    index of the host settings
-    * @param array|null $variables    hash of variable and the corresponding value (optional)
-    * @return string URL based on host settings
-    */
+     * Returns URL based on host settings, index and variables.
+     *
+     * @param array      $hostSettings array of host settings, generated from getHostSettings() or equivalent from the API clients
+     * @param int        $hostIndex    index of the host settings
+     * @param null|array $variables    hash of variable and the corresponding value (optional)
+     *
+     * @return string URL based on host settings
+     */
     public static function getHostString(array $hostSettings, $hostIndex, ?array $variables = null)
     {
-        if (null === $variables) {
+        if ($variables === null) {
             $variables = [];
         }
 
         // check array index out of bound
         if ($hostIndex < 0 || $hostIndex >= count($hostSettings)) {
-            throw new \InvalidArgumentException("Invalid index $hostIndex when selecting the host. Must be less than ".count($hostSettings));
+            throw new InvalidArgumentException("Invalid index {$hostIndex} when selecting the host. Must be less than " . count($hostSettings));
         }
 
         $host = $hostSettings[$hostIndex];
-        $url = $host["url"];
+        $url = $host['url'];
 
         // go through variable and assign a value
-        foreach ($host["variables"] ?? [] as $name => $variable) {
+        foreach ($host['variables'] ?? [] as $name => $variable) {
             if (array_key_exists($name, $variables)) { // check to see if it's in the variables provided by the user
-                if (!isset($variable['enum_values']) || in_array($variables[$name], $variable["enum_values"], true)) { // check to see if the value is in the enum
-                    $url = str_replace("{".$name."}", $variables[$name], $url);
+                if (!isset($variable['enum_values']) || in_array($variables[$name], $variable['enum_values'], true)) { // check to see if the value is in the enum
+                    $url = str_replace('{' . $name . '}', $variables[$name], $url);
                 } else {
-                    throw new \InvalidArgumentException("The variable `$name` in the host URL has invalid value ".$variables[$name].". Must be ".join(',', $variable["enum_values"]).".");
+                    throw new InvalidArgumentException("The variable `{$name}` in the host URL has invalid value " . $variables[$name] . '. Must be ' . join(',', $variable['enum_values']) . '.');
                 }
             } else {
                 // use default value
-                $url = str_replace("{".$name."}", $variable["default_value"], $url);
+                $url = str_replace('{' . $name . '}', $variable['default_value'], $url);
             }
         }
 
@@ -575,10 +597,11 @@ class Configuration
     }
 
     /**
-     * Returns URL based on the index and variables
+     * Returns URL based on the index and variables.
      *
      * @param int        $index     index of the host settings
-     * @param array|null $variables hash of variable and the corresponding value (optional)
+     * @param null|array $variables hash of variable and the corresponding value (optional)
+     *
      * @return string URL based on host settings
      */
     public function getHostFromSettings($index, $variables = null)

@@ -1,16 +1,18 @@
 <?php
+
 /**
  * DefaultApi
- * PHP version 8.1
+ * PHP version 8.1.
  *
  * @category Class
- * @package  IvExtractorClient
+ *
  * @author   OpenAPI Generator team
- * @link     https://openapi-generator.tech
+ *
+ * @see     https://openapi-generator.tech
  */
 
 /**
- * Pokemon GO IV Extractor API
+ * Pokemon GO IV Extractor API.
  *
  * Pokemon GO スクリーンショットからポケモン名と個体値を抽出する API
  *
@@ -31,27 +33,46 @@ use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Psr\Http\Message\RequestInterface;
-use Psr\Http\Message\ResponseInterface;
+use GuzzleHttp\Utils;
+use InvalidArgumentException;
 use IvExtractorClient\ApiException;
 use IvExtractorClient\Configuration;
 use IvExtractorClient\FormDataProcessor;
 use IvExtractorClient\HeaderSelector;
+use IvExtractorClient\Model\ErrorResponse;
+use IvExtractorClient\Model\ExtractResponse;
+use IvExtractorClient\Model\HealthResponse;
 use IvExtractorClient\ObjectSerializer;
+use JsonException;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use RuntimeException;
+use SplFileObject;
 
 /**
- * DefaultApi Class Doc Comment
+ * DefaultApi Class Doc Comment.
  *
  * @category Class
- * @package  IvExtractorClient
+ *
  * @author   OpenAPI Generator team
- * @link     https://openapi-generator.tech
+ *
+ * @see     https://openapi-generator.tech
  */
 class DefaultApi
 {
+    /** @var string[] */
+    public const contentTypes = [
+        'extractIv' => [
+            'multipart/form-data',
+        ],
+        'healthCheck' => [
+            'application/json',
+        ],
+    ];
     /**
      * @var ClientInterface
      */
@@ -72,21 +93,8 @@ class DefaultApi
      */
     protected $hostIndex;
 
-    /** @var string[] $contentTypes **/
-    public const contentTypes = [
-        'extractIv' => [
-            'multipart/form-data',
-        ],
-        'healthCheck' => [
-            'application/json',
-        ],
-    ];
-
     /**
-     * @param ClientInterface $client
-     * @param Configuration   $config
-     * @param HeaderSelector  $selector
-     * @param int             $hostIndex (Optional) host index to select the list of hosts if defined in the OpenAPI spec
+     * @param int $hostIndex (Optional) host index to select the list of hosts if defined in the OpenAPI spec
      */
     public function __construct(
         ?ClientInterface $client = null,
@@ -101,7 +109,7 @@ class DefaultApi
     }
 
     /**
-     * Set the host index
+     * Set the host index.
      *
      * @param int $hostIndex Host index (required)
      */
@@ -111,7 +119,7 @@ class DefaultApi
     }
 
     /**
-     * Get the host index
+     * Get the host index.
      *
      * @return int Host index
      */
@@ -129,34 +137,37 @@ class DefaultApi
     }
 
     /**
-     * Operation extractIv
+     * Operation extractIv.
      *
      * スクリーンショットからポケモン名と個体値を抽出
      *
-     * @param  \SplFileObject $image Pokemon GO スクリーンショット画像 (required)
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['extractIv'] to see the possible values for this operation
+     * @param SplFileObject $image       Pokemon GO スクリーンショット画像 (required)
+     * @param string        $contentType The value for the Content-Type header. Check self::contentTypes['extractIv'] to see the possible values for this operation
      *
-     * @throws \IvExtractorClient\ApiException on non-2xx response or if the response body is not in the expected format
-     * @throws \InvalidArgumentException
-     * @return \IvExtractorClient\Model\ExtractResponse|\IvExtractorClient\Model\ErrorResponse
+     * @return ErrorResponse|ExtractResponse
+     *
+     * @throws ApiException             on non-2xx response or if the response body is not in the expected format
+     * @throws InvalidArgumentException
      */
     public function extractIv($image, string $contentType = self::contentTypes['extractIv'][0])
     {
         list($response) = $this->extractIvWithHttpInfo($image, $contentType);
+
         return $response;
     }
 
     /**
-     * Operation extractIvWithHttpInfo
+     * Operation extractIvWithHttpInfo.
      *
      * スクリーンショットからポケモン名と個体値を抽出
      *
-     * @param  \SplFileObject $image Pokemon GO スクリーンショット画像 (required)
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['extractIv'] to see the possible values for this operation
+     * @param SplFileObject $image       Pokemon GO スクリーンショット画像 (required)
+     * @param string        $contentType The value for the Content-Type header. Check self::contentTypes['extractIv'] to see the possible values for this operation
      *
-     * @throws \IvExtractorClient\ApiException on non-2xx response or if the response body is not in the expected format
-     * @throws \InvalidArgumentException
      * @return array of \IvExtractorClient\Model\ExtractResponse|\IvExtractorClient\Model\ErrorResponse, HTTP status code, HTTP response headers (array of strings)
+     *
+     * @throws ApiException             on non-2xx response or if the response body is not in the expected format
+     * @throws InvalidArgumentException
      */
     public function extractIvWithHttpInfo($image, string $contentType = self::contentTypes['extractIv'][0])
     {
@@ -164,6 +175,7 @@ class DefaultApi
 
         try {
             $options = $this->createHttpClientOption();
+
             try {
                 $response = $this->client->send($request, $options);
             } catch (RequestException $e) {
@@ -184,14 +196,14 @@ class DefaultApi
 
             $statusCode = $response->getStatusCode();
 
-
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\IvExtractorClient\Model\ExtractResponse',
                         $request,
                         $response,
                     );
+
                 case 400:
                     return $this->handleResponseWithDataType(
                         '\IvExtractorClient\Model\ErrorResponse',
@@ -199,8 +211,6 @@ class DefaultApi
                         $response,
                     );
             }
-
-            
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -229,7 +239,9 @@ class DefaultApi
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
+
                     throw $e;
+
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
@@ -237,24 +249,25 @@ class DefaultApi
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
+
                     throw $e;
             }
-        
 
             throw $e;
         }
     }
 
     /**
-     * Operation extractIvAsync
+     * Operation extractIvAsync.
      *
      * スクリーンショットからポケモン名と個体値を抽出
      *
-     * @param  \SplFileObject $image Pokemon GO スクリーンショット画像 (required)
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['extractIv'] to see the possible values for this operation
+     * @param SplFileObject $image       Pokemon GO スクリーンショット画像 (required)
+     * @param string        $contentType The value for the Content-Type header. Check self::contentTypes['extractIv'] to see the possible values for this operation
      *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
+     * @return PromiseInterface
+     *
+     * @throws InvalidArgumentException
      */
     public function extractIvAsync($image, string $contentType = self::contentTypes['extractIv'][0])
     {
@@ -267,15 +280,16 @@ class DefaultApi
     }
 
     /**
-     * Operation extractIvAsyncWithHttpInfo
+     * Operation extractIvAsyncWithHttpInfo.
      *
      * スクリーンショットからポケモン名と個体値を抽出
      *
-     * @param  \SplFileObject $image Pokemon GO スクリーンショット画像 (required)
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['extractIv'] to see the possible values for this operation
+     * @param SplFileObject $image       Pokemon GO スクリーンショット画像 (required)
+     * @param string        $contentType The value for the Content-Type header. Check self::contentTypes['extractIv'] to see the possible values for this operation
      *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
+     * @return PromiseInterface
+     *
+     * @throws InvalidArgumentException
      */
     public function extractIvAsyncWithHttpInfo($image, string $contentType = self::contentTypes['extractIv'][0])
     {
@@ -287,9 +301,10 @@ class DefaultApi
             ->then(
                 function ($response) use ($returnType) {
                     if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
+                        $content = $response->getBody(); // stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
+
                         if ($returnType !== 'string') {
                             $content = json_decode($content);
                         }
@@ -298,12 +313,13 @@ class DefaultApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
                     $response = $exception->getResponse();
                     $statusCode = $response->getStatusCode();
+
                     throw new ApiException(
                         sprintf(
                             '[%d] Error connecting to the API (%s)',
@@ -319,24 +335,23 @@ class DefaultApi
     }
 
     /**
-     * Create request for operation 'extractIv'
+     * Create request for operation 'extractIv'.
      *
-     * @param  \SplFileObject $image Pokemon GO スクリーンショット画像 (required)
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['extractIv'] to see the possible values for this operation
+     * @param SplFileObject $image       Pokemon GO スクリーンショット画像 (required)
+     * @param string        $contentType The value for the Content-Type header. Check self::contentTypes['extractIv'] to see the possible values for this operation
      *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Psr7\Request
+     * @return Request
+     *
+     * @throws InvalidArgumentException
      */
     public function extractIvRequest($image, string $contentType = self::contentTypes['extractIv'][0])
     {
-
         // verify the required parameter 'image' is set
         if ($image === null || (is_array($image) && count($image) === 0)) {
-            throw new \InvalidArgumentException(
+            throw new InvalidArgumentException(
                 'Missing the required parameter $image when calling extractIv'
             );
         }
-
 
         $resourcePath = '/extract';
         $formParams = [];
@@ -344,9 +359,6 @@ class DefaultApi
         $headerParams = [];
         $httpBody = '';
         $multipart = false;
-
-
-
 
         // form params
         $formDataProcessor = new FormDataProcessor();
@@ -360,7 +372,7 @@ class DefaultApi
 
         $multipart = true;
         $headers = $this->headerSelector->selectHeaders(
-            ['application/json', ],
+            ['application/json'],
             $contentType,
             $multipart
         );
@@ -369,29 +381,30 @@ class DefaultApi
         if (count($formParams) > 0) {
             if ($multipart) {
                 $multipartContents = [];
+
                 foreach ($formParams as $formParamName => $formParamValue) {
                     $formParamValueItems = is_array($formParamValue) ? $formParamValue : [$formParamValue];
+
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
-                # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                // if Content-Type contains "application/json", json_encode the form parameters
+                $httpBody = Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
             }
         }
 
-
         $defaultHeaders = [];
+
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
         }
@@ -404,6 +417,7 @@ class DefaultApi
 
         $operationHost = $this->config->getHost();
         $query = ObjectSerializer::buildQuery($queryParams);
+
         return new Request(
             'POST',
             $operationHost . $resourcePath . ($query ? "?{$query}" : ''),
@@ -413,32 +427,35 @@ class DefaultApi
     }
 
     /**
-     * Operation healthCheck
+     * Operation healthCheck.
      *
      * ヘルスチェック
      *
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
+     * @param string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
      *
-     * @throws \IvExtractorClient\ApiException on non-2xx response or if the response body is not in the expected format
-     * @throws \InvalidArgumentException
-     * @return \IvExtractorClient\Model\HealthResponse
+     * @return HealthResponse
+     *
+     * @throws ApiException             on non-2xx response or if the response body is not in the expected format
+     * @throws InvalidArgumentException
      */
     public function healthCheck(string $contentType = self::contentTypes['healthCheck'][0])
     {
         list($response) = $this->healthCheckWithHttpInfo($contentType);
+
         return $response;
     }
 
     /**
-     * Operation healthCheckWithHttpInfo
+     * Operation healthCheckWithHttpInfo.
      *
      * ヘルスチェック
      *
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
+     * @param string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
      *
-     * @throws \IvExtractorClient\ApiException on non-2xx response or if the response body is not in the expected format
-     * @throws \InvalidArgumentException
      * @return array of \IvExtractorClient\Model\HealthResponse, HTTP status code, HTTP response headers (array of strings)
+     *
+     * @throws ApiException             on non-2xx response or if the response body is not in the expected format
+     * @throws InvalidArgumentException
      */
     public function healthCheckWithHttpInfo(string $contentType = self::contentTypes['healthCheck'][0])
     {
@@ -446,6 +463,7 @@ class DefaultApi
 
         try {
             $options = $this->createHttpClientOption();
+
             try {
                 $response = $this->client->send($request, $options);
             } catch (RequestException $e) {
@@ -466,8 +484,7 @@ class DefaultApi
 
             $statusCode = $response->getStatusCode();
 
-
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\IvExtractorClient\Model\HealthResponse',
@@ -475,8 +492,6 @@ class DefaultApi
                         $response,
                     );
             }
-
-            
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -505,23 +520,24 @@ class DefaultApi
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
+
                     throw $e;
             }
-        
 
             throw $e;
         }
     }
 
     /**
-     * Operation healthCheckAsync
+     * Operation healthCheckAsync.
      *
      * ヘルスチェック
      *
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
+     * @param string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
      *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
+     * @return PromiseInterface
+     *
+     * @throws InvalidArgumentException
      */
     public function healthCheckAsync(string $contentType = self::contentTypes['healthCheck'][0])
     {
@@ -534,14 +550,15 @@ class DefaultApi
     }
 
     /**
-     * Operation healthCheckAsyncWithHttpInfo
+     * Operation healthCheckAsyncWithHttpInfo.
      *
      * ヘルスチェック
      *
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
+     * @param string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
      *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
+     * @return PromiseInterface
+     *
+     * @throws InvalidArgumentException
      */
     public function healthCheckAsyncWithHttpInfo(string $contentType = self::contentTypes['healthCheck'][0])
     {
@@ -553,9 +570,10 @@ class DefaultApi
             ->then(
                 function ($response) use ($returnType) {
                     if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
+                        $content = $response->getBody(); // stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
+
                         if ($returnType !== 'string') {
                             $content = json_decode($content);
                         }
@@ -564,12 +582,13 @@ class DefaultApi
                     return [
                         ObjectSerializer::deserialize($content, $returnType, []),
                         $response->getStatusCode(),
-                        $response->getHeaders()
+                        $response->getHeaders(),
                     ];
                 },
                 function ($exception) {
                     $response = $exception->getResponse();
                     $statusCode = $response->getStatusCode();
+
                     throw new ApiException(
                         sprintf(
                             '[%d] Error connecting to the API (%s)',
@@ -585,17 +604,16 @@ class DefaultApi
     }
 
     /**
-     * Create request for operation 'healthCheck'
+     * Create request for operation 'healthCheck'.
      *
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
+     * @param string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
      *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Psr7\Request
+     * @return Request
+     *
+     * @throws InvalidArgumentException
      */
     public function healthCheckRequest(string $contentType = self::contentTypes['healthCheck'][0])
     {
-
-
         $resourcePath = '/';
         $formParams = [];
         $queryParams = [];
@@ -603,12 +621,8 @@ class DefaultApi
         $httpBody = '';
         $multipart = false;
 
-
-
-
-
         $headers = $this->headerSelector->selectHeaders(
-            ['application/json', ],
+            ['application/json'],
             $contentType,
             $multipart
         );
@@ -617,29 +631,30 @@ class DefaultApi
         if (count($formParams) > 0) {
             if ($multipart) {
                 $multipartContents = [];
+
                 foreach ($formParams as $formParamName => $formParamValue) {
                     $formParamValueItems = is_array($formParamValue) ? $formParamValue : [$formParamValue];
+
                     foreach ($formParamValueItems as $formParamValueItem) {
                         $multipartContents[] = [
                             'name' => $formParamName,
-                            'contents' => $formParamValueItem
+                            'contents' => $formParamValueItem,
                         ];
                     }
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
-                # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                // if Content-Type contains "application/json", json_encode the form parameters
+                $httpBody = Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
             }
         }
 
-
         $defaultHeaders = [];
+
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
         }
@@ -652,6 +667,7 @@ class DefaultApi
 
         $operationHost = $this->config->getHost();
         $query = ObjectSerializer::buildQuery($queryParams);
+
         return new Request(
             'GET',
             $operationHost . $resourcePath . ($query ? "?{$query}" : ''),
@@ -661,18 +677,21 @@ class DefaultApi
     }
 
     /**
-     * Create http client option
+     * Create http client option.
      *
-     * @throws \RuntimeException on file opening failure
      * @return array of http client options
+     *
+     * @throws RuntimeException on file opening failure
      */
     protected function createHttpClientOption()
     {
         $options = [];
+
         if ($this->config->getDebug()) {
             $options[RequestOptions::DEBUG] = fopen($this->config->getDebugFile(), 'a');
+
             if (!$options[RequestOptions::DEBUG]) {
-                throw new \RuntimeException('Failed to open the debug file: ' . $this->config->getDebugFile());
+                throw new RuntimeException('Failed to open the debug file: ' . $this->config->getDebugFile());
             }
         }
 
@@ -693,13 +712,14 @@ class DefaultApi
         ResponseInterface $response
     ): array {
         if ($dataType === '\SplFileObject') {
-            $content = $response->getBody(); //stream goes to serializer
+            $content = $response->getBody(); // stream goes to serializer
         } else {
             $content = (string) $response->getBody();
+
             if ($dataType !== 'string') {
                 try {
                     $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                } catch (\JsonException $exception) {
+                } catch (JsonException $exception) {
                     throw new ApiException(
                         sprintf(
                             'Error JSON decoding server response (%s)',
@@ -716,7 +736,7 @@ class DefaultApi
         return [
             ObjectSerializer::deserialize($content, $dataType, []),
             $response->getStatusCode(),
-            $response->getHeaders()
+            $response->getHeaders(),
         ];
     }
 
@@ -724,8 +744,8 @@ class DefaultApi
         string $rangeCode,
         int $statusCode
     ): bool {
-        $left = (int) ($rangeCode[0].'00');
-        $right = (int) ($rangeCode[0].'99');
+        $left = (int) ($rangeCode[0] . '00');
+        $right = (int) ($rangeCode[0] . '99');
 
         return $statusCode >= $left && $statusCode <= $right;
     }

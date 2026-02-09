@@ -1,17 +1,19 @@
 <?php
+
 /**
- * IV
+ * IV.
  *
  * PHP version 8.1
  *
  * @category Class
- * @package  IvExtractorClient
+ *
  * @author   OpenAPI Generator team
- * @link     https://openapi-generator.tech
+ *
+ * @see     https://openapi-generator.tech
  */
 
 /**
- * Pokemon GO IV Extractor API
+ * Pokemon GO IV Extractor API.
  *
  * Pokemon GO スクリーンショットからポケモン名と個体値を抽出する API
  *
@@ -28,73 +30,147 @@
 
 namespace IvExtractorClient\Model;
 
-use \ArrayAccess;
-use \IvExtractorClient\ObjectSerializer;
+use ArrayAccess;
+use InvalidArgumentException;
+use IvExtractorClient\ObjectSerializer;
+use JsonSerializable;
+use ReturnTypeWillChange;
 
 /**
- * IV Class Doc Comment
+ * IV Class Doc Comment.
  *
  * @category Class
- * @package  IvExtractorClient
+ *
  * @author   OpenAPI Generator team
- * @link     https://openapi-generator.tech
- * @implements \ArrayAccess<string, mixed>
+ *
+ * @see     https://openapi-generator.tech
+ *
+ * @implements ArrayAccess<string, mixed>
  */
-class IV implements ModelInterface, ArrayAccess, \JsonSerializable
+class IV implements ModelInterface, ArrayAccess, JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'IV';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization.
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'attack' => 'int',
         'defense' => 'int',
-        'stamina' => 'int'
+        'stamina' => 'int',
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization.
+     *
+     * @var string[]
+     *
+     * @phpstan-var array<string, string|null>
+     *
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'attack' => null,
         'defense' => null,
-        'stamina' => null
+        'stamina' => null,
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization.
+     *
+     * @var bool[]
+     */
     protected static array $openAPINullables = [
         'attack' => false,
         'defense' => false,
-        'stamina' => false
+        'stamina' => false,
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here.
+     *
+     * @var bool[]
+     */
     protected array $openAPINullablesSetToNull = [];
 
     /**
-     * Array of property to type mappings. Used for (de)serialization
+     * Array of attributes where the key is the local name,
+     * and the value is the original name.
+     *
+     * @var string[]
+     */
+    protected static $attributeMap = [
+        'attack' => 'attack',
+        'defense' => 'defense',
+        'stamina' => 'stamina',
+    ];
+
+    /**
+     * Array of attributes to setter functions (for deserialization of responses).
+     *
+     * @var string[]
+     */
+    protected static $setters = [
+        'attack' => 'setAttack',
+        'defense' => 'setDefense',
+        'stamina' => 'setStamina',
+    ];
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests).
+     *
+     * @var string[]
+     */
+    protected static $getters = [
+        'attack' => 'getAttack',
+        'defense' => 'getDefense',
+        'stamina' => 'getStamina',
+    ];
+
+    /**
+     * Associative array for storing property values.
+     *
+     * @var mixed[]
+     */
+    protected $container = [];
+
+    /**
+     * Constructor.
+     *
+     * @param null|mixed[] $data Associated array of property values
+     *                           initializing the model
+     */
+    public function __construct(?array $data = null)
+    {
+        $this->setIfExists('attack', $data ?? [], null);
+        $this->setIfExists('defense', $data ?? [], null);
+        $this->setIfExists('stamina', $data ?? [], null);
+    }
+
+    /**
+     * Gets the string presentation of the object.
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return json_encode(
+            ObjectSerializer::sanitizeForSerialization($this),
+            JSON_PRETTY_PRINT
+        );
+    }
+
+    /**
+     * Array of property to type mappings. Used for (de)serialization.
      *
      * @return array
      */
@@ -104,7 +180,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Array of property to format mappings. Used for (de)serialization
+     * Array of property to format mappings. Used for (de)serialization.
      *
      * @return array
      */
@@ -114,40 +190,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Array of nullable properties
-     *
-     * @return array
-     */
-    protected static function openAPINullables(): array
-    {
-        return self::$openAPINullables;
-    }
-
-    /**
-     * Array of nullable field names deliberately set to null
-     *
-     * @return boolean[]
-     */
-    private function getOpenAPINullablesSetToNull(): array
-    {
-        return $this->openAPINullablesSetToNull;
-    }
-
-    /**
-     * Setter - Array of nullable field names deliberately set to null
-     *
-     * @param boolean[] $openAPINullablesSetToNull
-     */
-    private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
-    {
-        $this->openAPINullablesSetToNull = $openAPINullablesSetToNull;
-    }
-
-    /**
-     * Checks if a property is nullable
-     *
-     * @param string $property
-     * @return bool
+     * Checks if a property is nullable.
      */
     public static function isNullable(string $property): bool
     {
@@ -156,9 +199,6 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Checks if a nullable property is set to null.
-     *
-     * @param string $property
-     * @return bool
      */
     public function isNullableSetToNull(string $property): bool
     {
@@ -167,41 +207,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Array of attributes where the key is the local name,
-     * and the value is the original name
-     *
-     * @var string[]
-     */
-    protected static $attributeMap = [
-        'attack' => 'attack',
-        'defense' => 'defense',
-        'stamina' => 'stamina'
-    ];
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     *
-     * @var string[]
-     */
-    protected static $setters = [
-        'attack' => 'setAttack',
-        'defense' => 'setDefense',
-        'stamina' => 'setStamina'
-    ];
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     *
-     * @var string[]
-     */
-    protected static $getters = [
-        'attack' => 'getAttack',
-        'defense' => 'getDefense',
-        'stamina' => 'getStamina'
-    ];
-
-    /**
-     * Array of attributes where the key is the local name,
-     * and the value is the original name
+     * and the value is the original name.
      *
      * @return array
      */
@@ -211,7 +217,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Array of attributes to setter functions (for deserialization of responses)
+     * Array of attributes to setter functions (for deserialization of responses).
      *
      * @return array
      */
@@ -221,7 +227,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Array of attributes to getter functions (for serialization of requests)
+     * Array of attributes to getter functions (for serialization of requests).
      *
      * @return array
      */
@@ -240,45 +246,6 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-
-    /**
-     * Associative array for storing property values
-     *
-     * @var mixed[]
-     */
-    protected $container = [];
-
-    /**
-     * Constructor
-     *
-     * @param mixed[]|null $data Associated array of property values
-     *                      initializing the model
-     */
-    public function __construct(?array $data = null)
-    {
-        $this->setIfExists('attack', $data ?? [], null);
-        $this->setIfExists('defense', $data ?? [], null);
-        $this->setIfExists('stamina', $data ?? [], null);
-    }
-
-    /**
-    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-    * $this->openAPINullablesSetToNull array
-    *
-    * @param string $variableName
-    * @param array  $fields
-    * @param mixed  $defaultValue
-    */
-    private function setIfExists(string $variableName, array $fields, $defaultValue): void
-    {
-        if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
-            $this->openAPINullablesSetToNull[] = $variableName;
-        }
-
-        $this->container[$variableName] = $fields[$variableName] ?? $defaultValue;
-    }
-
     /**
      * Show all the invalid properties with reasons.
      *
@@ -291,33 +258,36 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['attack'] === null) {
             $invalidProperties[] = "'attack' can't be null";
         }
-        if (($this->container['attack'] > 15)) {
+
+        if ($this->container['attack'] > 15) {
             $invalidProperties[] = "invalid value for 'attack', must be smaller than or equal to 15.";
         }
 
-        if (($this->container['attack'] < 0)) {
+        if ($this->container['attack'] < 0) {
             $invalidProperties[] = "invalid value for 'attack', must be bigger than or equal to 0.";
         }
 
         if ($this->container['defense'] === null) {
             $invalidProperties[] = "'defense' can't be null";
         }
-        if (($this->container['defense'] > 15)) {
+
+        if ($this->container['defense'] > 15) {
             $invalidProperties[] = "invalid value for 'defense', must be smaller than or equal to 15.";
         }
 
-        if (($this->container['defense'] < 0)) {
+        if ($this->container['defense'] < 0) {
             $invalidProperties[] = "invalid value for 'defense', must be bigger than or equal to 0.";
         }
 
         if ($this->container['stamina'] === null) {
             $invalidProperties[] = "'stamina' can't be null";
         }
-        if (($this->container['stamina'] > 15)) {
+
+        if ($this->container['stamina'] > 15) {
             $invalidProperties[] = "invalid value for 'stamina', must be smaller than or equal to 15.";
         }
 
-        if (($this->container['stamina'] < 0)) {
+        if ($this->container['stamina'] < 0) {
             $invalidProperties[] = "invalid value for 'stamina', must be bigger than or equal to 0.";
         }
 
@@ -326,7 +296,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Validate all the properties in the model
-     * return true if all passed
+     * return true if all passed.
      *
      * @return bool True if all properties are valid
      */
@@ -335,9 +305,8 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
         return count($this->listInvalidProperties()) === 0;
     }
 
-
     /**
-     * Gets attack
+     * Gets attack.
      *
      * @return int
      */
@@ -347,7 +316,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Sets attack
+     * Sets attack.
      *
      * @param int $attack 攻撃個体値
      *
@@ -356,14 +325,15 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setAttack($attack)
     {
         if (is_null($attack)) {
-            throw new \InvalidArgumentException('non-nullable attack cannot be null');
+            throw new InvalidArgumentException('non-nullable attack cannot be null');
         }
 
-        if (($attack > 15)) {
-            throw new \InvalidArgumentException('invalid value for $attack when calling IV., must be smaller than or equal to 15.');
+        if ($attack > 15) {
+            throw new InvalidArgumentException('invalid value for $attack when calling IV., must be smaller than or equal to 15.');
         }
-        if (($attack < 0)) {
-            throw new \InvalidArgumentException('invalid value for $attack when calling IV., must be bigger than or equal to 0.');
+
+        if ($attack < 0) {
+            throw new InvalidArgumentException('invalid value for $attack when calling IV., must be bigger than or equal to 0.');
         }
 
         $this->container['attack'] = $attack;
@@ -372,7 +342,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets defense
+     * Gets defense.
      *
      * @return int
      */
@@ -382,7 +352,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Sets defense
+     * Sets defense.
      *
      * @param int $defense 防御個体値
      *
@@ -391,14 +361,15 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setDefense($defense)
     {
         if (is_null($defense)) {
-            throw new \InvalidArgumentException('non-nullable defense cannot be null');
+            throw new InvalidArgumentException('non-nullable defense cannot be null');
         }
 
-        if (($defense > 15)) {
-            throw new \InvalidArgumentException('invalid value for $defense when calling IV., must be smaller than or equal to 15.');
+        if ($defense > 15) {
+            throw new InvalidArgumentException('invalid value for $defense when calling IV., must be smaller than or equal to 15.');
         }
-        if (($defense < 0)) {
-            throw new \InvalidArgumentException('invalid value for $defense when calling IV., must be bigger than or equal to 0.');
+
+        if ($defense < 0) {
+            throw new InvalidArgumentException('invalid value for $defense when calling IV., must be bigger than or equal to 0.');
         }
 
         $this->container['defense'] = $defense;
@@ -407,7 +378,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets stamina
+     * Gets stamina.
      *
      * @return int
      */
@@ -417,7 +388,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Sets stamina
+     * Sets stamina.
      *
      * @param int $stamina HP個体値
      *
@@ -426,26 +397,26 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setStamina($stamina)
     {
         if (is_null($stamina)) {
-            throw new \InvalidArgumentException('non-nullable stamina cannot be null');
+            throw new InvalidArgumentException('non-nullable stamina cannot be null');
         }
 
-        if (($stamina > 15)) {
-            throw new \InvalidArgumentException('invalid value for $stamina when calling IV., must be smaller than or equal to 15.');
+        if ($stamina > 15) {
+            throw new InvalidArgumentException('invalid value for $stamina when calling IV., must be smaller than or equal to 15.');
         }
-        if (($stamina < 0)) {
-            throw new \InvalidArgumentException('invalid value for $stamina when calling IV., must be bigger than or equal to 0.');
+
+        if ($stamina < 0) {
+            throw new InvalidArgumentException('invalid value for $stamina when calling IV., must be bigger than or equal to 0.');
         }
 
         $this->container['stamina'] = $stamina;
 
         return $this;
     }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
-     * @param integer|string $offset Offset
-     *
-     * @return boolean
+     * @param int|string $offset Offset
      */
     public function offsetExists(mixed $offset): bool
     {
@@ -455,11 +426,11 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offset.
      *
-     * @param integer|string $offset Offset
+     * @param int|string $offset Offset
      *
-     * @return mixed|null
+     * @return null|mixed
      */
-    #[\ReturnTypeWillChange]
+    #[ReturnTypeWillChange]
     public function offsetGet(mixed $offset)
     {
         return $this->container[$offset] ?? null;
@@ -468,10 +439,8 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets value based on offset.
      *
-     * @param int|null $offset Offset
+     * @param null|int $offset Offset
      * @param mixed    $value  Value to be set
-     *
-     * @return void
      */
     public function offsetSet($offset, $value): void
     {
@@ -485,9 +454,7 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Unsets offset.
      *
-     * @param integer|string $offset Offset
-     *
-     * @return void
+     * @param int|string $offset Offset
      */
     public function offsetUnset(mixed $offset): void
     {
@@ -496,32 +463,20 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
 
     /**
      * Serializes the object to a value that can be serialized natively by json_encode().
-     * @link https://www.php.net/manual/en/jsonserializable.jsonserialize.php
      *
-     * @return mixed Returns data which can be serialized by json_encode(), which is a value
-     * of any type other than a resource.
+     * @see https://www.php.net/manual/en/jsonserializable.jsonserialize.php
+     *
+     * @return mixed returns data which can be serialized by json_encode(), which is a value
+     *               of any type other than a resource
      */
-    #[\ReturnTypeWillChange]
+    #[ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
-     * Gets the string presentation of the object
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return json_encode(
-            ObjectSerializer::sanitizeForSerialization($this),
-            JSON_PRETTY_PRINT
-        );
-    }
-
-    /**
-     * Gets a header-safe presentation of the object
+     * Gets a header-safe presentation of the object.
      *
      * @return string
      */
@@ -529,6 +484,48 @@ class IV implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
+
+    /**
+     * Array of nullable properties.
+     */
+    protected static function openAPINullables(): array
+    {
+        return self::$openAPINullables;
+    }
+
+    /**
+     * Array of nullable field names deliberately set to null.
+     *
+     * @return bool[]
+     */
+    private function getOpenAPINullablesSetToNull(): array
+    {
+        return $this->openAPINullablesSetToNull;
+    }
+
+    /**
+     * Setter - Array of nullable field names deliberately set to null.
+     *
+     * @param bool[] $openAPINullablesSetToNull
+     */
+    private function setOpenAPINullablesSetToNull(array $openAPINullablesSetToNull): void
+    {
+        $this->openAPINullablesSetToNull = $openAPINullablesSetToNull;
+    }
+
+    /**
+     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+     * $this->openAPINullablesSetToNull array.
+     *
+     * @param mixed $defaultValue
+     */
+    private function setIfExists(string $variableName, array $fields, $defaultValue): void
+    {
+        if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
+            $this->openAPINullablesSetToNull[] = $variableName;
+        }
+
+        $this->container[$variableName] = $fields[$variableName] ?? $defaultValue;
+    }
 }
-
-

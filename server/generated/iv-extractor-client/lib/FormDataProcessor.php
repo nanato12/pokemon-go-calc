@@ -1,16 +1,18 @@
 <?php
+
 /**
  * FormDataProcessor
- * PHP version 7.4
+ * PHP version 7.4.
  *
  * @category Class
- * @package  IvExtractorClient
+ *
  * @author   OpenAPI Generator team
- * @link     https://openapi-generator.tech
+ *
+ * @see     https://openapi-generator.tech
  */
 
 /**
- * Pokemon GO IV Extractor API
+ * Pokemon GO IV Extractor API.
  *
  * Pokemon GO スクリーンショットからポケモン名と個体値を抽出する API
  *
@@ -29,18 +31,20 @@ namespace IvExtractorClient;
 
 use ArrayAccess;
 use DateTime;
+use DateTimeInterface;
 use GuzzleHttp\Psr7\Utils;
+use IvExtractorClient\Model\ModelInterface;
 use Psr\Http\Message\StreamInterface;
 use SplFileObject;
-use IvExtractorClient\Model\ModelInterface;
 
 /**
- * FormDataProcessor Class Doc Comment
+ * FormDataProcessor Class Doc Comment.
  *
  * @category Class
- * @package  IvExtractorClient
+ *
  * @author   OpenAPI Generator team
- * @link     https://openapi-generator.tech
+ *
+ * @see     https://openapi-generator.tech
  */
 class FormDataProcessor
 {
@@ -53,9 +57,9 @@ class FormDataProcessor
     /**
      * Take value and turn it into an array suitable for inclusion in
      * the http body (form parameter). If it's a string, pass through unchanged
-     * If it's a datetime object, format it in ISO8601
+     * If it's a datetime object, format it in ISO8601.
      *
-     * @param array<string|bool|array|DateTime|ArrayAccess|SplFileObject> $values the value of the form parameter
+     * @param array<array|ArrayAccess|bool|DateTime|SplFileObject|string> $values the value of the form parameter
      *
      * @return array [key => value] of formdata
      */
@@ -85,25 +89,25 @@ class FormDataProcessor
     public static function flatten(array $source, string $start = ''): array
     {
         $opt = [
-            'prefix'          => '[',
-            'suffix'          => ']',
-            'suffix-end'      => true,
-            'prefix-list'     => '[',
-            'suffix-list'     => ']',
+            'prefix' => '[',
+            'suffix' => ']',
+            'suffix-end' => true,
+            'prefix-list' => '[',
+            'suffix-list' => ']',
             'suffix-list-end' => true,
         ];
 
         if ($start === '') {
-            $currentPrefix    = '';
-            $currentSuffix    = '';
+            $currentPrefix = '';
+            $currentSuffix = '';
             $currentSuffixEnd = false;
         } elseif (array_is_list($source)) {
-            $currentPrefix    = $opt['prefix-list'];
-            $currentSuffix    = $opt['suffix-list'];
+            $currentPrefix = $opt['prefix-list'];
+            $currentSuffix = $opt['suffix-list'];
             $currentSuffixEnd = $opt['suffix-list-end'];
         } else {
-            $currentPrefix    = $opt['prefix'];
-            $currentSuffix    = $opt['suffix'];
+            $currentPrefix = $opt['prefix'];
+            $currentSuffix = $opt['suffix'];
             $currentSuffixEnd = $opt['suffix-end'];
         }
 
@@ -111,7 +115,7 @@ class FormDataProcessor
         $result = [];
 
         foreach ($source as $key => $val) {
-            $currentName .= $currentPrefix.$key;
+            $currentName .= $currentPrefix . $key;
 
             if (is_array($val) && !empty($val)) {
                 $currentName .= $currentSuffix;
@@ -137,7 +141,9 @@ class FormDataProcessor
     /**
      * formdata must be limited to scalars or arrays of scalar values,
      * or a resource for a file upload. Here we iterate through all available
-     * data and identify how to handle each scenario
+     * data and identify how to handle each scenario.
+     *
+     * @param mixed $value
      */
     protected function makeFormSafe($value)
     {
@@ -155,7 +161,7 @@ class FormDataProcessor
             return $this->processModel($value);
         }
 
-        if (is_array($value) || (is_object($value) && !$value instanceof \DateTimeInterface)) {
+        if (is_array($value) || (is_object($value) && !$value instanceof DateTimeInterface)) {
             $data = [];
 
             foreach ($value as $k => $v) {
@@ -171,7 +177,7 @@ class FormDataProcessor
     /**
      * We are able to handle nested ModelInterface. We do not simply call
      * json_decode(json_encode()) because any given model may have binary data
-     * or other data that cannot be serialized to a JSON string
+     * or other data that cannot be serialized to a JSON string.
      */
     protected function processModel(ModelInterface $model): array
     {
@@ -210,7 +216,7 @@ class FormDataProcessor
     }
 
     /**
-     * Handle file data
+     * Handle file data.
      */
     protected function processFiles(array $files): array
     {
