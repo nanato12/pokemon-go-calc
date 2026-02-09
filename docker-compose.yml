@@ -4,7 +4,7 @@ services:
     ports:
       - "38000:8000"
     volumes:
-      - ./server:/var/www/html
+      - ./web:/var/www/html
     working_dir: /var/www/html
     depends_on:
       - mysql
