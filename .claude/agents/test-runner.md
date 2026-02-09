@@ -17,11 +17,11 @@ cd api && pytest
 cd api && pytest --cov=pokemon_go_calc
 ```
 
-### PHP - Laravel (server/)
+### PHP - Laravel (web/)
 
 ```bash
-cd server && php artisan test
-cd server && vendor/bin/phpunit
+cd web && php artisan test
+cd web && vendor/bin/phpunit
 ```
 
 ### PHP - LINE Bot (linebot/)

@@ -5,21 +5,21 @@ on:
     branches:
       - develop
     paths:
-      - 'server/**/*.php'
-      - 'server/composer.json'
-      - 'server/composer.lock'
-      - 'server/phpstan.neon'
-      - 'server/.php-cs-fixer.dist.php'
+      - 'web/**/*.php'
+      - 'web/composer.json'
+      - 'web/composer.lock'
+      - 'web/phpstan.neon'
+      - 'web/.php-cs-fixer.dist.php'
       - '.github/workflows/lint.yml'
   pull_request:
     branches:
       - develop
     paths:
-      - 'server/**/*.php'
-      - 'server/composer.json'
-      - 'server/composer.lock'
-      - 'server/phpstan.neon'
-      - 'server/.php-cs-fixer.dist.php'
+      - 'web/**/*.php'
+      - 'web/composer.json'
+      - 'web/composer.lock'
+      - 'web/phpstan.neon'
+      - 'web/.php-cs-fixer.dist.php'
       - '.github/workflows/lint.yml'
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: server
+        working-directory: web
 
     steps:
       - uses: actions/checkout@v4
@@ -41,8 +41,8 @@ jobs:
       - name: Cache Composer packages
         uses: actions/cache@v4
         with:
-          path: server/vendor
-          key: ${{ runner.os }}-composer-${{ hashFiles('server/composer.lock') }}
+          path: web/vendor
+          key: ${{ runner.os }}-composer-${{ hashFiles('web/composer.lock') }}
           restore-keys: |
             ${{ runner.os }}-composer-
 
@@ -56,7 +56,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: server
+        working-directory: web
 
     steps:
       - uses: actions/checkout@v4
@@ -70,8 +70,8 @@ jobs:
       - name: Cache Composer packages
         uses: actions/cache@v4
         with:
-          path: server/vendor
-          key: ${{ runner.os }}-composer-${{ hashFiles('server/composer.lock') }}
+          path: web/vendor
+          key: ${{ runner.os }}-composer-${{ hashFiles('web/composer.lock') }}
           restore-keys: |
             ${{ runner.os }}-composer-
 

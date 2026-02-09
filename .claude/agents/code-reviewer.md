@@ -18,7 +18,7 @@
 - pydantic モデルの適切な使用
 - ロギングの適切な使用（print禁止）
 
-### PHP (server/, linebot/)
+### PHP (web/, linebot/)
 
 - PSR-12 準拠
 - 型宣言の有無
