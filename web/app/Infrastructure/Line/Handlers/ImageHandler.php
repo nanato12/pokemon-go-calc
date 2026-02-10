@@ -11,6 +11,7 @@ use App\Domain\RankedIv;
 use App\Infrastructure\IvExtractor\IvExtractorClient;
 use App\Services\RankingService;
 use Exception;
+use IvExtractorClient\Model\IV as ExtractedIV;
 use LINE\Clients\MessagingApi\Api\MessagingApiBlobApi;
 use LINE\Webhook\Model\Event;
 use LINE\Webhook\Model\ImageMessageContent;
@@ -68,9 +69,8 @@ final class ImageHandler extends BaseEventHandler
     /**
      * 基本情報テキストを構築.
      *
-     * @param object $ivData IV data from API response
      */
-    private function buildBasicInfo(string $pokemonName, object $ivData): string
+    private function buildBasicInfo(string $pokemonName, ExtractedIV $ivData): string
     {
         return sprintf(
             "%s\n\n攻撃: %d / 防御: %d / HP: %d",
@@ -84,9 +84,8 @@ final class ImageHandler extends BaseEventHandler
     /**
      * ランキング情報テキストを構築.
      *
-     * @param object $ivData IV data from API response
      */
-    private function buildRankingInfo(string $pokemonName, object $ivData): string
+    private function buildRankingInfo(string $pokemonName, ExtractedIV $ivData): string
     {
         $pokemon = PokemonDatabase::findByName($pokemonName);
 

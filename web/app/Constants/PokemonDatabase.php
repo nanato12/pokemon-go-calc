@@ -13,7 +13,7 @@ use App\Domain\Pokemon;
  */
 final class PokemonDatabase
 {
-    /** @var array<string, Pokemon>|null */
+    /** @var null|array<string, Pokemon> */
     private static ?array $cache = null;
 
     /**

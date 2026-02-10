@@ -8,6 +8,7 @@ use App\Constants\CpmTable;
 use App\Domain\IV;
 use App\Domain\League;
 use App\Domain\Pokemon;
+use App\Domain\PokemonStats;
 use App\Domain\RankedIv;
 
 /**
@@ -31,12 +32,12 @@ final class RankingService
     ): array {
         $cpCap = $league->cpCap();
 
-        /** @var array<int, array{iv: IV, level: float, stats: \App\Domain\PokemonStats, product: float}> $results */
+        /** @var array<int, array{iv: IV, level: float, stats: PokemonStats, product: float}> $results */
         $results = [];
 
-        for ($atk = self::IV_MIN; $atk <= self::IV_MAX; $atk++) {
-            for ($def = self::IV_MIN; $def <= self::IV_MAX; $def++) {
-                for ($sta = self::IV_MIN; $sta <= self::IV_MAX; $sta++) {
+        for ($atk = self::IV_MIN; $atk <= self::IV_MAX; ++$atk) {
+            for ($def = self::IV_MIN; $def <= self::IV_MAX; ++$def) {
+                for ($sta = self::IV_MIN; $sta <= self::IV_MAX; ++$sta) {
                     $iv = new IV($atk, $def, $sta);
 
                     $level = $cpCap !== null
@@ -59,9 +60,10 @@ final class RankingService
         // ステータス積の降順でソート
         usort($results, static fn (array $a, array $b): int => $b['product'] <=> $a['product']);
 
-        $bestProduct = $results[0]['product'] ?? 1.0;
+        $bestProduct = $results[0]['product'];
 
         $rankings = [];
+
         foreach ($results as $rank => $entry) {
             $percent = ($entry['product'] / $bestProduct) * self::PERCENTAGE_MULTIPLIER;
 
