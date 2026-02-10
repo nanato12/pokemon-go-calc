@@ -68,7 +68,6 @@ final class ImageHandler extends BaseEventHandler
 
     /**
      * 基本情報テキストを構築.
-     *
      */
     private function buildBasicInfo(string $pokemonName, ExtractedIV $ivData): string
     {
@@ -83,7 +82,6 @@ final class ImageHandler extends BaseEventHandler
 
     /**
      * ランキング情報テキストを構築.
-     *
      */
     private function buildRankingInfo(string $pokemonName, ExtractedIV $ivData): string
     {
