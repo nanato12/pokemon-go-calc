@@ -71,6 +71,7 @@ components:
         - pokemon
         - pokemon_en
         - dex
+        - cp
         - iv
       properties:
         pokemon:
@@ -88,6 +89,11 @@ components:
           nullable: true
           description: 図鑑番号
           example: 702
+        cp:
+          type: integer
+          nullable: true
+          description: CP（Combat Power）
+          example: 1500
         iv:
           $ref: "#/components/schemas/IV"
 

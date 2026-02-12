@@ -1,0 +1,8038 @@
+[
+  {
+    "name": "フシギダネ",
+    "dex": 1,
+    "baseAttack": 118,
+    "baseDefense": 111,
+    "baseStamina": 128
+  },
+  {
+    "name": "フシギソウ",
+    "dex": 2,
+    "baseAttack": 151,
+    "baseDefense": 143,
+    "baseStamina": 155
+  },
+  {
+    "name": "フシギバナ",
+    "dex": 3,
+    "baseAttack": 198,
+    "baseDefense": 189,
+    "baseStamina": 190
+  },
+  {
+    "name": "フシギバナ(キョダイ)",
+    "dex": 3,
+    "baseAttack": 198,
+    "baseDefense": 189,
+    "baseStamina": 190
+  },
+  {
+    "name": "ヒトカゲ",
+    "dex": 4,
+    "baseAttack": 116,
+    "baseDefense": 93,
+    "baseStamina": 118
+  },
+  {
+    "name": "リザード",
+    "dex": 5,
+    "baseAttack": 158,
+    "baseDefense": 126,
+    "baseStamina": 151
+  },
+  {
+    "name": "リザードン",
+    "dex": 6,
+    "baseAttack": 223,
+    "baseDefense": 173,
+    "baseStamina": 186
+  },
+  {
+    "name": "リザードン(キョダイ)",
+    "dex": 6,
+    "baseAttack": 223,
+    "baseDefense": 173,
+    "baseStamina": 186
+  },
+  {
+    "name": "ゼニガメ",
+    "dex": 7,
+    "baseAttack": 94,
+    "baseDefense": 121,
+    "baseStamina": 127
+  },
+  {
+    "name": "カメール",
+    "dex": 8,
+    "baseAttack": 126,
+    "baseDefense": 155,
+    "baseStamina": 153
+  },
+  {
+    "name": "カメックス",
+    "dex": 9,
+    "baseAttack": 171,
+    "baseDefense": 207,
+    "baseStamina": 188
+  },
+  {
+    "name": "カメックス(キョダイ)",
+    "dex": 9,
+    "baseAttack": 171,
+    "baseDefense": 207,
+    "baseStamina": 188
+  },
+  {
+    "name": "キャタピー",
+    "dex": 10,
+    "baseAttack": 55,
+    "baseDefense": 55,
+    "baseStamina": 128
+  },
+  {
+    "name": "トランセル",
+    "dex": 11,
+    "baseAttack": 45,
+    "baseDefense": 80,
+    "baseStamina": 137
+  },
+  {
+    "name": "バタフリー",
+    "dex": 12,
+    "baseAttack": 167,
+    "baseDefense": 137,
+    "baseStamina": 155
+  },
+  {
+    "name": "バタフリー(キョダイ)",
+    "dex": 12,
+    "baseAttack": 167,
+    "baseDefense": 137,
+    "baseStamina": 155
+  },
+  {
+    "name": "ビードル",
+    "dex": 13,
+    "baseAttack": 63,
+    "baseDefense": 50,
+    "baseStamina": 120
+  },
+  {
+    "name": "コクーン",
+    "dex": 14,
+    "baseAttack": 46,
+    "baseDefense": 75,
+    "baseStamina": 128
+  },
+  {
+    "name": "スピアー",
+    "dex": 15,
+    "baseAttack": 169,
+    "baseDefense": 130,
+    "baseStamina": 163
+  },
+  {
+    "name": "ポッポ",
+    "dex": 16,
+    "baseAttack": 85,
+    "baseDefense": 73,
+    "baseStamina": 120
+  },
+  {
+    "name": "ピジョン",
+    "dex": 17,
+    "baseAttack": 117,
+    "baseDefense": 105,
+    "baseStamina": 160
+  },
+  {
+    "name": "ピジョット",
+    "dex": 18,
+    "baseAttack": 166,
+    "baseDefense": 154,
+    "baseStamina": 195
+  },
+  {
+    "name": "コラッタ",
+    "dex": 19,
+    "baseAttack": 103,
+    "baseDefense": 70,
+    "baseStamina": 102
+  },
+  {
+    "name": "コラッタ(アローラ)",
+    "dex": 19,
+    "baseAttack": 103,
+    "baseDefense": 70,
+    "baseStamina": 102
+  },
+  {
+    "name": "ラッタ",
+    "dex": 20,
+    "baseAttack": 161,
+    "baseDefense": 139,
+    "baseStamina": 146
+  },
+  {
+    "name": "ラッタ(アローラ)",
+    "dex": 20,
+    "baseAttack": 135,
+    "baseDefense": 154,
+    "baseStamina": 181
+  },
+  {
+    "name": "オニスズメ",
+    "dex": 21,
+    "baseAttack": 112,
+    "baseDefense": 60,
+    "baseStamina": 120
+  },
+  {
+    "name": "オニドリル",
+    "dex": 22,
+    "baseAttack": 182,
+    "baseDefense": 133,
+    "baseStamina": 163
+  },
+  {
+    "name": "アーボ",
+    "dex": 23,
+    "baseAttack": 110,
+    "baseDefense": 97,
+    "baseStamina": 111
+  },
+  {
+    "name": "アーボック",
+    "dex": 24,
+    "baseAttack": 167,
+    "baseDefense": 153,
+    "baseStamina": 155
+  },
+  {
+    "name": "ピカチュウ",
+    "dex": 25,
+    "baseAttack": 112,
+    "baseDefense": 96,
+    "baseStamina": 111
+  },
+  {
+    "name": "ピカチュウ(かりゆし)",
+    "dex": 25,
+    "baseAttack": 112,
+    "baseDefense": 96,
+    "baseStamina": 111
+  },
+  {
+    "name": "ピカチュウ(そらをとぶ)",
+    "dex": 25,
+    "baseAttack": 112,
+    "baseDefense": 96,
+    "baseStamina": 111
+  },
+  {
+    "name": "ピカチュウ(そらをとぶ5周年)",
+    "dex": 25,
+    "baseAttack": 112,
+    "baseDefense": 96,
+    "baseStamina": 111
+  },
+  {
+    "name": "ピカチュウ(アイドル)",
+    "dex": 25,
+    "baseAttack": 112,
+    "baseDefense": 96,
+    "baseStamina": 111
+  },
+  {
+    "name": "ピカチュウ(キャプテン帽子)",
+    "dex": 25,
+    "baseAttack": 112,
+    "baseDefense": 96,
+    "baseStamina": 111
+  },
+  {
+    "name": "ピカチュウ(ドクター)",
+    "dex": 25,
+    "baseAttack": 112,
+    "baseDefense": 96,
+    "baseStamina": 111
+  },
+  {
+    "name": "ピカチュウ(ハードロック)",
+    "dex": 25,
+    "baseAttack": 112,
+    "baseDefense": 96,
+    "baseStamina": 111
+  },
+  {
+    "name": "ピカチュウ(マスクド)",
+    "dex": 25,
+    "baseAttack": 112,
+    "baseDefense": 96,
+    "baseStamina": 111
+  },
+  {
+    "name": "ライチュウ",
+    "dex": 26,
+    "baseAttack": 193,
+    "baseDefense": 151,
+    "baseStamina": 155
+  },
+  {
+    "name": "ライチュウ(アローラ)",
+    "dex": 26,
+    "baseAttack": 201,
+    "baseDefense": 154,
+    "baseStamina": 155
+  },
+  {
+    "name": "サンド",
+    "dex": 27,
+    "baseAttack": 126,
+    "baseDefense": 120,
+    "baseStamina": 137
+  },
+  {
+    "name": "サンド(アローラ)",
+    "dex": 27,
+    "baseAttack": 125,
+    "baseDefense": 129,
+    "baseStamina": 137
+  },
+  {
+    "name": "サンドパン",
+    "dex": 28,
+    "baseAttack": 182,
+    "baseDefense": 175,
+    "baseStamina": 181
+  },
+  {
+    "name": "サンドパン(アローラ)",
+    "dex": 28,
+    "baseAttack": 177,
+    "baseDefense": 195,
+    "baseStamina": 181
+  },
+  {
+    "name": "ニドラン♀",
+    "dex": 29,
+    "baseAttack": 86,
+    "baseDefense": 89,
+    "baseStamina": 146
+  },
+  {
+    "name": "ニドリーナ",
+    "dex": 30,
+    "baseAttack": 117,
+    "baseDefense": 120,
+    "baseStamina": 172
+  },
+  {
+    "name": "ニドクイン",
+    "dex": 31,
+    "baseAttack": 180,
+    "baseDefense": 173,
+    "baseStamina": 207
+  },
+  {
+    "name": "ニドラン♂",
+    "dex": 32,
+    "baseAttack": 105,
+    "baseDefense": 76,
+    "baseStamina": 130
+  },
+  {
+    "name": "ニドリーノ",
+    "dex": 33,
+    "baseAttack": 137,
+    "baseDefense": 111,
+    "baseStamina": 156
+  },
+  {
+    "name": "ニドキング",
+    "dex": 34,
+    "baseAttack": 204,
+    "baseDefense": 156,
+    "baseStamina": 191
+  },
+  {
+    "name": "ピッピ",
+    "dex": 35,
+    "baseAttack": 107,
+    "baseDefense": 108,
+    "baseStamina": 172
+  },
+  {
+    "name": "ピクシー",
+    "dex": 36,
+    "baseAttack": 178,
+    "baseDefense": 162,
+    "baseStamina": 216
+  },
+  {
+    "name": "ロコン",
+    "dex": 37,
+    "baseAttack": 96,
+    "baseDefense": 109,
+    "baseStamina": 116
+  },
+  {
+    "name": "ロコン(アローラ)",
+    "dex": 37,
+    "baseAttack": 96,
+    "baseDefense": 109,
+    "baseStamina": 116
+  },
+  {
+    "name": "キュウコン",
+    "dex": 38,
+    "baseAttack": 169,
+    "baseDefense": 190,
+    "baseStamina": 177
+  },
+  {
+    "name": "キュウコン(アローラ)",
+    "dex": 38,
+    "baseAttack": 170,
+    "baseDefense": 193,
+    "baseStamina": 177
+  },
+  {
+    "name": "プリン",
+    "dex": 39,
+    "baseAttack": 80,
+    "baseDefense": 41,
+    "baseStamina": 251
+  },
+  {
+    "name": "プクリン",
+    "dex": 40,
+    "baseAttack": 156,
+    "baseDefense": 90,
+    "baseStamina": 295
+  },
+  {
+    "name": "ズバット",
+    "dex": 41,
+    "baseAttack": 83,
+    "baseDefense": 73,
+    "baseStamina": 120
+  },
+  {
+    "name": "ゴルバット",
+    "dex": 42,
+    "baseAttack": 161,
+    "baseDefense": 150,
+    "baseStamina": 181
+  },
+  {
+    "name": "ナゾノクサ",
+    "dex": 43,
+    "baseAttack": 131,
+    "baseDefense": 112,
+    "baseStamina": 128
+  },
+  {
+    "name": "クサイハナ",
+    "dex": 44,
+    "baseAttack": 153,
+    "baseDefense": 136,
+    "baseStamina": 155
+  },
+  {
+    "name": "ラフレシア",
+    "dex": 45,
+    "baseAttack": 202,
+    "baseDefense": 167,
+    "baseStamina": 181
+  },
+  {
+    "name": "パラス",
+    "dex": 46,
+    "baseAttack": 121,
+    "baseDefense": 99,
+    "baseStamina": 111
+  },
+  {
+    "name": "パラセクト",
+    "dex": 47,
+    "baseAttack": 165,
+    "baseDefense": 146,
+    "baseStamina": 155
+  },
+  {
+    "name": "コンパン",
+    "dex": 48,
+    "baseAttack": 100,
+    "baseDefense": 100,
+    "baseStamina": 155
+  },
+  {
+    "name": "モルフォン",
+    "dex": 49,
+    "baseAttack": 179,
+    "baseDefense": 143,
+    "baseStamina": 172
+  },
+  {
+    "name": "ディグダ",
+    "dex": 50,
+    "baseAttack": 109,
+    "baseDefense": 78,
+    "baseStamina": 67
+  },
+  {
+    "name": "ディグダ(アローラ)",
+    "dex": 50,
+    "baseAttack": 108,
+    "baseDefense": 81,
+    "baseStamina": 67
+  },
+  {
+    "name": "ダグトリオ",
+    "dex": 51,
+    "baseAttack": 167,
+    "baseDefense": 136,
+    "baseStamina": 111
+  },
+  {
+    "name": "ダグトリオ(アローラ)",
+    "dex": 51,
+    "baseAttack": 201,
+    "baseDefense": 142,
+    "baseStamina": 111
+  },
+  {
+    "name": "ニャース",
+    "dex": 52,
+    "baseAttack": 92,
+    "baseDefense": 78,
+    "baseStamina": 120
+  },
+  {
+    "name": "ニャース(アローラ)",
+    "dex": 52,
+    "baseAttack": 99,
+    "baseDefense": 78,
+    "baseStamina": 120
+  },
+  {
+    "name": "ニャース(ガラル)",
+    "dex": 52,
+    "baseAttack": 115,
+    "baseDefense": 92,
+    "baseStamina": 137
+  },
+  {
+    "name": "ニャース(キョダイ)",
+    "dex": 52,
+    "baseAttack": 92,
+    "baseDefense": 78,
+    "baseStamina": 120
+  },
+  {
+    "name": "ペルシアン",
+    "dex": 53,
+    "baseAttack": 150,
+    "baseDefense": 136,
+    "baseStamina": 163
+  },
+  {
+    "name": "ペルシアン(アローラ)",
+    "dex": 53,
+    "baseAttack": 158,
+    "baseDefense": 136,
+    "baseStamina": 163
+  },
+  {
+    "name": "コダック",
+    "dex": 54,
+    "baseAttack": 122,
+    "baseDefense": 95,
+    "baseStamina": 137
+  },
+  {
+    "name": "ゴルダック",
+    "dex": 55,
+    "baseAttack": 191,
+    "baseDefense": 162,
+    "baseStamina": 190
+  },
+  {
+    "name": "マンキー",
+    "dex": 56,
+    "baseAttack": 148,
+    "baseDefense": 82,
+    "baseStamina": 120
+  },
+  {
+    "name": "オコリザル",
+    "dex": 57,
+    "baseAttack": 207,
+    "baseDefense": 138,
+    "baseStamina": 163
+  },
+  {
+    "name": "ガーディ",
+    "dex": 58,
+    "baseAttack": 136,
+    "baseDefense": 93,
+    "baseStamina": 146
+  },
+  {
+    "name": "ガーディ(ヒスイ)",
+    "dex": 58,
+    "baseAttack": 142,
+    "baseDefense": 92,
+    "baseStamina": 155
+  },
+  {
+    "name": "ウインディ",
+    "dex": 59,
+    "baseAttack": 227,
+    "baseDefense": 166,
+    "baseStamina": 207
+  },
+  {
+    "name": "ウインディ(ヒスイ)",
+    "dex": 59,
+    "baseAttack": 232,
+    "baseDefense": 165,
+    "baseStamina": 216
+  },
+  {
+    "name": "ニョロモ",
+    "dex": 60,
+    "baseAttack": 101,
+    "baseDefense": 82,
+    "baseStamina": 120
+  },
+  {
+    "name": "ニョロゾ",
+    "dex": 61,
+    "baseAttack": 130,
+    "baseDefense": 123,
+    "baseStamina": 163
+  },
+  {
+    "name": "ニョロボン",
+    "dex": 62,
+    "baseAttack": 182,
+    "baseDefense": 184,
+    "baseStamina": 207
+  },
+  {
+    "name": "ケーシィ",
+    "dex": 63,
+    "baseAttack": 195,
+    "baseDefense": 82,
+    "baseStamina": 93
+  },
+  {
+    "name": "ユンゲラー",
+    "dex": 64,
+    "baseAttack": 232,
+    "baseDefense": 117,
+    "baseStamina": 120
+  },
+  {
+    "name": "フーディン",
+    "dex": 65,
+    "baseAttack": 271,
+    "baseDefense": 167,
+    "baseStamina": 146
+  },
+  {
+    "name": "ワンリキー",
+    "dex": 66,
+    "baseAttack": 137,
+    "baseDefense": 82,
+    "baseStamina": 172
+  },
+  {
+    "name": "ゴーリキー",
+    "dex": 67,
+    "baseAttack": 177,
+    "baseDefense": 125,
+    "baseStamina": 190
+  },
+  {
+    "name": "カイリキー",
+    "dex": 68,
+    "baseAttack": 234,
+    "baseDefense": 159,
+    "baseStamina": 207
+  },
+  {
+    "name": "カイリキー(キョダイ)",
+    "dex": 68,
+    "baseAttack": 234,
+    "baseDefense": 159,
+    "baseStamina": 207
+  },
+  {
+    "name": "マダツボミ",
+    "dex": 69,
+    "baseAttack": 139,
+    "baseDefense": 61,
+    "baseStamina": 137
+  },
+  {
+    "name": "ウツドン",
+    "dex": 70,
+    "baseAttack": 172,
+    "baseDefense": 92,
+    "baseStamina": 163
+  },
+  {
+    "name": "ウツボット",
+    "dex": 71,
+    "baseAttack": 207,
+    "baseDefense": 135,
+    "baseStamina": 190
+  },
+  {
+    "name": "メガウツボット",
+    "dex": 71,
+    "baseAttack": 265,
+    "baseDefense": 181,
+    "baseStamina": 190
+  },
+  {
+    "name": "メノクラゲ",
+    "dex": 72,
+    "baseAttack": 97,
+    "baseDefense": 149,
+    "baseStamina": 120
+  },
+  {
+    "name": "ドククラゲ",
+    "dex": 73,
+    "baseAttack": 166,
+    "baseDefense": 209,
+    "baseStamina": 190
+  },
+  {
+    "name": "イシツブテ",
+    "dex": 74,
+    "baseAttack": 132,
+    "baseDefense": 132,
+    "baseStamina": 120
+  },
+  {
+    "name": "イシツブテ(アローラ)",
+    "dex": 74,
+    "baseAttack": 132,
+    "baseDefense": 132,
+    "baseStamina": 120
+  },
+  {
+    "name": "ゴローン",
+    "dex": 75,
+    "baseAttack": 164,
+    "baseDefense": 164,
+    "baseStamina": 146
+  },
+  {
+    "name": "ゴローン(アローラ)",
+    "dex": 75,
+    "baseAttack": 164,
+    "baseDefense": 164,
+    "baseStamina": 146
+  },
+  {
+    "name": "ゴローニャ",
+    "dex": 76,
+    "baseAttack": 211,
+    "baseDefense": 198,
+    "baseStamina": 190
+  },
+  {
+    "name": "ゴローニャ(アローラ)",
+    "dex": 76,
+    "baseAttack": 211,
+    "baseDefense": 198,
+    "baseStamina": 190
+  },
+  {
+    "name": "ポニータ",
+    "dex": 77,
+    "baseAttack": 170,
+    "baseDefense": 127,
+    "baseStamina": 137
+  },
+  {
+    "name": "ポニータ(ガラル)",
+    "dex": 77,
+    "baseAttack": 170,
+    "baseDefense": 127,
+    "baseStamina": 137
+  },
+  {
+    "name": "ギャロップ",
+    "dex": 78,
+    "baseAttack": 207,
+    "baseDefense": 162,
+    "baseStamina": 163
+  },
+  {
+    "name": "ギャロップ(ガラル)",
+    "dex": 78,
+    "baseAttack": 207,
+    "baseDefense": 162,
+    "baseStamina": 163
+  },
+  {
+    "name": "ヤドン",
+    "dex": 79,
+    "baseAttack": 109,
+    "baseDefense": 98,
+    "baseStamina": 207
+  },
+  {
+    "name": "ヤドン(ガラル)",
+    "dex": 79,
+    "baseAttack": 109,
+    "baseDefense": 98,
+    "baseStamina": 207
+  },
+  {
+    "name": "ヤドラン",
+    "dex": 80,
+    "baseAttack": 177,
+    "baseDefense": 180,
+    "baseStamina": 216
+  },
+  {
+    "name": "ヤドラン(ガラル)",
+    "dex": 80,
+    "baseAttack": 182,
+    "baseDefense": 156,
+    "baseStamina": 216
+  },
+  {
+    "name": "コイル",
+    "dex": 81,
+    "baseAttack": 165,
+    "baseDefense": 121,
+    "baseStamina": 93
+  },
+  {
+    "name": "レアコイル",
+    "dex": 82,
+    "baseAttack": 223,
+    "baseDefense": 169,
+    "baseStamina": 137
+  },
+  {
+    "name": "カモネギ",
+    "dex": 83,
+    "baseAttack": 124,
+    "baseDefense": 115,
+    "baseStamina": 141
+  },
+  {
+    "name": "カモネギ(ガラル)",
+    "dex": 83,
+    "baseAttack": 174,
+    "baseDefense": 114,
+    "baseStamina": 141
+  },
+  {
+    "name": "ドードー",
+    "dex": 84,
+    "baseAttack": 158,
+    "baseDefense": 83,
+    "baseStamina": 111
+  },
+  {
+    "name": "ドードリオ",
+    "dex": 85,
+    "baseAttack": 218,
+    "baseDefense": 140,
+    "baseStamina": 155
+  },
+  {
+    "name": "パウワウ",
+    "dex": 86,
+    "baseAttack": 85,
+    "baseDefense": 121,
+    "baseStamina": 163
+  },
+  {
+    "name": "ジュゴン",
+    "dex": 87,
+    "baseAttack": 139,
+    "baseDefense": 177,
+    "baseStamina": 207
+  },
+  {
+    "name": "ベトベター",
+    "dex": 88,
+    "baseAttack": 135,
+    "baseDefense": 90,
+    "baseStamina": 190
+  },
+  {
+    "name": "ベトベター(アローラ)",
+    "dex": 88,
+    "baseAttack": 135,
+    "baseDefense": 90,
+    "baseStamina": 190
+  },
+  {
+    "name": "ベトベトン",
+    "dex": 89,
+    "baseAttack": 190,
+    "baseDefense": 172,
+    "baseStamina": 233
+  },
+  {
+    "name": "ベトベトン(アローラ)",
+    "dex": 89,
+    "baseAttack": 190,
+    "baseDefense": 172,
+    "baseStamina": 233
+  },
+  {
+    "name": "シェルダー",
+    "dex": 90,
+    "baseAttack": 116,
+    "baseDefense": 134,
+    "baseStamina": 102
+  },
+  {
+    "name": "パルシェン",
+    "dex": 91,
+    "baseAttack": 186,
+    "baseDefense": 256,
+    "baseStamina": 137
+  },
+  {
+    "name": "ゴース",
+    "dex": 92,
+    "baseAttack": 186,
+    "baseDefense": 67,
+    "baseStamina": 102
+  },
+  {
+    "name": "ゴースト",
+    "dex": 93,
+    "baseAttack": 223,
+    "baseDefense": 107,
+    "baseStamina": 128
+  },
+  {
+    "name": "ゲンガー",
+    "dex": 94,
+    "baseAttack": 261,
+    "baseDefense": 149,
+    "baseStamina": 155
+  },
+  {
+    "name": "ゲンガー(キョダイ)",
+    "dex": 94,
+    "baseAttack": 261,
+    "baseDefense": 149,
+    "baseStamina": 155
+  },
+  {
+    "name": "イワーク",
+    "dex": 95,
+    "baseAttack": 85,
+    "baseDefense": 232,
+    "baseStamina": 111
+  },
+  {
+    "name": "スリープ",
+    "dex": 96,
+    "baseAttack": 89,
+    "baseDefense": 136,
+    "baseStamina": 155
+  },
+  {
+    "name": "スリーパー",
+    "dex": 97,
+    "baseAttack": 144,
+    "baseDefense": 193,
+    "baseStamina": 198
+  },
+  {
+    "name": "クラブ",
+    "dex": 98,
+    "baseAttack": 181,
+    "baseDefense": 124,
+    "baseStamina": 102
+  },
+  {
+    "name": "キングラー",
+    "dex": 99,
+    "baseAttack": 240,
+    "baseDefense": 181,
+    "baseStamina": 146
+  },
+  {
+    "name": "キングラー(キョダイ)",
+    "dex": 99,
+    "baseAttack": 240,
+    "baseDefense": 181,
+    "baseStamina": 146
+  },
+  {
+    "name": "ビリリダマ",
+    "dex": 100,
+    "baseAttack": 109,
+    "baseDefense": 111,
+    "baseStamina": 120
+  },
+  {
+    "name": "ビリリダマ(ヒスイ)",
+    "dex": 100,
+    "baseAttack": 109,
+    "baseDefense": 111,
+    "baseStamina": 120
+  },
+  {
+    "name": "マルマイン",
+    "dex": 101,
+    "baseAttack": 173,
+    "baseDefense": 173,
+    "baseStamina": 155
+  },
+  {
+    "name": "マルマイン(ヒスイ)",
+    "dex": 101,
+    "baseAttack": 176,
+    "baseDefense": 176,
+    "baseStamina": 155
+  },
+  {
+    "name": "タマタマ",
+    "dex": 102,
+    "baseAttack": 107,
+    "baseDefense": 125,
+    "baseStamina": 155
+  },
+  {
+    "name": "ナッシー",
+    "dex": 103,
+    "baseAttack": 233,
+    "baseDefense": 149,
+    "baseStamina": 216
+  },
+  {
+    "name": "ナッシー(アローラ)",
+    "dex": 103,
+    "baseAttack": 230,
+    "baseDefense": 153,
+    "baseStamina": 216
+  },
+  {
+    "name": "カラカラ",
+    "dex": 104,
+    "baseAttack": 90,
+    "baseDefense": 144,
+    "baseStamina": 137
+  },
+  {
+    "name": "ガラガラ",
+    "dex": 105,
+    "baseAttack": 144,
+    "baseDefense": 186,
+    "baseStamina": 155
+  },
+  {
+    "name": "ガラガラ(アローラ)",
+    "dex": 105,
+    "baseAttack": 144,
+    "baseDefense": 186,
+    "baseStamina": 155
+  },
+  {
+    "name": "サワムラー",
+    "dex": 106,
+    "baseAttack": 224,
+    "baseDefense": 181,
+    "baseStamina": 137
+  },
+  {
+    "name": "エビワラー",
+    "dex": 107,
+    "baseAttack": 193,
+    "baseDefense": 197,
+    "baseStamina": 137
+  },
+  {
+    "name": "ベロリンガ",
+    "dex": 108,
+    "baseAttack": 108,
+    "baseDefense": 137,
+    "baseStamina": 207
+  },
+  {
+    "name": "ドガース",
+    "dex": 109,
+    "baseAttack": 119,
+    "baseDefense": 141,
+    "baseStamina": 120
+  },
+  {
+    "name": "マタドガス",
+    "dex": 110,
+    "baseAttack": 174,
+    "baseDefense": 197,
+    "baseStamina": 163
+  },
+  {
+    "name": "マタドガス(ガラル)",
+    "dex": 110,
+    "baseAttack": 174,
+    "baseDefense": 197,
+    "baseStamina": 163
+  },
+  {
+    "name": "サイホーン",
+    "dex": 111,
+    "baseAttack": 140,
+    "baseDefense": 127,
+    "baseStamina": 190
+  },
+  {
+    "name": "サイドン",
+    "dex": 112,
+    "baseAttack": 222,
+    "baseDefense": 171,
+    "baseStamina": 233
+  },
+  {
+    "name": "ラッキー",
+    "dex": 113,
+    "baseAttack": 60,
+    "baseDefense": 128,
+    "baseStamina": 487
+  },
+  {
+    "name": "モンジャラ",
+    "dex": 114,
+    "baseAttack": 183,
+    "baseDefense": 169,
+    "baseStamina": 163
+  },
+  {
+    "name": "ガルーラ",
+    "dex": 115,
+    "baseAttack": 181,
+    "baseDefense": 165,
+    "baseStamina": 233
+  },
+  {
+    "name": "タッツー",
+    "dex": 116,
+    "baseAttack": 129,
+    "baseDefense": 103,
+    "baseStamina": 102
+  },
+  {
+    "name": "シードラ",
+    "dex": 117,
+    "baseAttack": 187,
+    "baseDefense": 156,
+    "baseStamina": 146
+  },
+  {
+    "name": "トサキント",
+    "dex": 118,
+    "baseAttack": 123,
+    "baseDefense": 110,
+    "baseStamina": 128
+  },
+  {
+    "name": "アズマオウ",
+    "dex": 119,
+    "baseAttack": 175,
+    "baseDefense": 147,
+    "baseStamina": 190
+  },
+  {
+    "name": "ヒトデマン",
+    "dex": 120,
+    "baseAttack": 137,
+    "baseDefense": 112,
+    "baseStamina": 102
+  },
+  {
+    "name": "スターミー",
+    "dex": 121,
+    "baseAttack": 210,
+    "baseDefense": 184,
+    "baseStamina": 155
+  },
+  {
+    "name": "バリヤード",
+    "dex": 122,
+    "baseAttack": 192,
+    "baseDefense": 205,
+    "baseStamina": 120
+  },
+  {
+    "name": "バリヤード(ガラル)",
+    "dex": 122,
+    "baseAttack": 183,
+    "baseDefense": 169,
+    "baseStamina": 137
+  },
+  {
+    "name": "ストライク",
+    "dex": 123,
+    "baseAttack": 218,
+    "baseDefense": 170,
+    "baseStamina": 172
+  },
+  {
+    "name": "ルージュラ",
+    "dex": 124,
+    "baseAttack": 223,
+    "baseDefense": 151,
+    "baseStamina": 163
+  },
+  {
+    "name": "エレブー",
+    "dex": 125,
+    "baseAttack": 198,
+    "baseDefense": 158,
+    "baseStamina": 163
+  },
+  {
+    "name": "ブーバー",
+    "dex": 126,
+    "baseAttack": 206,
+    "baseDefense": 154,
+    "baseStamina": 163
+  },
+  {
+    "name": "カイロス",
+    "dex": 127,
+    "baseAttack": 238,
+    "baseDefense": 182,
+    "baseStamina": 163
+  },
+  {
+    "name": "ケンタロス",
+    "dex": 128,
+    "baseAttack": 198,
+    "baseDefense": 183,
+    "baseStamina": 181
+  },
+  {
+    "name": "ケンタロス(パルデア・ウォーター)",
+    "dex": 128,
+    "baseAttack": 210,
+    "baseDefense": 193,
+    "baseStamina": 181
+  },
+  {
+    "name": "ケンタロス(パルデア・コンバット)",
+    "dex": 128,
+    "baseAttack": 210,
+    "baseDefense": 193,
+    "baseStamina": 181
+  },
+  {
+    "name": "ケンタロス(パルデア・ブレイズ)",
+    "dex": 128,
+    "baseAttack": 210,
+    "baseDefense": 193,
+    "baseStamina": 181
+  },
+  {
+    "name": "コイキング",
+    "dex": 129,
+    "baseAttack": 29,
+    "baseDefense": 85,
+    "baseStamina": 85
+  },
+  {
+    "name": "ギャラドス",
+    "dex": 130,
+    "baseAttack": 237,
+    "baseDefense": 186,
+    "baseStamina": 216
+  },
+  {
+    "name": "ラプラス",
+    "dex": 131,
+    "baseAttack": 165,
+    "baseDefense": 174,
+    "baseStamina": 277
+  },
+  {
+    "name": "ラプラス(キョダイ)",
+    "dex": 131,
+    "baseAttack": 165,
+    "baseDefense": 174,
+    "baseStamina": 277
+  },
+  {
+    "name": "メタモン",
+    "dex": 132,
+    "baseAttack": 91,
+    "baseDefense": 91,
+    "baseStamina": 134
+  },
+  {
+    "name": "イーブイ",
+    "dex": 133,
+    "baseAttack": 104,
+    "baseDefense": 114,
+    "baseStamina": 146
+  },
+  {
+    "name": "シャワーズ",
+    "dex": 134,
+    "baseAttack": 205,
+    "baseDefense": 161,
+    "baseStamina": 277
+  },
+  {
+    "name": "サンダース",
+    "dex": 135,
+    "baseAttack": 232,
+    "baseDefense": 182,
+    "baseStamina": 163
+  },
+  {
+    "name": "ブースター",
+    "dex": 136,
+    "baseAttack": 246,
+    "baseDefense": 179,
+    "baseStamina": 163
+  },
+  {
+    "name": "ポリゴン",
+    "dex": 137,
+    "baseAttack": 153,
+    "baseDefense": 136,
+    "baseStamina": 163
+  },
+  {
+    "name": "オムナイト",
+    "dex": 138,
+    "baseAttack": 155,
+    "baseDefense": 153,
+    "baseStamina": 111
+  },
+  {
+    "name": "オムスター",
+    "dex": 139,
+    "baseAttack": 207,
+    "baseDefense": 201,
+    "baseStamina": 172
+  },
+  {
+    "name": "カブト",
+    "dex": 140,
+    "baseAttack": 148,
+    "baseDefense": 140,
+    "baseStamina": 102
+  },
+  {
+    "name": "カブトプス",
+    "dex": 141,
+    "baseAttack": 220,
+    "baseDefense": 186,
+    "baseStamina": 155
+  },
+  {
+    "name": "プテラ",
+    "dex": 142,
+    "baseAttack": 221,
+    "baseDefense": 159,
+    "baseStamina": 190
+  },
+  {
+    "name": "カビゴン",
+    "dex": 143,
+    "baseAttack": 190,
+    "baseDefense": 169,
+    "baseStamina": 330
+  },
+  {
+    "name": "カビゴン(キョダイ)",
+    "dex": 143,
+    "baseAttack": 190,
+    "baseDefense": 169,
+    "baseStamina": 330
+  },
+  {
+    "name": "フリーザー",
+    "dex": 144,
+    "baseAttack": 192,
+    "baseDefense": 236,
+    "baseStamina": 207
+  },
+  {
+    "name": "フリーザー(ガラル)",
+    "dex": 144,
+    "baseAttack": 250,
+    "baseDefense": 197,
+    "baseStamina": 207
+  },
+  {
+    "name": "サンダー",
+    "dex": 145,
+    "baseAttack": 253,
+    "baseDefense": 185,
+    "baseStamina": 207
+  },
+  {
+    "name": "サンダー(ガラル)",
+    "dex": 145,
+    "baseAttack": 252,
+    "baseDefense": 189,
+    "baseStamina": 207
+  },
+  {
+    "name": "ファイヤー",
+    "dex": 146,
+    "baseAttack": 251,
+    "baseDefense": 181,
+    "baseStamina": 207
+  },
+  {
+    "name": "ファイヤー(ガラル)",
+    "dex": 146,
+    "baseAttack": 202,
+    "baseDefense": 231,
+    "baseStamina": 207
+  },
+  {
+    "name": "ミニリュウ",
+    "dex": 147,
+    "baseAttack": 119,
+    "baseDefense": 91,
+    "baseStamina": 121
+  },
+  {
+    "name": "ハクリュー",
+    "dex": 148,
+    "baseAttack": 163,
+    "baseDefense": 135,
+    "baseStamina": 156
+  },
+  {
+    "name": "カイリュー",
+    "dex": 149,
+    "baseAttack": 263,
+    "baseDefense": 198,
+    "baseStamina": 209
+  },
+  {
+    "name": "ミュウツー",
+    "dex": 150,
+    "baseAttack": 300,
+    "baseDefense": 182,
+    "baseStamina": 214
+  },
+  {
+    "name": "ミュウツー(アーマード)",
+    "dex": 150,
+    "baseAttack": 182,
+    "baseDefense": 278,
+    "baseStamina": 214
+  },
+  {
+    "name": "ミュウ",
+    "dex": 151,
+    "baseAttack": 210,
+    "baseDefense": 210,
+    "baseStamina": 225
+  },
+  {
+    "name": "チコリータ",
+    "dex": 152,
+    "baseAttack": 92,
+    "baseDefense": 122,
+    "baseStamina": 128
+  },
+  {
+    "name": "ベイリーフ",
+    "dex": 153,
+    "baseAttack": 122,
+    "baseDefense": 155,
+    "baseStamina": 155
+  },
+  {
+    "name": "メガニウム",
+    "dex": 154,
+    "baseAttack": 168,
+    "baseDefense": 202,
+    "baseStamina": 190
+  },
+  {
+    "name": "ヒノアラシ",
+    "dex": 155,
+    "baseAttack": 116,
+    "baseDefense": 93,
+    "baseStamina": 118
+  },
+  {
+    "name": "マグマラシ",
+    "dex": 156,
+    "baseAttack": 158,
+    "baseDefense": 126,
+    "baseStamina": 151
+  },
+  {
+    "name": "バクフーン",
+    "dex": 157,
+    "baseAttack": 223,
+    "baseDefense": 173,
+    "baseStamina": 186
+  },
+  {
+    "name": "バクフーン(ヒスイ)",
+    "dex": 157,
+    "baseAttack": 238,
+    "baseDefense": 172,
+    "baseStamina": 177
+  },
+  {
+    "name": "ワニノコ",
+    "dex": 158,
+    "baseAttack": 117,
+    "baseDefense": 109,
+    "baseStamina": 137
+  },
+  {
+    "name": "アリゲイツ",
+    "dex": 159,
+    "baseAttack": 150,
+    "baseDefense": 142,
+    "baseStamina": 163
+  },
+  {
+    "name": "オーダイル",
+    "dex": 160,
+    "baseAttack": 205,
+    "baseDefense": 188,
+    "baseStamina": 198
+  },
+  {
+    "name": "オタチ",
+    "dex": 161,
+    "baseAttack": 79,
+    "baseDefense": 73,
+    "baseStamina": 111
+  },
+  {
+    "name": "オオタチ",
+    "dex": 162,
+    "baseAttack": 148,
+    "baseDefense": 125,
+    "baseStamina": 198
+  },
+  {
+    "name": "ホーホー",
+    "dex": 163,
+    "baseAttack": 67,
+    "baseDefense": 88,
+    "baseStamina": 155
+  },
+  {
+    "name": "ヨルノズク",
+    "dex": 164,
+    "baseAttack": 145,
+    "baseDefense": 156,
+    "baseStamina": 225
+  },
+  {
+    "name": "レディバ",
+    "dex": 165,
+    "baseAttack": 72,
+    "baseDefense": 118,
+    "baseStamina": 120
+  },
+  {
+    "name": "レディアン",
+    "dex": 166,
+    "baseAttack": 107,
+    "baseDefense": 179,
+    "baseStamina": 146
+  },
+  {
+    "name": "イトマル",
+    "dex": 167,
+    "baseAttack": 105,
+    "baseDefense": 73,
+    "baseStamina": 120
+  },
+  {
+    "name": "アリアドス",
+    "dex": 168,
+    "baseAttack": 161,
+    "baseDefense": 124,
+    "baseStamina": 172
+  },
+  {
+    "name": "クロバット",
+    "dex": 169,
+    "baseAttack": 194,
+    "baseDefense": 178,
+    "baseStamina": 198
+  },
+  {
+    "name": "チョンチー",
+    "dex": 170,
+    "baseAttack": 106,
+    "baseDefense": 97,
+    "baseStamina": 181
+  },
+  {
+    "name": "ランターン",
+    "dex": 171,
+    "baseAttack": 146,
+    "baseDefense": 137,
+    "baseStamina": 268
+  },
+  {
+    "name": "ピチュー",
+    "dex": 172,
+    "baseAttack": 77,
+    "baseDefense": 53,
+    "baseStamina": 85
+  },
+  {
+    "name": "ピィ",
+    "dex": 173,
+    "baseAttack": 75,
+    "baseDefense": 79,
+    "baseStamina": 137
+  },
+  {
+    "name": "ププリン",
+    "dex": 174,
+    "baseAttack": 69,
+    "baseDefense": 32,
+    "baseStamina": 207
+  },
+  {
+    "name": "トゲピー",
+    "dex": 175,
+    "baseAttack": 67,
+    "baseDefense": 116,
+    "baseStamina": 111
+  },
+  {
+    "name": "トゲチック",
+    "dex": 176,
+    "baseAttack": 139,
+    "baseDefense": 181,
+    "baseStamina": 146
+  },
+  {
+    "name": "ネイティ",
+    "dex": 177,
+    "baseAttack": 134,
+    "baseDefense": 89,
+    "baseStamina": 120
+  },
+  {
+    "name": "ネイティオ",
+    "dex": 178,
+    "baseAttack": 192,
+    "baseDefense": 146,
+    "baseStamina": 163
+  },
+  {
+    "name": "メリープ",
+    "dex": 179,
+    "baseAttack": 114,
+    "baseDefense": 79,
+    "baseStamina": 146
+  },
+  {
+    "name": "モココ",
+    "dex": 180,
+    "baseAttack": 145,
+    "baseDefense": 109,
+    "baseStamina": 172
+  },
+  {
+    "name": "デンリュウ",
+    "dex": 181,
+    "baseAttack": 211,
+    "baseDefense": 169,
+    "baseStamina": 207
+  },
+  {
+    "name": "キレイハナ",
+    "dex": 182,
+    "baseAttack": 169,
+    "baseDefense": 186,
+    "baseStamina": 181
+  },
+  {
+    "name": "マリル",
+    "dex": 183,
+    "baseAttack": 37,
+    "baseDefense": 93,
+    "baseStamina": 172
+  },
+  {
+    "name": "マリルリ",
+    "dex": 184,
+    "baseAttack": 112,
+    "baseDefense": 152,
+    "baseStamina": 225
+  },
+  {
+    "name": "ウソッキー",
+    "dex": 185,
+    "baseAttack": 167,
+    "baseDefense": 176,
+    "baseStamina": 172
+  },
+  {
+    "name": "ニョロトノ",
+    "dex": 186,
+    "baseAttack": 174,
+    "baseDefense": 179,
+    "baseStamina": 207
+  },
+  {
+    "name": "ハネッコ",
+    "dex": 187,
+    "baseAttack": 67,
+    "baseDefense": 94,
+    "baseStamina": 111
+  },
+  {
+    "name": "ポポッコ",
+    "dex": 188,
+    "baseAttack": 91,
+    "baseDefense": 120,
+    "baseStamina": 146
+  },
+  {
+    "name": "ワタッコ",
+    "dex": 189,
+    "baseAttack": 118,
+    "baseDefense": 183,
+    "baseStamina": 181
+  },
+  {
+    "name": "エイパム",
+    "dex": 190,
+    "baseAttack": 136,
+    "baseDefense": 112,
+    "baseStamina": 146
+  },
+  {
+    "name": "ヒマナッツ",
+    "dex": 191,
+    "baseAttack": 55,
+    "baseDefense": 55,
+    "baseStamina": 102
+  },
+  {
+    "name": "キマワリ",
+    "dex": 192,
+    "baseAttack": 185,
+    "baseDefense": 135,
+    "baseStamina": 181
+  },
+  {
+    "name": "ヤンヤンマ",
+    "dex": 193,
+    "baseAttack": 154,
+    "baseDefense": 94,
+    "baseStamina": 163
+  },
+  {
+    "name": "ウパー",
+    "dex": 194,
+    "baseAttack": 75,
+    "baseDefense": 66,
+    "baseStamina": 146
+  },
+  {
+    "name": "ウパー(パルデア)",
+    "dex": 194,
+    "baseAttack": 75,
+    "baseDefense": 66,
+    "baseStamina": 146
+  },
+  {
+    "name": "ヌオー",
+    "dex": 195,
+    "baseAttack": 152,
+    "baseDefense": 143,
+    "baseStamina": 216
+  },
+  {
+    "name": "エーフィ",
+    "dex": 196,
+    "baseAttack": 261,
+    "baseDefense": 175,
+    "baseStamina": 163
+  },
+  {
+    "name": "ブラッキー",
+    "dex": 197,
+    "baseAttack": 126,
+    "baseDefense": 240,
+    "baseStamina": 216
+  },
+  {
+    "name": "ヤミカラス",
+    "dex": 198,
+    "baseAttack": 175,
+    "baseDefense": 87,
+    "baseStamina": 155
+  },
+  {
+    "name": "ヤドキング",
+    "dex": 199,
+    "baseAttack": 177,
+    "baseDefense": 180,
+    "baseStamina": 216
+  },
+  {
+    "name": "ヤドキング(ガラル)",
+    "dex": 199,
+    "baseAttack": 190,
+    "baseDefense": 180,
+    "baseStamina": 216
+  },
+  {
+    "name": "ムウマ",
+    "dex": 200,
+    "baseAttack": 167,
+    "baseDefense": 154,
+    "baseStamina": 155
+  },
+  {
+    "name": "アンノーン",
+    "dex": 201,
+    "baseAttack": 136,
+    "baseDefense": 91,
+    "baseStamina": 134
+  },
+  {
+    "name": "ソーナンス",
+    "dex": 202,
+    "baseAttack": 60,
+    "baseDefense": 106,
+    "baseStamina": 382
+  },
+  {
+    "name": "キリンリキ",
+    "dex": 203,
+    "baseAttack": 182,
+    "baseDefense": 133,
+    "baseStamina": 172
+  },
+  {
+    "name": "クヌギダマ",
+    "dex": 204,
+    "baseAttack": 108,
+    "baseDefense": 122,
+    "baseStamina": 137
+  },
+  {
+    "name": "フォレトス",
+    "dex": 205,
+    "baseAttack": 161,
+    "baseDefense": 205,
+    "baseStamina": 181
+  },
+  {
+    "name": "ノコッチ",
+    "dex": 206,
+    "baseAttack": 131,
+    "baseDefense": 128,
+    "baseStamina": 225
+  },
+  {
+    "name": "グライガー",
+    "dex": 207,
+    "baseAttack": 143,
+    "baseDefense": 184,
+    "baseStamina": 163
+  },
+  {
+    "name": "ハガネール",
+    "dex": 208,
+    "baseAttack": 148,
+    "baseDefense": 272,
+    "baseStamina": 181
+  },
+  {
+    "name": "ブルー",
+    "dex": 209,
+    "baseAttack": 137,
+    "baseDefense": 85,
+    "baseStamina": 155
+  },
+  {
+    "name": "グランブル",
+    "dex": 210,
+    "baseAttack": 212,
+    "baseDefense": 131,
+    "baseStamina": 207
+  },
+  {
+    "name": "ハリーセン",
+    "dex": 211,
+    "baseAttack": 184,
+    "baseDefense": 138,
+    "baseStamina": 163
+  },
+  {
+    "name": "ハリーセン(ヒスイ)",
+    "dex": 211,
+    "baseAttack": 184,
+    "baseDefense": 151,
+    "baseStamina": 163
+  },
+  {
+    "name": "ハッサム",
+    "dex": 212,
+    "baseAttack": 236,
+    "baseDefense": 181,
+    "baseStamina": 172
+  },
+  {
+    "name": "ツボツボ",
+    "dex": 213,
+    "baseAttack": 17,
+    "baseDefense": 396,
+    "baseStamina": 85
+  },
+  {
+    "name": "ヘラクロス",
+    "dex": 214,
+    "baseAttack": 234,
+    "baseDefense": 179,
+    "baseStamina": 190
+  },
+  {
+    "name": "ニューラ",
+    "dex": 215,
+    "baseAttack": 189,
+    "baseDefense": 146,
+    "baseStamina": 146
+  },
+  {
+    "name": "ニューラ(ヒスイ)",
+    "dex": 215,
+    "baseAttack": 189,
+    "baseDefense": 146,
+    "baseStamina": 146
+  },
+  {
+    "name": "ヒメグマ",
+    "dex": 216,
+    "baseAttack": 142,
+    "baseDefense": 93,
+    "baseStamina": 155
+  },
+  {
+    "name": "リングマ",
+    "dex": 217,
+    "baseAttack": 236,
+    "baseDefense": 144,
+    "baseStamina": 207
+  },
+  {
+    "name": "マグマッグ",
+    "dex": 218,
+    "baseAttack": 118,
+    "baseDefense": 71,
+    "baseStamina": 120
+  },
+  {
+    "name": "マグカルゴ",
+    "dex": 219,
+    "baseAttack": 139,
+    "baseDefense": 191,
+    "baseStamina": 137
+  },
+  {
+    "name": "ウリムー",
+    "dex": 220,
+    "baseAttack": 90,
+    "baseDefense": 69,
+    "baseStamina": 137
+  },
+  {
+    "name": "イノムー",
+    "dex": 221,
+    "baseAttack": 181,
+    "baseDefense": 138,
+    "baseStamina": 225
+  },
+  {
+    "name": "サニーゴ",
+    "dex": 222,
+    "baseAttack": 118,
+    "baseDefense": 156,
+    "baseStamina": 146
+  },
+  {
+    "name": "サニーゴ(ガラル)",
+    "dex": 222,
+    "baseAttack": 116,
+    "baseDefense": 182,
+    "baseStamina": 155
+  },
+  {
+    "name": "テッポウオ",
+    "dex": 223,
+    "baseAttack": 127,
+    "baseDefense": 69,
+    "baseStamina": 111
+  },
+  {
+    "name": "オクタン",
+    "dex": 224,
+    "baseAttack": 197,
+    "baseDefense": 141,
+    "baseStamina": 181
+  },
+  {
+    "name": "デリバード",
+    "dex": 225,
+    "baseAttack": 128,
+    "baseDefense": 90,
+    "baseStamina": 128
+  },
+  {
+    "name": "マンタイン",
+    "dex": 226,
+    "baseAttack": 148,
+    "baseDefense": 226,
+    "baseStamina": 163
+  },
+  {
+    "name": "エアームド",
+    "dex": 227,
+    "baseAttack": 148,
+    "baseDefense": 226,
+    "baseStamina": 163
+  },
+  {
+    "name": "デルビル",
+    "dex": 228,
+    "baseAttack": 152,
+    "baseDefense": 83,
+    "baseStamina": 128
+  },
+  {
+    "name": "ヘルガー",
+    "dex": 229,
+    "baseAttack": 224,
+    "baseDefense": 144,
+    "baseStamina": 181
+  },
+  {
+    "name": "キングドラ",
+    "dex": 230,
+    "baseAttack": 194,
+    "baseDefense": 194,
+    "baseStamina": 181
+  },
+  {
+    "name": "ゴマゾウ",
+    "dex": 231,
+    "baseAttack": 107,
+    "baseDefense": 98,
+    "baseStamina": 207
+  },
+  {
+    "name": "ドンファン",
+    "dex": 232,
+    "baseAttack": 214,
+    "baseDefense": 185,
+    "baseStamina": 207
+  },
+  {
+    "name": "ポリゴン2",
+    "dex": 233,
+    "baseAttack": 198,
+    "baseDefense": 180,
+    "baseStamina": 198
+  },
+  {
+    "name": "オドシシ",
+    "dex": 234,
+    "baseAttack": 192,
+    "baseDefense": 131,
+    "baseStamina": 177
+  },
+  {
+    "name": "ドーブル",
+    "dex": 235,
+    "baseAttack": 40,
+    "baseDefense": 83,
+    "baseStamina": 146
+  },
+  {
+    "name": "バルキー",
+    "dex": 236,
+    "baseAttack": 64,
+    "baseDefense": 64,
+    "baseStamina": 111
+  },
+  {
+    "name": "カポエラー",
+    "dex": 237,
+    "baseAttack": 173,
+    "baseDefense": 207,
+    "baseStamina": 137
+  },
+  {
+    "name": "ムチュール",
+    "dex": 238,
+    "baseAttack": 153,
+    "baseDefense": 91,
+    "baseStamina": 128
+  },
+  {
+    "name": "エレキッド",
+    "dex": 239,
+    "baseAttack": 135,
+    "baseDefense": 101,
+    "baseStamina": 128
+  },
+  {
+    "name": "ブビィ",
+    "dex": 240,
+    "baseAttack": 151,
+    "baseDefense": 99,
+    "baseStamina": 128
+  },
+  {
+    "name": "ミルタンク",
+    "dex": 241,
+    "baseAttack": 157,
+    "baseDefense": 193,
+    "baseStamina": 216
+  },
+  {
+    "name": "ハピナス",
+    "dex": 242,
+    "baseAttack": 129,
+    "baseDefense": 169,
+    "baseStamina": 496
+  },
+  {
+    "name": "ライコウ",
+    "dex": 243,
+    "baseAttack": 241,
+    "baseDefense": 195,
+    "baseStamina": 207
+  },
+  {
+    "name": "エンテイ",
+    "dex": 244,
+    "baseAttack": 235,
+    "baseDefense": 171,
+    "baseStamina": 251
+  },
+  {
+    "name": "スイクン",
+    "dex": 245,
+    "baseAttack": 180,
+    "baseDefense": 235,
+    "baseStamina": 225
+  },
+  {
+    "name": "ヨーギラス",
+    "dex": 246,
+    "baseAttack": 115,
+    "baseDefense": 93,
+    "baseStamina": 137
+  },
+  {
+    "name": "サナギラス",
+    "dex": 247,
+    "baseAttack": 155,
+    "baseDefense": 133,
+    "baseStamina": 172
+  },
+  {
+    "name": "バンギラス",
+    "dex": 248,
+    "baseAttack": 251,
+    "baseDefense": 207,
+    "baseStamina": 225
+  },
+  {
+    "name": "ルギア",
+    "dex": 249,
+    "baseAttack": 193,
+    "baseDefense": 310,
+    "baseStamina": 235
+  },
+  {
+    "name": "ルギア(APEX)",
+    "dex": 249,
+    "baseAttack": 193,
+    "baseDefense": 310,
+    "baseStamina": 235
+  },
+  {
+    "name": "ホウオウ",
+    "dex": 250,
+    "baseAttack": 239,
+    "baseDefense": 244,
+    "baseStamina": 214
+  },
+  {
+    "name": "ホウオウ(APEX)",
+    "dex": 250,
+    "baseAttack": 239,
+    "baseDefense": 244,
+    "baseStamina": 214
+  },
+  {
+    "name": "セレビィ",
+    "dex": 251,
+    "baseAttack": 210,
+    "baseDefense": 210,
+    "baseStamina": 225
+  },
+  {
+    "name": "キモリ",
+    "dex": 252,
+    "baseAttack": 124,
+    "baseDefense": 94,
+    "baseStamina": 120
+  },
+  {
+    "name": "ジュプトル",
+    "dex": 253,
+    "baseAttack": 172,
+    "baseDefense": 120,
+    "baseStamina": 137
+  },
+  {
+    "name": "ジュカイン",
+    "dex": 254,
+    "baseAttack": 223,
+    "baseDefense": 169,
+    "baseStamina": 172
+  },
+  {
+    "name": "アチャモ",
+    "dex": 255,
+    "baseAttack": 130,
+    "baseDefense": 87,
+    "baseStamina": 128
+  },
+  {
+    "name": "ワカシャモ",
+    "dex": 256,
+    "baseAttack": 163,
+    "baseDefense": 115,
+    "baseStamina": 155
+  },
+  {
+    "name": "バシャーモ",
+    "dex": 257,
+    "baseAttack": 240,
+    "baseDefense": 141,
+    "baseStamina": 190
+  },
+  {
+    "name": "ミズゴロウ",
+    "dex": 258,
+    "baseAttack": 126,
+    "baseDefense": 93,
+    "baseStamina": 137
+  },
+  {
+    "name": "ヌマクロー",
+    "dex": 259,
+    "baseAttack": 156,
+    "baseDefense": 133,
+    "baseStamina": 172
+  },
+  {
+    "name": "ラグラージ",
+    "dex": 260,
+    "baseAttack": 208,
+    "baseDefense": 175,
+    "baseStamina": 225
+  },
+  {
+    "name": "ポチエナ",
+    "dex": 261,
+    "baseAttack": 96,
+    "baseDefense": 61,
+    "baseStamina": 111
+  },
+  {
+    "name": "グラエナ",
+    "dex": 262,
+    "baseAttack": 171,
+    "baseDefense": 132,
+    "baseStamina": 172
+  },
+  {
+    "name": "ジグザグマ",
+    "dex": 263,
+    "baseAttack": 58,
+    "baseDefense": 80,
+    "baseStamina": 116
+  },
+  {
+    "name": "ジグザグマ(ガラル)",
+    "dex": 263,
+    "baseAttack": 58,
+    "baseDefense": 80,
+    "baseStamina": 116
+  },
+  {
+    "name": "マッスグマ",
+    "dex": 264,
+    "baseAttack": 142,
+    "baseDefense": 128,
+    "baseStamina": 186
+  },
+  {
+    "name": "マッスグマ(ガラル)",
+    "dex": 264,
+    "baseAttack": 142,
+    "baseDefense": 128,
+    "baseStamina": 186
+  },
+  {
+    "name": "ケムッソ",
+    "dex": 265,
+    "baseAttack": 75,
+    "baseDefense": 59,
+    "baseStamina": 128
+  },
+  {
+    "name": "カラサリス",
+    "dex": 266,
+    "baseAttack": 60,
+    "baseDefense": 77,
+    "baseStamina": 137
+  },
+  {
+    "name": "アゲハント",
+    "dex": 267,
+    "baseAttack": 189,
+    "baseDefense": 98,
+    "baseStamina": 155
+  },
+  {
+    "name": "マユルド",
+    "dex": 268,
+    "baseAttack": 60,
+    "baseDefense": 77,
+    "baseStamina": 137
+  },
+  {
+    "name": "ドクケイル",
+    "dex": 269,
+    "baseAttack": 98,
+    "baseDefense": 162,
+    "baseStamina": 155
+  },
+  {
+    "name": "ハスボー",
+    "dex": 270,
+    "baseAttack": 71,
+    "baseDefense": 77,
+    "baseStamina": 120
+  },
+  {
+    "name": "ハスブレロ",
+    "dex": 271,
+    "baseAttack": 112,
+    "baseDefense": 119,
+    "baseStamina": 155
+  },
+  {
+    "name": "ルンパッパ",
+    "dex": 272,
+    "baseAttack": 173,
+    "baseDefense": 176,
+    "baseStamina": 190
+  },
+  {
+    "name": "タネボー",
+    "dex": 273,
+    "baseAttack": 71,
+    "baseDefense": 77,
+    "baseStamina": 120
+  },
+  {
+    "name": "コノハナ",
+    "dex": 274,
+    "baseAttack": 134,
+    "baseDefense": 78,
+    "baseStamina": 172
+  },
+  {
+    "name": "ダーテング",
+    "dex": 275,
+    "baseAttack": 200,
+    "baseDefense": 121,
+    "baseStamina": 207
+  },
+  {
+    "name": "スバメ",
+    "dex": 276,
+    "baseAttack": 106,
+    "baseDefense": 61,
+    "baseStamina": 120
+  },
+  {
+    "name": "オオスバメ",
+    "dex": 277,
+    "baseAttack": 185,
+    "baseDefense": 124,
+    "baseStamina": 155
+  },
+  {
+    "name": "キャモメ",
+    "dex": 278,
+    "baseAttack": 106,
+    "baseDefense": 61,
+    "baseStamina": 120
+  },
+  {
+    "name": "ペリッパー",
+    "dex": 279,
+    "baseAttack": 175,
+    "baseDefense": 174,
+    "baseStamina": 155
+  },
+  {
+    "name": "ラルトス",
+    "dex": 280,
+    "baseAttack": 79,
+    "baseDefense": 59,
+    "baseStamina": 99
+  },
+  {
+    "name": "キルリア",
+    "dex": 281,
+    "baseAttack": 117,
+    "baseDefense": 90,
+    "baseStamina": 116
+  },
+  {
+    "name": "サーナイト",
+    "dex": 282,
+    "baseAttack": 237,
+    "baseDefense": 195,
+    "baseStamina": 169
+  },
+  {
+    "name": "アメタマ",
+    "dex": 283,
+    "baseAttack": 93,
+    "baseDefense": 87,
+    "baseStamina": 120
+  },
+  {
+    "name": "アメモース",
+    "dex": 284,
+    "baseAttack": 192,
+    "baseDefense": 150,
+    "baseStamina": 172
+  },
+  {
+    "name": "キノココ",
+    "dex": 285,
+    "baseAttack": 74,
+    "baseDefense": 110,
+    "baseStamina": 155
+  },
+  {
+    "name": "キノガッサ",
+    "dex": 286,
+    "baseAttack": 241,
+    "baseDefense": 144,
+    "baseStamina": 155
+  },
+  {
+    "name": "ナマケロ",
+    "dex": 287,
+    "baseAttack": 104,
+    "baseDefense": 92,
+    "baseStamina": 155
+  },
+  {
+    "name": "ヤルキモノ",
+    "dex": 288,
+    "baseAttack": 159,
+    "baseDefense": 145,
+    "baseStamina": 190
+  },
+  {
+    "name": "ケッキング",
+    "dex": 289,
+    "baseAttack": 290,
+    "baseDefense": 166,
+    "baseStamina": 284
+  },
+  {
+    "name": "ツチニン",
+    "dex": 290,
+    "baseAttack": 80,
+    "baseDefense": 126,
+    "baseStamina": 104
+  },
+  {
+    "name": "テッカニン",
+    "dex": 291,
+    "baseAttack": 199,
+    "baseDefense": 112,
+    "baseStamina": 156
+  },
+  {
+    "name": "ヌケニン",
+    "dex": 292,
+    "baseAttack": 153,
+    "baseDefense": 73,
+    "baseStamina": 1
+  },
+  {
+    "name": "ゴニョニョ",
+    "dex": 293,
+    "baseAttack": 92,
+    "baseDefense": 42,
+    "baseStamina": 162
+  },
+  {
+    "name": "ドゴーム",
+    "dex": 294,
+    "baseAttack": 134,
+    "baseDefense": 81,
+    "baseStamina": 197
+  },
+  {
+    "name": "バクオング",
+    "dex": 295,
+    "baseAttack": 179,
+    "baseDefense": 137,
+    "baseStamina": 232
+  },
+  {
+    "name": "マクノシタ",
+    "dex": 296,
+    "baseAttack": 99,
+    "baseDefense": 54,
+    "baseStamina": 176
+  },
+  {
+    "name": "ハリテヤマ",
+    "dex": 297,
+    "baseAttack": 209,
+    "baseDefense": 114,
+    "baseStamina": 302
+  },
+  {
+    "name": "ルリリ",
+    "dex": 298,
+    "baseAttack": 36,
+    "baseDefense": 71,
+    "baseStamina": 137
+  },
+  {
+    "name": "ノズパス",
+    "dex": 299,
+    "baseAttack": 82,
+    "baseDefense": 215,
+    "baseStamina": 102
+  },
+  {
+    "name": "エネコ",
+    "dex": 300,
+    "baseAttack": 84,
+    "baseDefense": 79,
+    "baseStamina": 137
+  },
+  {
+    "name": "エネコロロ",
+    "dex": 301,
+    "baseAttack": 132,
+    "baseDefense": 127,
+    "baseStamina": 172
+  },
+  {
+    "name": "ヤミラミ",
+    "dex": 302,
+    "baseAttack": 141,
+    "baseDefense": 136,
+    "baseStamina": 137
+  },
+  {
+    "name": "クチート",
+    "dex": 303,
+    "baseAttack": 155,
+    "baseDefense": 141,
+    "baseStamina": 137
+  },
+  {
+    "name": "ココドラ",
+    "dex": 304,
+    "baseAttack": 121,
+    "baseDefense": 141,
+    "baseStamina": 137
+  },
+  {
+    "name": "コドラ",
+    "dex": 305,
+    "baseAttack": 158,
+    "baseDefense": 198,
+    "baseStamina": 155
+  },
+  {
+    "name": "ボスゴドラ",
+    "dex": 306,
+    "baseAttack": 198,
+    "baseDefense": 257,
+    "baseStamina": 172
+  },
+  {
+    "name": "アサナン",
+    "dex": 307,
+    "baseAttack": 78,
+    "baseDefense": 107,
+    "baseStamina": 102
+  },
+  {
+    "name": "チャーレム",
+    "dex": 308,
+    "baseAttack": 121,
+    "baseDefense": 152,
+    "baseStamina": 155
+  },
+  {
+    "name": "ラクライ",
+    "dex": 309,
+    "baseAttack": 123,
+    "baseDefense": 78,
+    "baseStamina": 120
+  },
+  {
+    "name": "ライボルト",
+    "dex": 310,
+    "baseAttack": 215,
+    "baseDefense": 127,
+    "baseStamina": 172
+  },
+  {
+    "name": "プラスル",
+    "dex": 311,
+    "baseAttack": 167,
+    "baseDefense": 129,
+    "baseStamina": 155
+  },
+  {
+    "name": "マイナン",
+    "dex": 312,
+    "baseAttack": 147,
+    "baseDefense": 150,
+    "baseStamina": 155
+  },
+  {
+    "name": "バルビート",
+    "dex": 313,
+    "baseAttack": 143,
+    "baseDefense": 166,
+    "baseStamina": 163
+  },
+  {
+    "name": "イルミーゼ",
+    "dex": 314,
+    "baseAttack": 143,
+    "baseDefense": 166,
+    "baseStamina": 163
+  },
+  {
+    "name": "ロゼリア",
+    "dex": 315,
+    "baseAttack": 186,
+    "baseDefense": 131,
+    "baseStamina": 137
+  },
+  {
+    "name": "ゴクリン",
+    "dex": 316,
+    "baseAttack": 80,
+    "baseDefense": 99,
+    "baseStamina": 172
+  },
+  {
+    "name": "マルノーム",
+    "dex": 317,
+    "baseAttack": 140,
+    "baseDefense": 159,
+    "baseStamina": 225
+  },
+  {
+    "name": "キバニア",
+    "dex": 318,
+    "baseAttack": 171,
+    "baseDefense": 39,
+    "baseStamina": 128
+  },
+  {
+    "name": "サメハダー",
+    "dex": 319,
+    "baseAttack": 243,
+    "baseDefense": 83,
+    "baseStamina": 172
+  },
+  {
+    "name": "ホエルコ",
+    "dex": 320,
+    "baseAttack": 136,
+    "baseDefense": 68,
+    "baseStamina": 277
+  },
+  {
+    "name": "ホエルオー",
+    "dex": 321,
+    "baseAttack": 175,
+    "baseDefense": 87,
+    "baseStamina": 347
+  },
+  {
+    "name": "ドンメル",
+    "dex": 322,
+    "baseAttack": 119,
+    "baseDefense": 79,
+    "baseStamina": 155
+  },
+  {
+    "name": "バクーダ",
+    "dex": 323,
+    "baseAttack": 194,
+    "baseDefense": 136,
+    "baseStamina": 172
+  },
+  {
+    "name": "コータス",
+    "dex": 324,
+    "baseAttack": 151,
+    "baseDefense": 203,
+    "baseStamina": 172
+  },
+  {
+    "name": "バネブー",
+    "dex": 325,
+    "baseAttack": 125,
+    "baseDefense": 122,
+    "baseStamina": 155
+  },
+  {
+    "name": "ブーピッグ",
+    "dex": 326,
+    "baseAttack": 171,
+    "baseDefense": 188,
+    "baseStamina": 190
+  },
+  {
+    "name": "パッチール",
+    "dex": 327,
+    "baseAttack": 116,
+    "baseDefense": 116,
+    "baseStamina": 155
+  },
+  {
+    "name": "ナックラー",
+    "dex": 328,
+    "baseAttack": 162,
+    "baseDefense": 78,
+    "baseStamina": 128
+  },
+  {
+    "name": "ビブラーバ",
+    "dex": 329,
+    "baseAttack": 134,
+    "baseDefense": 99,
+    "baseStamina": 137
+  },
+  {
+    "name": "フライゴン",
+    "dex": 330,
+    "baseAttack": 205,
+    "baseDefense": 168,
+    "baseStamina": 190
+  },
+  {
+    "name": "サボネア",
+    "dex": 331,
+    "baseAttack": 156,
+    "baseDefense": 74,
+    "baseStamina": 137
+  },
+  {
+    "name": "ノクタス",
+    "dex": 332,
+    "baseAttack": 221,
+    "baseDefense": 115,
+    "baseStamina": 172
+  },
+  {
+    "name": "チルット",
+    "dex": 333,
+    "baseAttack": 76,
+    "baseDefense": 132,
+    "baseStamina": 128
+  },
+  {
+    "name": "チルタリス",
+    "dex": 334,
+    "baseAttack": 141,
+    "baseDefense": 201,
+    "baseStamina": 181
+  },
+  {
+    "name": "ザングース",
+    "dex": 335,
+    "baseAttack": 222,
+    "baseDefense": 124,
+    "baseStamina": 177
+  },
+  {
+    "name": "ハブネーク",
+    "dex": 336,
+    "baseAttack": 196,
+    "baseDefense": 118,
+    "baseStamina": 177
+  },
+  {
+    "name": "ルナトーン",
+    "dex": 337,
+    "baseAttack": 178,
+    "baseDefense": 153,
+    "baseStamina": 207
+  },
+  {
+    "name": "ソルロック",
+    "dex": 338,
+    "baseAttack": 178,
+    "baseDefense": 153,
+    "baseStamina": 207
+  },
+  {
+    "name": "ドジョッチ",
+    "dex": 339,
+    "baseAttack": 93,
+    "baseDefense": 82,
+    "baseStamina": 137
+  },
+  {
+    "name": "ナマズン",
+    "dex": 340,
+    "baseAttack": 151,
+    "baseDefense": 141,
+    "baseStamina": 242
+  },
+  {
+    "name": "ヘイガニ",
+    "dex": 341,
+    "baseAttack": 141,
+    "baseDefense": 99,
+    "baseStamina": 125
+  },
+  {
+    "name": "シザリガー",
+    "dex": 342,
+    "baseAttack": 224,
+    "baseDefense": 142,
+    "baseStamina": 160
+  },
+  {
+    "name": "ヤジロン",
+    "dex": 343,
+    "baseAttack": 77,
+    "baseDefense": 124,
+    "baseStamina": 120
+  },
+  {
+    "name": "ネンドール",
+    "dex": 344,
+    "baseAttack": 140,
+    "baseDefense": 229,
+    "baseStamina": 155
+  },
+  {
+    "name": "リリーラ",
+    "dex": 345,
+    "baseAttack": 105,
+    "baseDefense": 150,
+    "baseStamina": 165
+  },
+  {
+    "name": "ユレイドル",
+    "dex": 346,
+    "baseAttack": 152,
+    "baseDefense": 194,
+    "baseStamina": 200
+  },
+  {
+    "name": "アノプス",
+    "dex": 347,
+    "baseAttack": 176,
+    "baseDefense": 100,
+    "baseStamina": 128
+  },
+  {
+    "name": "アーマルド",
+    "dex": 348,
+    "baseAttack": 222,
+    "baseDefense": 174,
+    "baseStamina": 181
+  },
+  {
+    "name": "ヒンバス",
+    "dex": 349,
+    "baseAttack": 29,
+    "baseDefense": 85,
+    "baseStamina": 85
+  },
+  {
+    "name": "ミロカロス",
+    "dex": 350,
+    "baseAttack": 192,
+    "baseDefense": 219,
+    "baseStamina": 216
+  },
+  {
+    "name": "ポワルン",
+    "dex": 351,
+    "baseAttack": 139,
+    "baseDefense": 139,
+    "baseStamina": 172
+  },
+  {
+    "name": "ポワルン(あまみず)",
+    "dex": 351,
+    "baseAttack": 139,
+    "baseDefense": 139,
+    "baseStamina": 172
+  },
+  {
+    "name": "ポワルン(たいよう)",
+    "dex": 351,
+    "baseAttack": 139,
+    "baseDefense": 139,
+    "baseStamina": 172
+  },
+  {
+    "name": "ポワルン(ゆきぐも)",
+    "dex": 351,
+    "baseAttack": 139,
+    "baseDefense": 139,
+    "baseStamina": 172
+  },
+  {
+    "name": "カクレオン",
+    "dex": 352,
+    "baseAttack": 161,
+    "baseDefense": 189,
+    "baseStamina": 155
+  },
+  {
+    "name": "カゲボウズ",
+    "dex": 353,
+    "baseAttack": 138,
+    "baseDefense": 65,
+    "baseStamina": 127
+  },
+  {
+    "name": "ジュペッタ",
+    "dex": 354,
+    "baseAttack": 218,
+    "baseDefense": 126,
+    "baseStamina": 162
+  },
+  {
+    "name": "ヨマワル",
+    "dex": 355,
+    "baseAttack": 70,
+    "baseDefense": 162,
+    "baseStamina": 85
+  },
+  {
+    "name": "サマヨール",
+    "dex": 356,
+    "baseAttack": 124,
+    "baseDefense": 234,
+    "baseStamina": 120
+  },
+  {
+    "name": "トロピウス",
+    "dex": 357,
+    "baseAttack": 136,
+    "baseDefense": 163,
+    "baseStamina": 223
+  },
+  {
+    "name": "チリーン",
+    "dex": 358,
+    "baseAttack": 175,
+    "baseDefense": 170,
+    "baseStamina": 181
+  },
+  {
+    "name": "アブソル",
+    "dex": 359,
+    "baseAttack": 246,
+    "baseDefense": 120,
+    "baseStamina": 163
+  },
+  {
+    "name": "ソーナノ",
+    "dex": 360,
+    "baseAttack": 41,
+    "baseDefense": 86,
+    "baseStamina": 216
+  },
+  {
+    "name": "ユキワラシ",
+    "dex": 361,
+    "baseAttack": 95,
+    "baseDefense": 95,
+    "baseStamina": 137
+  },
+  {
+    "name": "オニゴーリ",
+    "dex": 362,
+    "baseAttack": 162,
+    "baseDefense": 162,
+    "baseStamina": 190
+  },
+  {
+    "name": "タマザラシ",
+    "dex": 363,
+    "baseAttack": 95,
+    "baseDefense": 90,
+    "baseStamina": 172
+  },
+  {
+    "name": "トドグラー",
+    "dex": 364,
+    "baseAttack": 137,
+    "baseDefense": 132,
+    "baseStamina": 207
+  },
+  {
+    "name": "トドゼルガ",
+    "dex": 365,
+    "baseAttack": 182,
+    "baseDefense": 176,
+    "baseStamina": 242
+  },
+  {
+    "name": "パールル",
+    "dex": 366,
+    "baseAttack": 133,
+    "baseDefense": 135,
+    "baseStamina": 111
+  },
+  {
+    "name": "ハンテール",
+    "dex": 367,
+    "baseAttack": 197,
+    "baseDefense": 179,
+    "baseStamina": 146
+  },
+  {
+    "name": "サクラビス",
+    "dex": 368,
+    "baseAttack": 211,
+    "baseDefense": 179,
+    "baseStamina": 146
+  },
+  {
+    "name": "ジーランス",
+    "dex": 369,
+    "baseAttack": 162,
+    "baseDefense": 203,
+    "baseStamina": 225
+  },
+  {
+    "name": "ラブカス",
+    "dex": 370,
+    "baseAttack": 81,
+    "baseDefense": 128,
+    "baseStamina": 125
+  },
+  {
+    "name": "タツベイ",
+    "dex": 371,
+    "baseAttack": 134,
+    "baseDefense": 93,
+    "baseStamina": 128
+  },
+  {
+    "name": "コモルー",
+    "dex": 372,
+    "baseAttack": 172,
+    "baseDefense": 155,
+    "baseStamina": 163
+  },
+  {
+    "name": "ボーマンダ",
+    "dex": 373,
+    "baseAttack": 277,
+    "baseDefense": 168,
+    "baseStamina": 216
+  },
+  {
+    "name": "ダンバル",
+    "dex": 374,
+    "baseAttack": 96,
+    "baseDefense": 132,
+    "baseStamina": 120
+  },
+  {
+    "name": "メタング",
+    "dex": 375,
+    "baseAttack": 138,
+    "baseDefense": 176,
+    "baseStamina": 155
+  },
+  {
+    "name": "メタグロス",
+    "dex": 376,
+    "baseAttack": 257,
+    "baseDefense": 228,
+    "baseStamina": 190
+  },
+  {
+    "name": "レジロック",
+    "dex": 377,
+    "baseAttack": 179,
+    "baseDefense": 309,
+    "baseStamina": 190
+  },
+  {
+    "name": "レジアイス",
+    "dex": 378,
+    "baseAttack": 179,
+    "baseDefense": 309,
+    "baseStamina": 190
+  },
+  {
+    "name": "レジスチル",
+    "dex": 379,
+    "baseAttack": 143,
+    "baseDefense": 285,
+    "baseStamina": 190
+  },
+  {
+    "name": "ラティアス",
+    "dex": 380,
+    "baseAttack": 228,
+    "baseDefense": 246,
+    "baseStamina": 190
+  },
+  {
+    "name": "ラティオス",
+    "dex": 381,
+    "baseAttack": 268,
+    "baseDefense": 212,
+    "baseStamina": 190
+  },
+  {
+    "name": "カイオーガ",
+    "dex": 382,
+    "baseAttack": 270,
+    "baseDefense": 228,
+    "baseStamina": 205
+  },
+  {
+    "name": "グラードン",
+    "dex": 383,
+    "baseAttack": 270,
+    "baseDefense": 228,
+    "baseStamina": 205
+  },
+  {
+    "name": "レックウザ",
+    "dex": 384,
+    "baseAttack": 284,
+    "baseDefense": 170,
+    "baseStamina": 213
+  },
+  {
+    "name": "ジラーチ",
+    "dex": 385,
+    "baseAttack": 210,
+    "baseDefense": 210,
+    "baseStamina": 225
+  },
+  {
+    "name": "デオキシス",
+    "dex": 386,
+    "baseAttack": 345,
+    "baseDefense": 115,
+    "baseStamina": 137
+  },
+  {
+    "name": "デオキシス(アタック)",
+    "dex": 386,
+    "baseAttack": 414,
+    "baseDefense": 46,
+    "baseStamina": 137
+  },
+  {
+    "name": "デオキシス(スピード)",
+    "dex": 386,
+    "baseAttack": 230,
+    "baseDefense": 218,
+    "baseStamina": 137
+  },
+  {
+    "name": "デオキシス(ディフェンス)",
+    "dex": 386,
+    "baseAttack": 144,
+    "baseDefense": 330,
+    "baseStamina": 137
+  },
+  {
+    "name": "ナエトル",
+    "dex": 387,
+    "baseAttack": 119,
+    "baseDefense": 110,
+    "baseStamina": 146
+  },
+  {
+    "name": "ハヤシガメ",
+    "dex": 388,
+    "baseAttack": 157,
+    "baseDefense": 143,
+    "baseStamina": 181
+  },
+  {
+    "name": "ドダイトス",
+    "dex": 389,
+    "baseAttack": 202,
+    "baseDefense": 188,
+    "baseStamina": 216
+  },
+  {
+    "name": "ヒコザル",
+    "dex": 390,
+    "baseAttack": 113,
+    "baseDefense": 86,
+    "baseStamina": 127
+  },
+  {
+    "name": "モウカザル",
+    "dex": 391,
+    "baseAttack": 158,
+    "baseDefense": 105,
+    "baseStamina": 162
+  },
+  {
+    "name": "ゴウカザル",
+    "dex": 392,
+    "baseAttack": 222,
+    "baseDefense": 151,
+    "baseStamina": 183
+  },
+  {
+    "name": "ポッチャマ",
+    "dex": 393,
+    "baseAttack": 112,
+    "baseDefense": 102,
+    "baseStamina": 142
+  },
+  {
+    "name": "ポッタイシ",
+    "dex": 394,
+    "baseAttack": 150,
+    "baseDefense": 139,
+    "baseStamina": 162
+  },
+  {
+    "name": "エンペルト",
+    "dex": 395,
+    "baseAttack": 210,
+    "baseDefense": 186,
+    "baseStamina": 197
+  },
+  {
+    "name": "ムックル",
+    "dex": 396,
+    "baseAttack": 101,
+    "baseDefense": 58,
+    "baseStamina": 120
+  },
+  {
+    "name": "ムクバード",
+    "dex": 397,
+    "baseAttack": 142,
+    "baseDefense": 94,
+    "baseStamina": 146
+  },
+  {
+    "name": "ムクホーク",
+    "dex": 398,
+    "baseAttack": 234,
+    "baseDefense": 140,
+    "baseStamina": 198
+  },
+  {
+    "name": "ビッパ",
+    "dex": 399,
+    "baseAttack": 80,
+    "baseDefense": 73,
+    "baseStamina": 153
+  },
+  {
+    "name": "ビーダル",
+    "dex": 400,
+    "baseAttack": 162,
+    "baseDefense": 119,
+    "baseStamina": 188
+  },
+  {
+    "name": "コロボーシ",
+    "dex": 401,
+    "baseAttack": 45,
+    "baseDefense": 74,
+    "baseStamina": 114
+  },
+  {
+    "name": "コロトック",
+    "dex": 402,
+    "baseAttack": 160,
+    "baseDefense": 100,
+    "baseStamina": 184
+  },
+  {
+    "name": "コリンク",
+    "dex": 403,
+    "baseAttack": 117,
+    "baseDefense": 64,
+    "baseStamina": 128
+  },
+  {
+    "name": "ルクシオ",
+    "dex": 404,
+    "baseAttack": 159,
+    "baseDefense": 95,
+    "baseStamina": 155
+  },
+  {
+    "name": "レントラー",
+    "dex": 405,
+    "baseAttack": 232,
+    "baseDefense": 156,
+    "baseStamina": 190
+  },
+  {
+    "name": "スボミー",
+    "dex": 406,
+    "baseAttack": 91,
+    "baseDefense": 109,
+    "baseStamina": 120
+  },
+  {
+    "name": "ロズレイド",
+    "dex": 407,
+    "baseAttack": 243,
+    "baseDefense": 185,
+    "baseStamina": 155
+  },
+  {
+    "name": "ズガイドス",
+    "dex": 408,
+    "baseAttack": 218,
+    "baseDefense": 71,
+    "baseStamina": 167
+  },
+  {
+    "name": "ラムパルド",
+    "dex": 409,
+    "baseAttack": 295,
+    "baseDefense": 109,
+    "baseStamina": 219
+  },
+  {
+    "name": "タテトプス",
+    "dex": 410,
+    "baseAttack": 76,
+    "baseDefense": 195,
+    "baseStamina": 102
+  },
+  {
+    "name": "トリデプス",
+    "dex": 411,
+    "baseAttack": 94,
+    "baseDefense": 286,
+    "baseStamina": 155
+  },
+  {
+    "name": "ミノムッチ",
+    "dex": 412,
+    "baseAttack": 53,
+    "baseDefense": 83,
+    "baseStamina": 120
+  },
+  {
+    "name": "ミノマダム(くさきのミノ)",
+    "dex": 413,
+    "baseAttack": 141,
+    "baseDefense": 180,
+    "baseStamina": 155
+  },
+  {
+    "name": "ミノマダム(すなちのミノ)",
+    "dex": 413,
+    "baseAttack": 141,
+    "baseDefense": 180,
+    "baseStamina": 155
+  },
+  {
+    "name": "ミノマダム(ゴミのミノ)",
+    "dex": 413,
+    "baseAttack": 127,
+    "baseDefense": 175,
+    "baseStamina": 155
+  },
+  {
+    "name": "ガーメイル",
+    "dex": 414,
+    "baseAttack": 185,
+    "baseDefense": 98,
+    "baseStamina": 172
+  },
+  {
+    "name": "ミツハニー",
+    "dex": 415,
+    "baseAttack": 59,
+    "baseDefense": 83,
+    "baseStamina": 102
+  },
+  {
+    "name": "ビークイン",
+    "dex": 416,
+    "baseAttack": 149,
+    "baseDefense": 190,
+    "baseStamina": 172
+  },
+  {
+    "name": "パチリス",
+    "dex": 417,
+    "baseAttack": 94,
+    "baseDefense": 172,
+    "baseStamina": 155
+  },
+  {
+    "name": "ブイゼル",
+    "dex": 418,
+    "baseAttack": 132,
+    "baseDefense": 67,
+    "baseStamina": 146
+  },
+  {
+    "name": "フローゼル",
+    "dex": 419,
+    "baseAttack": 221,
+    "baseDefense": 114,
+    "baseStamina": 198
+  },
+  {
+    "name": "チェリンボ",
+    "dex": 420,
+    "baseAttack": 108,
+    "baseDefense": 92,
+    "baseStamina": 128
+  },
+  {
+    "name": "チェリム",
+    "dex": 421,
+    "baseAttack": 170,
+    "baseDefense": 153,
+    "baseStamina": 172
+  },
+  {
+    "name": "チェリム(ポジフォルム)",
+    "dex": 421,
+    "baseAttack": 170,
+    "baseDefense": 153,
+    "baseStamina": 172
+  },
+  {
+    "name": "カラナクシ",
+    "dex": 422,
+    "baseAttack": 103,
+    "baseDefense": 105,
+    "baseStamina": 183
+  },
+  {
+    "name": "トリトドン",
+    "dex": 423,
+    "baseAttack": 169,
+    "baseDefense": 143,
+    "baseStamina": 244
+  },
+  {
+    "name": "エテボース",
+    "dex": 424,
+    "baseAttack": 205,
+    "baseDefense": 143,
+    "baseStamina": 181
+  },
+  {
+    "name": "フワンテ",
+    "dex": 425,
+    "baseAttack": 117,
+    "baseDefense": 80,
+    "baseStamina": 207
+  },
+  {
+    "name": "フワライド",
+    "dex": 426,
+    "baseAttack": 180,
+    "baseDefense": 102,
+    "baseStamina": 312
+  },
+  {
+    "name": "ミミロル",
+    "dex": 427,
+    "baseAttack": 130,
+    "baseDefense": 105,
+    "baseStamina": 146
+  },
+  {
+    "name": "ミミロップ",
+    "dex": 428,
+    "baseAttack": 156,
+    "baseDefense": 194,
+    "baseStamina": 163
+  },
+  {
+    "name": "ムウマージ",
+    "dex": 429,
+    "baseAttack": 211,
+    "baseDefense": 187,
+    "baseStamina": 155
+  },
+  {
+    "name": "ドンカラス",
+    "dex": 430,
+    "baseAttack": 243,
+    "baseDefense": 103,
+    "baseStamina": 225
+  },
+  {
+    "name": "ニャルマー",
+    "dex": 431,
+    "baseAttack": 109,
+    "baseDefense": 82,
+    "baseStamina": 135
+  },
+  {
+    "name": "ブニャット",
+    "dex": 432,
+    "baseAttack": 172,
+    "baseDefense": 133,
+    "baseStamina": 174
+  },
+  {
+    "name": "リーシャン",
+    "dex": 433,
+    "baseAttack": 114,
+    "baseDefense": 94,
+    "baseStamina": 128
+  },
+  {
+    "name": "スカンプー",
+    "dex": 434,
+    "baseAttack": 121,
+    "baseDefense": 90,
+    "baseStamina": 160
+  },
+  {
+    "name": "スカタンク",
+    "dex": 435,
+    "baseAttack": 184,
+    "baseDefense": 132,
+    "baseStamina": 230
+  },
+  {
+    "name": "ドーミラー",
+    "dex": 436,
+    "baseAttack": 43,
+    "baseDefense": 154,
+    "baseStamina": 149
+  },
+  {
+    "name": "ドータクン",
+    "dex": 437,
+    "baseAttack": 161,
+    "baseDefense": 213,
+    "baseStamina": 167
+  },
+  {
+    "name": "ウソハチ",
+    "dex": 438,
+    "baseAttack": 124,
+    "baseDefense": 133,
+    "baseStamina": 137
+  },
+  {
+    "name": "マネネ",
+    "dex": 439,
+    "baseAttack": 125,
+    "baseDefense": 142,
+    "baseStamina": 85
+  },
+  {
+    "name": "ピンプク",
+    "dex": 440,
+    "baseAttack": 25,
+    "baseDefense": 77,
+    "baseStamina": 225
+  },
+  {
+    "name": "ペラップ",
+    "dex": 441,
+    "baseAttack": 183,
+    "baseDefense": 91,
+    "baseStamina": 183
+  },
+  {
+    "name": "ミカルゲ",
+    "dex": 442,
+    "baseAttack": 169,
+    "baseDefense": 199,
+    "baseStamina": 137
+  },
+  {
+    "name": "フカマル",
+    "dex": 443,
+    "baseAttack": 124,
+    "baseDefense": 84,
+    "baseStamina": 151
+  },
+  {
+    "name": "ガバイト",
+    "dex": 444,
+    "baseAttack": 172,
+    "baseDefense": 125,
+    "baseStamina": 169
+  },
+  {
+    "name": "ガブリアス",
+    "dex": 445,
+    "baseAttack": 261,
+    "baseDefense": 193,
+    "baseStamina": 239
+  },
+  {
+    "name": "ゴンベ",
+    "dex": 446,
+    "baseAttack": 137,
+    "baseDefense": 117,
+    "baseStamina": 286
+  },
+  {
+    "name": "リオル",
+    "dex": 447,
+    "baseAttack": 127,
+    "baseDefense": 78,
+    "baseStamina": 120
+  },
+  {
+    "name": "ルカリオ",
+    "dex": 448,
+    "baseAttack": 236,
+    "baseDefense": 144,
+    "baseStamina": 172
+  },
+  {
+    "name": "ヒポポタス",
+    "dex": 449,
+    "baseAttack": 124,
+    "baseDefense": 118,
+    "baseStamina": 169
+  },
+  {
+    "name": "カバルドン",
+    "dex": 450,
+    "baseAttack": 201,
+    "baseDefense": 191,
+    "baseStamina": 239
+  },
+  {
+    "name": "スコルピ",
+    "dex": 451,
+    "baseAttack": 93,
+    "baseDefense": 151,
+    "baseStamina": 120
+  },
+  {
+    "name": "ドラピオン",
+    "dex": 452,
+    "baseAttack": 180,
+    "baseDefense": 202,
+    "baseStamina": 172
+  },
+  {
+    "name": "グレッグル",
+    "dex": 453,
+    "baseAttack": 116,
+    "baseDefense": 76,
+    "baseStamina": 134
+  },
+  {
+    "name": "ドクロッグ",
+    "dex": 454,
+    "baseAttack": 211,
+    "baseDefense": 133,
+    "baseStamina": 195
+  },
+  {
+    "name": "マスキッパ",
+    "dex": 455,
+    "baseAttack": 187,
+    "baseDefense": 136,
+    "baseStamina": 179
+  },
+  {
+    "name": "ケイコウオ",
+    "dex": 456,
+    "baseAttack": 96,
+    "baseDefense": 116,
+    "baseStamina": 135
+  },
+  {
+    "name": "ネオラント",
+    "dex": 457,
+    "baseAttack": 142,
+    "baseDefense": 170,
+    "baseStamina": 170
+  },
+  {
+    "name": "タマンタ",
+    "dex": 458,
+    "baseAttack": 105,
+    "baseDefense": 179,
+    "baseStamina": 128
+  },
+  {
+    "name": "ユキカブリ",
+    "dex": 459,
+    "baseAttack": 115,
+    "baseDefense": 105,
+    "baseStamina": 155
+  },
+  {
+    "name": "ユキノオー",
+    "dex": 460,
+    "baseAttack": 178,
+    "baseDefense": 158,
+    "baseStamina": 207
+  },
+  {
+    "name": "マニューラ",
+    "dex": 461,
+    "baseAttack": 243,
+    "baseDefense": 171,
+    "baseStamina": 172
+  },
+  {
+    "name": "ジバコイル",
+    "dex": 462,
+    "baseAttack": 238,
+    "baseDefense": 205,
+    "baseStamina": 172
+  },
+  {
+    "name": "ベロベルト",
+    "dex": 463,
+    "baseAttack": 161,
+    "baseDefense": 181,
+    "baseStamina": 242
+  },
+  {
+    "name": "ドサイドン",
+    "dex": 464,
+    "baseAttack": 241,
+    "baseDefense": 190,
+    "baseStamina": 251
+  },
+  {
+    "name": "モジャンボ",
+    "dex": 465,
+    "baseAttack": 207,
+    "baseDefense": 184,
+    "baseStamina": 225
+  },
+  {
+    "name": "エレキブル",
+    "dex": 466,
+    "baseAttack": 249,
+    "baseDefense": 163,
+    "baseStamina": 181
+  },
+  {
+    "name": "ブーバーン",
+    "dex": 467,
+    "baseAttack": 247,
+    "baseDefense": 172,
+    "baseStamina": 181
+  },
+  {
+    "name": "トゲキッス",
+    "dex": 468,
+    "baseAttack": 225,
+    "baseDefense": 217,
+    "baseStamina": 198
+  },
+  {
+    "name": "メガヤンマ",
+    "dex": 469,
+    "baseAttack": 231,
+    "baseDefense": 156,
+    "baseStamina": 200
+  },
+  {
+    "name": "リーフィア",
+    "dex": 470,
+    "baseAttack": 216,
+    "baseDefense": 219,
+    "baseStamina": 163
+  },
+  {
+    "name": "グレイシア",
+    "dex": 471,
+    "baseAttack": 238,
+    "baseDefense": 205,
+    "baseStamina": 163
+  },
+  {
+    "name": "グライオン",
+    "dex": 472,
+    "baseAttack": 185,
+    "baseDefense": 222,
+    "baseStamina": 181
+  },
+  {
+    "name": "マンムー",
+    "dex": 473,
+    "baseAttack": 247,
+    "baseDefense": 146,
+    "baseStamina": 242
+  },
+  {
+    "name": "ポリゴンZ",
+    "dex": 474,
+    "baseAttack": 264,
+    "baseDefense": 150,
+    "baseStamina": 198
+  },
+  {
+    "name": "エルレイド",
+    "dex": 475,
+    "baseAttack": 237,
+    "baseDefense": 195,
+    "baseStamina": 169
+  },
+  {
+    "name": "ダイノーズ",
+    "dex": 476,
+    "baseAttack": 135,
+    "baseDefense": 275,
+    "baseStamina": 155
+  },
+  {
+    "name": "ヨノワール",
+    "dex": 477,
+    "baseAttack": 180,
+    "baseDefense": 254,
+    "baseStamina": 128
+  },
+  {
+    "name": "ユキメノコ",
+    "dex": 478,
+    "baseAttack": 171,
+    "baseDefense": 150,
+    "baseStamina": 172
+  },
+  {
+    "name": "ロトム",
+    "dex": 479,
+    "baseAttack": 185,
+    "baseDefense": 159,
+    "baseStamina": 137
+  },
+  {
+    "name": "ロトム(ウォッシュ)",
+    "dex": 479,
+    "baseAttack": 204,
+    "baseDefense": 219,
+    "baseStamina": 137
+  },
+  {
+    "name": "ロトム(カット)",
+    "dex": 479,
+    "baseAttack": 204,
+    "baseDefense": 219,
+    "baseStamina": 137
+  },
+  {
+    "name": "ロトム(スピン)",
+    "dex": 479,
+    "baseAttack": 204,
+    "baseDefense": 219,
+    "baseStamina": 137
+  },
+  {
+    "name": "ロトム(ヒート)",
+    "dex": 479,
+    "baseAttack": 204,
+    "baseDefense": 219,
+    "baseStamina": 137
+  },
+  {
+    "name": "ロトム(フロスト)",
+    "dex": 479,
+    "baseAttack": 204,
+    "baseDefense": 219,
+    "baseStamina": 137
+  },
+  {
+    "name": "ユクシー",
+    "dex": 480,
+    "baseAttack": 156,
+    "baseDefense": 270,
+    "baseStamina": 181
+  },
+  {
+    "name": "エムリット",
+    "dex": 481,
+    "baseAttack": 212,
+    "baseDefense": 212,
+    "baseStamina": 190
+  },
+  {
+    "name": "アグノム",
+    "dex": 482,
+    "baseAttack": 270,
+    "baseDefense": 151,
+    "baseStamina": 181
+  },
+  {
+    "name": "ディアルガ",
+    "dex": 483,
+    "baseAttack": 275,
+    "baseDefense": 211,
+    "baseStamina": 205
+  },
+  {
+    "name": "ディアルガ(オリジン)",
+    "dex": 483,
+    "baseAttack": 270,
+    "baseDefense": 225,
+    "baseStamina": 205
+  },
+  {
+    "name": "パルキア",
+    "dex": 484,
+    "baseAttack": 280,
+    "baseDefense": 215,
+    "baseStamina": 189
+  },
+  {
+    "name": "パルキア(オリジン)",
+    "dex": 484,
+    "baseAttack": 286,
+    "baseDefense": 223,
+    "baseStamina": 189
+  },
+  {
+    "name": "ヒードラン",
+    "dex": 485,
+    "baseAttack": 251,
+    "baseDefense": 213,
+    "baseStamina": 209
+  },
+  {
+    "name": "レジギガス",
+    "dex": 486,
+    "baseAttack": 287,
+    "baseDefense": 210,
+    "baseStamina": 221
+  },
+  {
+    "name": "ギラティナ",
+    "dex": 487,
+    "baseAttack": 187,
+    "baseDefense": 225,
+    "baseStamina": 284
+  },
+  {
+    "name": "ギラティナ(オリジン)",
+    "dex": 487,
+    "baseAttack": 225,
+    "baseDefense": 187,
+    "baseStamina": 284
+  },
+  {
+    "name": "クレセリア",
+    "dex": 488,
+    "baseAttack": 152,
+    "baseDefense": 258,
+    "baseStamina": 260
+  },
+  {
+    "name": "フィオネ",
+    "dex": 489,
+    "baseAttack": 162,
+    "baseDefense": 162,
+    "baseStamina": 190
+  },
+  {
+    "name": "マナフィ",
+    "dex": 490,
+    "baseAttack": 210,
+    "baseDefense": 210,
+    "baseStamina": 225
+  },
+  {
+    "name": "ダークライ",
+    "dex": 491,
+    "baseAttack": 285,
+    "baseDefense": 198,
+    "baseStamina": 172
+  },
+  {
+    "name": "シェイミ",
+    "dex": 492,
+    "baseAttack": 210,
+    "baseDefense": 210,
+    "baseStamina": 225
+  },
+  {
+    "name": "シェイミ(スカイ)",
+    "dex": 492,
+    "baseAttack": 261,
+    "baseDefense": 166,
+    "baseStamina": 225
+  },
+  {
+    "name": "アルセウス",
+    "dex": 493,
+    "baseAttack": 238,
+    "baseDefense": 238,
+    "baseStamina": 236
+  },
+  {
+    "name": "ビクティニ",
+    "dex": 494,
+    "baseAttack": 210,
+    "baseDefense": 210,
+    "baseStamina": 225
+  },
+  {
+    "name": "ツタージャ",
+    "dex": 495,
+    "baseAttack": 88,
+    "baseDefense": 107,
+    "baseStamina": 128
+  },
+  {
+    "name": "ジャノビー",
+    "dex": 496,
+    "baseAttack": 122,
+    "baseDefense": 152,
+    "baseStamina": 155
+  },
+  {
+    "name": "ジャローダ",
+    "dex": 497,
+    "baseAttack": 161,
+    "baseDefense": 204,
+    "baseStamina": 181
+  },
+  {
+    "name": "ポカブ",
+    "dex": 498,
+    "baseAttack": 115,
+    "baseDefense": 85,
+    "baseStamina": 163
+  },
+  {
+    "name": "チャオブー",
+    "dex": 499,
+    "baseAttack": 173,
+    "baseDefense": 106,
+    "baseStamina": 207
+  },
+  {
+    "name": "エンブオー",
+    "dex": 500,
+    "baseAttack": 235,
+    "baseDefense": 127,
+    "baseStamina": 242
+  },
+  {
+    "name": "ミジュマル",
+    "dex": 501,
+    "baseAttack": 117,
+    "baseDefense": 85,
+    "baseStamina": 146
+  },
+  {
+    "name": "フタチマル",
+    "dex": 502,
+    "baseAttack": 159,
+    "baseDefense": 116,
+    "baseStamina": 181
+  },
+  {
+    "name": "ダイケンキ",
+    "dex": 503,
+    "baseAttack": 212,
+    "baseDefense": 157,
+    "baseStamina": 216
+  },
+  {
+    "name": "ダイケンキ(ヒスイ)",
+    "dex": 503,
+    "baseAttack": 218,
+    "baseDefense": 152,
+    "baseStamina": 207
+  },
+  {
+    "name": "ミネズミ",
+    "dex": 504,
+    "baseAttack": 98,
+    "baseDefense": 73,
+    "baseStamina": 128
+  },
+  {
+    "name": "ミルホッグ",
+    "dex": 505,
+    "baseAttack": 165,
+    "baseDefense": 139,
+    "baseStamina": 155
+  },
+  {
+    "name": "ヨーテリー",
+    "dex": 506,
+    "baseAttack": 107,
+    "baseDefense": 86,
+    "baseStamina": 128
+  },
+  {
+    "name": "ハーデリア",
+    "dex": 507,
+    "baseAttack": 145,
+    "baseDefense": 126,
+    "baseStamina": 163
+  },
+  {
+    "name": "ムーランド",
+    "dex": 508,
+    "baseAttack": 206,
+    "baseDefense": 182,
+    "baseStamina": 198
+  },
+  {
+    "name": "チョロネコ",
+    "dex": 509,
+    "baseAttack": 98,
+    "baseDefense": 73,
+    "baseStamina": 121
+  },
+  {
+    "name": "レパルダス",
+    "dex": 510,
+    "baseAttack": 187,
+    "baseDefense": 106,
+    "baseStamina": 162
+  },
+  {
+    "name": "ヤナップ",
+    "dex": 511,
+    "baseAttack": 104,
+    "baseDefense": 94,
+    "baseStamina": 137
+  },
+  {
+    "name": "ヤナッキー",
+    "dex": 512,
+    "baseAttack": 206,
+    "baseDefense": 133,
+    "baseStamina": 181
+  },
+  {
+    "name": "バオップ",
+    "dex": 513,
+    "baseAttack": 104,
+    "baseDefense": 94,
+    "baseStamina": 137
+  },
+  {
+    "name": "バオッキー",
+    "dex": 514,
+    "baseAttack": 206,
+    "baseDefense": 133,
+    "baseStamina": 181
+  },
+  {
+    "name": "ヒヤップ",
+    "dex": 515,
+    "baseAttack": 104,
+    "baseDefense": 94,
+    "baseStamina": 137
+  },
+  {
+    "name": "ヒヤッキー",
+    "dex": 516,
+    "baseAttack": 206,
+    "baseDefense": 133,
+    "baseStamina": 181
+  },
+  {
+    "name": "ムンナ",
+    "dex": 517,
+    "baseAttack": 111,
+    "baseDefense": 92,
+    "baseStamina": 183
+  },
+  {
+    "name": "ムシャーナ",
+    "dex": 518,
+    "baseAttack": 183,
+    "baseDefense": 166,
+    "baseStamina": 253
+  },
+  {
+    "name": "マメパト",
+    "dex": 519,
+    "baseAttack": 98,
+    "baseDefense": 80,
+    "baseStamina": 137
+  },
+  {
+    "name": "ハトーボー",
+    "dex": 520,
+    "baseAttack": 144,
+    "baseDefense": 107,
+    "baseStamina": 158
+  },
+  {
+    "name": "ケンホロウ",
+    "dex": 521,
+    "baseAttack": 226,
+    "baseDefense": 146,
+    "baseStamina": 190
+  },
+  {
+    "name": "シママ",
+    "dex": 522,
+    "baseAttack": 118,
+    "baseDefense": 64,
+    "baseStamina": 128
+  },
+  {
+    "name": "ゼブライカ",
+    "dex": 523,
+    "baseAttack": 211,
+    "baseDefense": 136,
+    "baseStamina": 181
+  },
+  {
+    "name": "ダンゴロ",
+    "dex": 524,
+    "baseAttack": 121,
+    "baseDefense": 110,
+    "baseStamina": 146
+  },
+  {
+    "name": "ガントル",
+    "dex": 525,
+    "baseAttack": 174,
+    "baseDefense": 143,
+    "baseStamina": 172
+  },
+  {
+    "name": "ギガイアス",
+    "dex": 526,
+    "baseAttack": 226,
+    "baseDefense": 201,
+    "baseStamina": 198
+  },
+  {
+    "name": "コロモリ",
+    "dex": 527,
+    "baseAttack": 107,
+    "baseDefense": 85,
+    "baseStamina": 163
+  },
+  {
+    "name": "ココロモリ",
+    "dex": 528,
+    "baseAttack": 161,
+    "baseDefense": 119,
+    "baseStamina": 167
+  },
+  {
+    "name": "モグリュー",
+    "dex": 529,
+    "baseAttack": 154,
+    "baseDefense": 85,
+    "baseStamina": 155
+  },
+  {
+    "name": "ドリュウズ",
+    "dex": 530,
+    "baseAttack": 255,
+    "baseDefense": 129,
+    "baseStamina": 242
+  },
+  {
+    "name": "タブンネ",
+    "dex": 531,
+    "baseAttack": 114,
+    "baseDefense": 163,
+    "baseStamina": 230
+  },
+  {
+    "name": "ドッコラー",
+    "dex": 532,
+    "baseAttack": 134,
+    "baseDefense": 87,
+    "baseStamina": 181
+  },
+  {
+    "name": "ドテッコツ",
+    "dex": 533,
+    "baseAttack": 180,
+    "baseDefense": 134,
+    "baseStamina": 198
+  },
+  {
+    "name": "ローブシン",
+    "dex": 534,
+    "baseAttack": 243,
+    "baseDefense": 158,
+    "baseStamina": 233
+  },
+  {
+    "name": "オタマロ",
+    "dex": 535,
+    "baseAttack": 98,
+    "baseDefense": 78,
+    "baseStamina": 137
+  },
+  {
+    "name": "ガマガル",
+    "dex": 536,
+    "baseAttack": 128,
+    "baseDefense": 109,
+    "baseStamina": 181
+  },
+  {
+    "name": "ガマゲロゲ",
+    "dex": 537,
+    "baseAttack": 188,
+    "baseDefense": 150,
+    "baseStamina": 233
+  },
+  {
+    "name": "ナゲキ",
+    "dex": 538,
+    "baseAttack": 172,
+    "baseDefense": 160,
+    "baseStamina": 260
+  },
+  {
+    "name": "ダゲキ",
+    "dex": 539,
+    "baseAttack": 231,
+    "baseDefense": 153,
+    "baseStamina": 181
+  },
+  {
+    "name": "クルミル",
+    "dex": 540,
+    "baseAttack": 96,
+    "baseDefense": 124,
+    "baseStamina": 128
+  },
+  {
+    "name": "クルマユ",
+    "dex": 541,
+    "baseAttack": 115,
+    "baseDefense": 162,
+    "baseStamina": 146
+  },
+  {
+    "name": "ハハコモリ",
+    "dex": 542,
+    "baseAttack": 205,
+    "baseDefense": 165,
+    "baseStamina": 181
+  },
+  {
+    "name": "フシデ",
+    "dex": 543,
+    "baseAttack": 83,
+    "baseDefense": 99,
+    "baseStamina": 102
+  },
+  {
+    "name": "ホイーガ",
+    "dex": 544,
+    "baseAttack": 100,
+    "baseDefense": 173,
+    "baseStamina": 120
+  },
+  {
+    "name": "ペンドラー",
+    "dex": 545,
+    "baseAttack": 203,
+    "baseDefense": 175,
+    "baseStamina": 155
+  },
+  {
+    "name": "モンメン",
+    "dex": 546,
+    "baseAttack": 71,
+    "baseDefense": 111,
+    "baseStamina": 120
+  },
+  {
+    "name": "エルフーン",
+    "dex": 547,
+    "baseAttack": 164,
+    "baseDefense": 176,
+    "baseStamina": 155
+  },
+  {
+    "name": "チュリネ",
+    "dex": 548,
+    "baseAttack": 119,
+    "baseDefense": 91,
+    "baseStamina": 128
+  },
+  {
+    "name": "ドレディア",
+    "dex": 549,
+    "baseAttack": 214,
+    "baseDefense": 155,
+    "baseStamina": 172
+  },
+  {
+    "name": "ドレディア(ヒスイ)",
+    "dex": 549,
+    "baseAttack": 208,
+    "baseDefense": 159,
+    "baseStamina": 172
+  },
+  {
+    "name": "バスラオ",
+    "dex": 550,
+    "baseAttack": 189,
+    "baseDefense": 129,
+    "baseStamina": 172
+  },
+  {
+    "name": "バスラオ(しろすじのすがた)",
+    "dex": 550,
+    "baseAttack": 189,
+    "baseDefense": 129,
+    "baseStamina": 172
+  },
+  {
+    "name": "メグロコ",
+    "dex": 551,
+    "baseAttack": 132,
+    "baseDefense": 69,
+    "baseStamina": 137
+  },
+  {
+    "name": "ワルビル",
+    "dex": 552,
+    "baseAttack": 155,
+    "baseDefense": 90,
+    "baseStamina": 155
+  },
+  {
+    "name": "ワルビアル",
+    "dex": 553,
+    "baseAttack": 229,
+    "baseDefense": 158,
+    "baseStamina": 216
+  },
+  {
+    "name": "ダルマッカ",
+    "dex": 554,
+    "baseAttack": 153,
+    "baseDefense": 86,
+    "baseStamina": 172
+  },
+  {
+    "name": "ダルマッカ(ガラル)",
+    "dex": 554,
+    "baseAttack": 153,
+    "baseDefense": 86,
+    "baseStamina": 172
+  },
+  {
+    "name": "ヒヒダルマ",
+    "dex": 555,
+    "baseAttack": 263,
+    "baseDefense": 114,
+    "baseStamina": 233
+  },
+  {
+    "name": "ヒヒダルマ(ガラル)",
+    "dex": 555,
+    "baseAttack": 263,
+    "baseDefense": 114,
+    "baseStamina": 233
+  },
+  {
+    "name": "ヒヒダルマ(ダルマモード)",
+    "dex": 555,
+    "baseAttack": 217,
+    "baseDefense": 181,
+    "baseStamina": 209
+  },
+  {
+    "name": "ヒヒダルマ(ダルマ・ガラル)",
+    "dex": 555,
+    "baseAttack": 323,
+    "baseDefense": 123,
+    "baseStamina": 233
+  },
+  {
+    "name": "マラカッチ",
+    "dex": 556,
+    "baseAttack": 201,
+    "baseDefense": 130,
+    "baseStamina": 181
+  },
+  {
+    "name": "イシズマイ",
+    "dex": 557,
+    "baseAttack": 118,
+    "baseDefense": 128,
+    "baseStamina": 137
+  },
+  {
+    "name": "イワパレス",
+    "dex": 558,
+    "baseAttack": 188,
+    "baseDefense": 200,
+    "baseStamina": 172
+  },
+  {
+    "name": "ズルッグ",
+    "dex": 559,
+    "baseAttack": 132,
+    "baseDefense": 132,
+    "baseStamina": 137
+  },
+  {
+    "name": "ズルズキン",
+    "dex": 560,
+    "baseAttack": 163,
+    "baseDefense": 222,
+    "baseStamina": 163
+  },
+  {
+    "name": "シンボラー",
+    "dex": 561,
+    "baseAttack": 204,
+    "baseDefense": 167,
+    "baseStamina": 176
+  },
+  {
+    "name": "デスマス",
+    "dex": 562,
+    "baseAttack": 95,
+    "baseDefense": 141,
+    "baseStamina": 116
+  },
+  {
+    "name": "デスマス(ガラル)",
+    "dex": 562,
+    "baseAttack": 95,
+    "baseDefense": 141,
+    "baseStamina": 116
+  },
+  {
+    "name": "デスカーン",
+    "dex": 563,
+    "baseAttack": 163,
+    "baseDefense": 237,
+    "baseStamina": 151
+  },
+  {
+    "name": "プロトーガ",
+    "dex": 564,
+    "baseAttack": 134,
+    "baseDefense": 146,
+    "baseStamina": 144
+  },
+  {
+    "name": "アバゴーラ",
+    "dex": 565,
+    "baseAttack": 192,
+    "baseDefense": 197,
+    "baseStamina": 179
+  },
+  {
+    "name": "アーケン",
+    "dex": 566,
+    "baseAttack": 213,
+    "baseDefense": 89,
+    "baseStamina": 146
+  },
+  {
+    "name": "アーケオス",
+    "dex": 567,
+    "baseAttack": 292,
+    "baseDefense": 139,
+    "baseStamina": 181
+  },
+  {
+    "name": "ヤブクロン",
+    "dex": 568,
+    "baseAttack": 96,
+    "baseDefense": 122,
+    "baseStamina": 137
+  },
+  {
+    "name": "ダストダス",
+    "dex": 569,
+    "baseAttack": 181,
+    "baseDefense": 164,
+    "baseStamina": 190
+  },
+  {
+    "name": "ダストダス(キョダイ)",
+    "dex": 569,
+    "baseAttack": 181,
+    "baseDefense": 164,
+    "baseStamina": 190
+  },
+  {
+    "name": "ゾロア",
+    "dex": 570,
+    "baseAttack": 153,
+    "baseDefense": 78,
+    "baseStamina": 120
+  },
+  {
+    "name": "ゾロア(ヒスイ)",
+    "dex": 570,
+    "baseAttack": 162,
+    "baseDefense": 79,
+    "baseStamina": 111
+  },
+  {
+    "name": "ゾロアーク",
+    "dex": 571,
+    "baseAttack": 250,
+    "baseDefense": 127,
+    "baseStamina": 155
+  },
+  {
+    "name": "ゾロアーク(ヒスイ)",
+    "dex": 571,
+    "baseAttack": 261,
+    "baseDefense": 128,
+    "baseStamina": 146
+  },
+  {
+    "name": "チラーミィ",
+    "dex": 572,
+    "baseAttack": 98,
+    "baseDefense": 80,
+    "baseStamina": 146
+  },
+  {
+    "name": "チラチーノ",
+    "dex": 573,
+    "baseAttack": 198,
+    "baseDefense": 130,
+    "baseStamina": 181
+  },
+  {
+    "name": "ゴチム",
+    "dex": 574,
+    "baseAttack": 98,
+    "baseDefense": 112,
+    "baseStamina": 128
+  },
+  {
+    "name": "ゴチミル",
+    "dex": 575,
+    "baseAttack": 137,
+    "baseDefense": 153,
+    "baseStamina": 155
+  },
+  {
+    "name": "ゴチルゼル",
+    "dex": 576,
+    "baseAttack": 176,
+    "baseDefense": 205,
+    "baseStamina": 172
+  },
+  {
+    "name": "ユニラン",
+    "dex": 577,
+    "baseAttack": 170,
+    "baseDefense": 83,
+    "baseStamina": 128
+  },
+  {
+    "name": "ダブラン",
+    "dex": 578,
+    "baseAttack": 208,
+    "baseDefense": 103,
+    "baseStamina": 163
+  },
+  {
+    "name": "ランクルス",
+    "dex": 579,
+    "baseAttack": 214,
+    "baseDefense": 148,
+    "baseStamina": 242
+  },
+  {
+    "name": "コアルヒー",
+    "dex": 580,
+    "baseAttack": 84,
+    "baseDefense": 96,
+    "baseStamina": 158
+  },
+  {
+    "name": "スワンナ",
+    "dex": 581,
+    "baseAttack": 182,
+    "baseDefense": 132,
+    "baseStamina": 181
+  },
+  {
+    "name": "バニプッチ",
+    "dex": 582,
+    "baseAttack": 118,
+    "baseDefense": 106,
+    "baseStamina": 113
+  },
+  {
+    "name": "バニリッチ",
+    "dex": 583,
+    "baseAttack": 151,
+    "baseDefense": 138,
+    "baseStamina": 139
+  },
+  {
+    "name": "バイバニラ",
+    "dex": 584,
+    "baseAttack": 218,
+    "baseDefense": 184,
+    "baseStamina": 174
+  },
+  {
+    "name": "シキジカ",
+    "dex": 585,
+    "baseAttack": 115,
+    "baseDefense": 100,
+    "baseStamina": 155
+  },
+  {
+    "name": "メブキジカ",
+    "dex": 586,
+    "baseAttack": 198,
+    "baseDefense": 146,
+    "baseStamina": 190
+  },
+  {
+    "name": "エモンガ",
+    "dex": 587,
+    "baseAttack": 158,
+    "baseDefense": 127,
+    "baseStamina": 146
+  },
+  {
+    "name": "カブルモ",
+    "dex": 588,
+    "baseAttack": 137,
+    "baseDefense": 87,
+    "baseStamina": 137
+  },
+  {
+    "name": "シュバルゴ",
+    "dex": 589,
+    "baseAttack": 223,
+    "baseDefense": 187,
+    "baseStamina": 172
+  },
+  {
+    "name": "タマゲタケ",
+    "dex": 590,
+    "baseAttack": 97,
+    "baseDefense": 91,
+    "baseStamina": 170
+  },
+  {
+    "name": "モロバレル",
+    "dex": 591,
+    "baseAttack": 155,
+    "baseDefense": 139,
+    "baseStamina": 249
+  },
+  {
+    "name": "プルリル",
+    "dex": 592,
+    "baseAttack": 115,
+    "baseDefense": 134,
+    "baseStamina": 146
+  },
+  {
+    "name": "ブルンゲル",
+    "dex": 593,
+    "baseAttack": 159,
+    "baseDefense": 178,
+    "baseStamina": 225
+  },
+  {
+    "name": "ママンボウ",
+    "dex": 594,
+    "baseAttack": 138,
+    "baseDefense": 131,
+    "baseStamina": 338
+  },
+  {
+    "name": "バチュル",
+    "dex": 595,
+    "baseAttack": 110,
+    "baseDefense": 98,
+    "baseStamina": 137
+  },
+  {
+    "name": "デンチュラ",
+    "dex": 596,
+    "baseAttack": 201,
+    "baseDefense": 128,
+    "baseStamina": 172
+  },
+  {
+    "name": "テッシード",
+    "dex": 597,
+    "baseAttack": 82,
+    "baseDefense": 155,
+    "baseStamina": 127
+  },
+  {
+    "name": "ナットレイ",
+    "dex": 598,
+    "baseAttack": 158,
+    "baseDefense": 223,
+    "baseStamina": 179
+  },
+  {
+    "name": "ギアル",
+    "dex": 599,
+    "baseAttack": 98,
+    "baseDefense": 121,
+    "baseStamina": 120
+  },
+  {
+    "name": "ギギアル",
+    "dex": 600,
+    "baseAttack": 150,
+    "baseDefense": 174,
+    "baseStamina": 155
+  },
+  {
+    "name": "ギギギアル",
+    "dex": 601,
+    "baseAttack": 199,
+    "baseDefense": 214,
+    "baseStamina": 155
+  },
+  {
+    "name": "シビシラス",
+    "dex": 602,
+    "baseAttack": 105,
+    "baseDefense": 78,
+    "baseStamina": 111
+  },
+  {
+    "name": "シビビール",
+    "dex": 603,
+    "baseAttack": 156,
+    "baseDefense": 130,
+    "baseStamina": 163
+  },
+  {
+    "name": "シビルドン",
+    "dex": 604,
+    "baseAttack": 217,
+    "baseDefense": 152,
+    "baseStamina": 198
+  },
+  {
+    "name": "リグレー",
+    "dex": 605,
+    "baseAttack": 148,
+    "baseDefense": 100,
+    "baseStamina": 146
+  },
+  {
+    "name": "オーベム",
+    "dex": 606,
+    "baseAttack": 221,
+    "baseDefense": 163,
+    "baseStamina": 181
+  },
+  {
+    "name": "ヒトモシ",
+    "dex": 607,
+    "baseAttack": 108,
+    "baseDefense": 98,
+    "baseStamina": 137
+  },
+  {
+    "name": "ランプラー",
+    "dex": 608,
+    "baseAttack": 169,
+    "baseDefense": 115,
+    "baseStamina": 155
+  },
+  {
+    "name": "シャンデラ",
+    "dex": 609,
+    "baseAttack": 271,
+    "baseDefense": 182,
+    "baseStamina": 155
+  },
+  {
+    "name": "キバゴ",
+    "dex": 610,
+    "baseAttack": 154,
+    "baseDefense": 101,
+    "baseStamina": 130
+  },
+  {
+    "name": "オノンド",
+    "dex": 611,
+    "baseAttack": 212,
+    "baseDefense": 123,
+    "baseStamina": 165
+  },
+  {
+    "name": "オノノクス",
+    "dex": 612,
+    "baseAttack": 284,
+    "baseDefense": 172,
+    "baseStamina": 183
+  },
+  {
+    "name": "クマシュン",
+    "dex": 613,
+    "baseAttack": 128,
+    "baseDefense": 74,
+    "baseStamina": 146
+  },
+  {
+    "name": "ツンベアー",
+    "dex": 614,
+    "baseAttack": 233,
+    "baseDefense": 152,
+    "baseStamina": 216
+  },
+  {
+    "name": "フリージオ",
+    "dex": 615,
+    "baseAttack": 190,
+    "baseDefense": 218,
+    "baseStamina": 190
+  },
+  {
+    "name": "チョボマキ",
+    "dex": 616,
+    "baseAttack": 72,
+    "baseDefense": 140,
+    "baseStamina": 137
+  },
+  {
+    "name": "アギルダー",
+    "dex": 617,
+    "baseAttack": 220,
+    "baseDefense": 120,
+    "baseStamina": 190
+  },
+  {
+    "name": "マッギョ",
+    "dex": 618,
+    "baseAttack": 144,
+    "baseDefense": 171,
+    "baseStamina": 240
+  },
+  {
+    "name": "マッギョ(ガラル)",
+    "dex": 618,
+    "baseAttack": 144,
+    "baseDefense": 171,
+    "baseStamina": 240
+  },
+  {
+    "name": "コジョフー",
+    "dex": 619,
+    "baseAttack": 160,
+    "baseDefense": 98,
+    "baseStamina": 128
+  },
+  {
+    "name": "コジョンド",
+    "dex": 620,
+    "baseAttack": 258,
+    "baseDefense": 127,
+    "baseStamina": 163
+  },
+  {
+    "name": "クリムガン",
+    "dex": 621,
+    "baseAttack": 213,
+    "baseDefense": 170,
+    "baseStamina": 184
+  },
+  {
+    "name": "ゴビット",
+    "dex": 622,
+    "baseAttack": 127,
+    "baseDefense": 92,
+    "baseStamina": 153
+  },
+  {
+    "name": "ゴルーグ",
+    "dex": 623,
+    "baseAttack": 222,
+    "baseDefense": 154,
+    "baseStamina": 205
+  },
+  {
+    "name": "コマタナ",
+    "dex": 624,
+    "baseAttack": 154,
+    "baseDefense": 114,
+    "baseStamina": 128
+  },
+  {
+    "name": "キリキザン",
+    "dex": 625,
+    "baseAttack": 232,
+    "baseDefense": 176,
+    "baseStamina": 163
+  },
+  {
+    "name": "バッフロン",
+    "dex": 626,
+    "baseAttack": 195,
+    "baseDefense": 182,
+    "baseStamina": 216
+  },
+  {
+    "name": "ワシボン",
+    "dex": 627,
+    "baseAttack": 150,
+    "baseDefense": 97,
+    "baseStamina": 172
+  },
+  {
+    "name": "ウォーグル",
+    "dex": 628,
+    "baseAttack": 232,
+    "baseDefense": 152,
+    "baseStamina": 225
+  },
+  {
+    "name": "ウォーグル(ヒスイ)",
+    "dex": 628,
+    "baseAttack": 213,
+    "baseDefense": 137,
+    "baseStamina": 242
+  },
+  {
+    "name": "バルチャイ",
+    "dex": 629,
+    "baseAttack": 105,
+    "baseDefense": 139,
+    "baseStamina": 172
+  },
+  {
+    "name": "バルジーナ",
+    "dex": 630,
+    "baseAttack": 129,
+    "baseDefense": 205,
+    "baseStamina": 242
+  },
+  {
+    "name": "クイタラン",
+    "dex": 631,
+    "baseAttack": 204,
+    "baseDefense": 129,
+    "baseStamina": 198
+  },
+  {
+    "name": "アイアント",
+    "dex": 632,
+    "baseAttack": 217,
+    "baseDefense": 188,
+    "baseStamina": 151
+  },
+  {
+    "name": "モノズ",
+    "dex": 633,
+    "baseAttack": 116,
+    "baseDefense": 93,
+    "baseStamina": 141
+  },
+  {
+    "name": "ジヘッド",
+    "dex": 634,
+    "baseAttack": 159,
+    "baseDefense": 135,
+    "baseStamina": 176
+  },
+  {
+    "name": "サザンドラ",
+    "dex": 635,
+    "baseAttack": 256,
+    "baseDefense": 188,
+    "baseStamina": 211
+  },
+  {
+    "name": "メラルバ",
+    "dex": 636,
+    "baseAttack": 156,
+    "baseDefense": 107,
+    "baseStamina": 146
+  },
+  {
+    "name": "ウルガモス",
+    "dex": 637,
+    "baseAttack": 264,
+    "baseDefense": 189,
+    "baseStamina": 198
+  },
+  {
+    "name": "コバルオン",
+    "dex": 638,
+    "baseAttack": 192,
+    "baseDefense": 229,
+    "baseStamina": 209
+  },
+  {
+    "name": "テラキオン",
+    "dex": 639,
+    "baseAttack": 260,
+    "baseDefense": 192,
+    "baseStamina": 209
+  },
+  {
+    "name": "ビリジオン",
+    "dex": 640,
+    "baseAttack": 192,
+    "baseDefense": 229,
+    "baseStamina": 209
+  },
+  {
+    "name": "トルネロス",
+    "dex": 641,
+    "baseAttack": 266,
+    "baseDefense": 164,
+    "baseStamina": 188
+  },
+  {
+    "name": "トルネロス(れいじゅう)",
+    "dex": 641,
+    "baseAttack": 238,
+    "baseDefense": 189,
+    "baseStamina": 188
+  },
+  {
+    "name": "ボルトロス",
+    "dex": 642,
+    "baseAttack": 266,
+    "baseDefense": 164,
+    "baseStamina": 188
+  },
+  {
+    "name": "ボルトロス(れいじゅう)",
+    "dex": 642,
+    "baseAttack": 295,
+    "baseDefense": 161,
+    "baseStamina": 188
+  },
+  {
+    "name": "レシラム",
+    "dex": 643,
+    "baseAttack": 275,
+    "baseDefense": 211,
+    "baseStamina": 205
+  },
+  {
+    "name": "ゼクロム",
+    "dex": 644,
+    "baseAttack": 275,
+    "baseDefense": 211,
+    "baseStamina": 205
+  },
+  {
+    "name": "ランドロス",
+    "dex": 645,
+    "baseAttack": 261,
+    "baseDefense": 182,
+    "baseStamina": 205
+  },
+  {
+    "name": "ランドロス(れいじゅう)",
+    "dex": 645,
+    "baseAttack": 289,
+    "baseDefense": 179,
+    "baseStamina": 205
+  },
+  {
+    "name": "キュレム",
+    "dex": 646,
+    "baseAttack": 246,
+    "baseDefense": 170,
+    "baseStamina": 245
+  },
+  {
+    "name": "キュレム(ブラック)",
+    "dex": 646,
+    "baseAttack": 310,
+    "baseDefense": 183,
+    "baseStamina": 245
+  },
+  {
+    "name": "キュレム(ホワイト)",
+    "dex": 646,
+    "baseAttack": 310,
+    "baseDefense": 183,
+    "baseStamina": 245
+  },
+  {
+    "name": "ケルディオ",
+    "dex": 647,
+    "baseAttack": 260,
+    "baseDefense": 192,
+    "baseStamina": 209
+  },
+  {
+    "name": "ケルディオ(かくご)",
+    "dex": 647,
+    "baseAttack": 260,
+    "baseDefense": 192,
+    "baseStamina": 209
+  },
+  {
+    "name": "メロエッタ",
+    "dex": 648,
+    "baseAttack": 250,
+    "baseDefense": 225,
+    "baseStamina": 225
+  },
+  {
+    "name": "メロエッタ(ステップ)",
+    "dex": 648,
+    "baseAttack": 269,
+    "baseDefense": 188,
+    "baseStamina": 225
+  },
+  {
+    "name": "ゲノセクト",
+    "dex": 649,
+    "baseAttack": 252,
+    "baseDefense": 199,
+    "baseStamina": 174
+  },
+  {
+    "name": "ゲノセクト(アクア)",
+    "dex": 649,
+    "baseAttack": 252,
+    "baseDefense": 199,
+    "baseStamina": 174
+  },
+  {
+    "name": "ゲノセクト(イナズマ)",
+    "dex": 649,
+    "baseAttack": 252,
+    "baseDefense": 199,
+    "baseStamina": 174
+  },
+  {
+    "name": "ゲノセクト(フリーズ)",
+    "dex": 649,
+    "baseAttack": 252,
+    "baseDefense": 199,
+    "baseStamina": 174
+  },
+  {
+    "name": "ゲノセクト(ブレイズ)",
+    "dex": 649,
+    "baseAttack": 252,
+    "baseDefense": 199,
+    "baseStamina": 174
+  },
+  {
+    "name": "ハリマロン",
+    "dex": 650,
+    "baseAttack": 110,
+    "baseDefense": 106,
+    "baseStamina": 148
+  },
+  {
+    "name": "ハリボーグ",
+    "dex": 651,
+    "baseAttack": 146,
+    "baseDefense": 156,
+    "baseStamina": 156
+  },
+  {
+    "name": "ブリガロン",
+    "dex": 652,
+    "baseAttack": 201,
+    "baseDefense": 204,
+    "baseStamina": 204
+  },
+  {
+    "name": "フォッコ",
+    "dex": 653,
+    "baseAttack": 116,
+    "baseDefense": 102,
+    "baseStamina": 120
+  },
+  {
+    "name": "テールナー",
+    "dex": 654,
+    "baseAttack": 171,
+    "baseDefense": 130,
+    "baseStamina": 153
+  },
+  {
+    "name": "マフォクシー",
+    "dex": 655,
+    "baseAttack": 230,
+    "baseDefense": 189,
+    "baseStamina": 181
+  },
+  {
+    "name": "ケロマツ",
+    "dex": 656,
+    "baseAttack": 122,
+    "baseDefense": 84,
+    "baseStamina": 121
+  },
+  {
+    "name": "ゲコガシラ",
+    "dex": 657,
+    "baseAttack": 168,
+    "baseDefense": 114,
+    "baseStamina": 144
+  },
+  {
+    "name": "ゲッコウガ",
+    "dex": 658,
+    "baseAttack": 223,
+    "baseDefense": 152,
+    "baseStamina": 176
+  },
+  {
+    "name": "ホルビー",
+    "dex": 659,
+    "baseAttack": 68,
+    "baseDefense": 72,
+    "baseStamina": 116
+  },
+  {
+    "name": "ホルード",
+    "dex": 660,
+    "baseAttack": 112,
+    "baseDefense": 155,
+    "baseStamina": 198
+  },
+  {
+    "name": "ヤヤコマ",
+    "dex": 661,
+    "baseAttack": 95,
+    "baseDefense": 80,
+    "baseStamina": 128
+  },
+  {
+    "name": "ヒノヤコマ",
+    "dex": 662,
+    "baseAttack": 145,
+    "baseDefense": 110,
+    "baseStamina": 158
+  },
+  {
+    "name": "ファイアロー",
+    "dex": 663,
+    "baseAttack": 176,
+    "baseDefense": 155,
+    "baseStamina": 186
+  },
+  {
+    "name": "コフキムシ",
+    "dex": 664,
+    "baseAttack": 63,
+    "baseDefense": 63,
+    "baseStamina": 116
+  },
+  {
+    "name": "コフーライ",
+    "dex": 665,
+    "baseAttack": 48,
+    "baseDefense": 89,
+    "baseStamina": 128
+  },
+  {
+    "name": "ビビヨン",
+    "dex": 666,
+    "baseAttack": 176,
+    "baseDefense": 103,
+    "baseStamina": 190
+  },
+  {
+    "name": "シシコ",
+    "dex": 667,
+    "baseAttack": 139,
+    "baseDefense": 112,
+    "baseStamina": 158
+  },
+  {
+    "name": "カエンジシ",
+    "dex": 668,
+    "baseAttack": 221,
+    "baseDefense": 149,
+    "baseStamina": 200
+  },
+  {
+    "name": "フラベベ",
+    "dex": 669,
+    "baseAttack": 108,
+    "baseDefense": 120,
+    "baseStamina": 127
+  },
+  {
+    "name": "フラエッテ",
+    "dex": 670,
+    "baseAttack": 136,
+    "baseDefense": 151,
+    "baseStamina": 144
+  },
+  {
+    "name": "フラージェス",
+    "dex": 671,
+    "baseAttack": 212,
+    "baseDefense": 244,
+    "baseStamina": 186
+  },
+  {
+    "name": "メェークル",
+    "dex": 672,
+    "baseAttack": 123,
+    "baseDefense": 102,
+    "baseStamina": 165
+  },
+  {
+    "name": "ゴーゴート",
+    "dex": 673,
+    "baseAttack": 196,
+    "baseDefense": 146,
+    "baseStamina": 265
+  },
+  {
+    "name": "ヤンチャム",
+    "dex": 674,
+    "baseAttack": 145,
+    "baseDefense": 107,
+    "baseStamina": 167
+  },
+  {
+    "name": "ゴロンダ",
+    "dex": 675,
+    "baseAttack": 226,
+    "baseDefense": 146,
+    "baseStamina": 216
+  },
+  {
+    "name": "トリミアン",
+    "dex": 676,
+    "baseAttack": 164,
+    "baseDefense": 167,
+    "baseStamina": 181
+  },
+  {
+    "name": "ニャスパー",
+    "dex": 677,
+    "baseAttack": 120,
+    "baseDefense": 114,
+    "baseStamina": 158
+  },
+  {
+    "name": "ニャオニクス(オス)",
+    "dex": 678,
+    "baseAttack": 166,
+    "baseDefense": 167,
+    "baseStamina": 179
+  },
+  {
+    "name": "ニャオニクス(メス)",
+    "dex": 678,
+    "baseAttack": 166,
+    "baseDefense": 167,
+    "baseStamina": 179
+  },
+  {
+    "name": "ヒトツキ",
+    "dex": 679,
+    "baseAttack": 135,
+    "baseDefense": 139,
+    "baseStamina": 128
+  },
+  {
+    "name": "ニダンギル",
+    "dex": 680,
+    "baseAttack": 188,
+    "baseDefense": 206,
+    "baseStamina": 153
+  },
+  {
+    "name": "ギルガルド(シールド)",
+    "dex": 681,
+    "baseAttack": 97,
+    "baseDefense": 272,
+    "baseStamina": 155
+  },
+  {
+    "name": "ギルガルド(ブレード)",
+    "dex": 681,
+    "baseAttack": 272,
+    "baseDefense": 97,
+    "baseStamina": 155
+  },
+  {
+    "name": "シュシュプ",
+    "dex": 682,
+    "baseAttack": 110,
+    "baseDefense": 113,
+    "baseStamina": 186
+  },
+  {
+    "name": "フレフワン",
+    "dex": 683,
+    "baseAttack": 173,
+    "baseDefense": 150,
+    "baseStamina": 226
+  },
+  {
+    "name": "ペロッパフ",
+    "dex": 684,
+    "baseAttack": 109,
+    "baseDefense": 119,
+    "baseStamina": 158
+  },
+  {
+    "name": "ペロリーム",
+    "dex": 685,
+    "baseAttack": 168,
+    "baseDefense": 163,
+    "baseStamina": 193
+  },
+  {
+    "name": "マーイーカ",
+    "dex": 686,
+    "baseAttack": 98,
+    "baseDefense": 95,
+    "baseStamina": 142
+  },
+  {
+    "name": "カラマネロ",
+    "dex": 687,
+    "baseAttack": 177,
+    "baseDefense": 165,
+    "baseStamina": 200
+  },
+  {
+    "name": "メガカラマネロ",
+    "dex": 687,
+    "baseAttack": 208,
+    "baseDefense": 222,
+    "baseStamina": 200
+  },
+  {
+    "name": "カメテテ",
+    "dex": 688,
+    "baseAttack": 96,
+    "baseDefense": 120,
+    "baseStamina": 123
+  },
+  {
+    "name": "ガメノデス",
+    "dex": 689,
+    "baseAttack": 194,
+    "baseDefense": 205,
+    "baseStamina": 176
+  },
+  {
+    "name": "クズモー",
+    "dex": 690,
+    "baseAttack": 109,
+    "baseDefense": 109,
+    "baseStamina": 137
+  },
+  {
+    "name": "ドラミドロ",
+    "dex": 691,
+    "baseAttack": 177,
+    "baseDefense": 207,
+    "baseStamina": 163
+  },
+  {
+    "name": "ウデッポウ",
+    "dex": 692,
+    "baseAttack": 108,
+    "baseDefense": 117,
+    "baseStamina": 137
+  },
+  {
+    "name": "ブロスター",
+    "dex": 693,
+    "baseAttack": 221,
+    "baseDefense": 171,
+    "baseStamina": 174
+  },
+  {
+    "name": "エリキテル",
+    "dex": 694,
+    "baseAttack": 115,
+    "baseDefense": 78,
+    "baseStamina": 127
+  },
+  {
+    "name": "エレザード",
+    "dex": 695,
+    "baseAttack": 219,
+    "baseDefense": 168,
+    "baseStamina": 158
+  },
+  {
+    "name": "チゴラス",
+    "dex": 696,
+    "baseAttack": 158,
+    "baseDefense": 123,
+    "baseStamina": 151
+  },
+  {
+    "name": "ガチゴラス",
+    "dex": 697,
+    "baseAttack": 227,
+    "baseDefense": 191,
+    "baseStamina": 193
+  },
+  {
+    "name": "アマルス",
+    "dex": 698,
+    "baseAttack": 124,
+    "baseDefense": 109,
+    "baseStamina": 184
+  },
+  {
+    "name": "アマルルガ",
+    "dex": 699,
+    "baseAttack": 186,
+    "baseDefense": 163,
+    "baseStamina": 265
+  },
+  {
+    "name": "ニンフィア",
+    "dex": 700,
+    "baseAttack": 203,
+    "baseDefense": 205,
+    "baseStamina": 216
+  },
+  {
+    "name": "ルチャブル",
+    "dex": 701,
+    "baseAttack": 195,
+    "baseDefense": 153,
+    "baseStamina": 186
+  },
+  {
+    "name": "デデンネ",
+    "dex": 702,
+    "baseAttack": 164,
+    "baseDefense": 134,
+    "baseStamina": 167
+  },
+  {
+    "name": "メレシー",
+    "dex": 703,
+    "baseAttack": 95,
+    "baseDefense": 285,
+    "baseStamina": 137
+  },
+  {
+    "name": "ヌメラ",
+    "dex": 704,
+    "baseAttack": 101,
+    "baseDefense": 112,
+    "baseStamina": 128
+  },
+  {
+    "name": "ヌメイル",
+    "dex": 705,
+    "baseAttack": 159,
+    "baseDefense": 176,
+    "baseStamina": 169
+  },
+  {
+    "name": "ヌメルゴン",
+    "dex": 706,
+    "baseAttack": 220,
+    "baseDefense": 242,
+    "baseStamina": 207
+  },
+  {
+    "name": "クレッフィ",
+    "dex": 707,
+    "baseAttack": 160,
+    "baseDefense": 179,
+    "baseStamina": 149
+  },
+  {
+    "name": "ボクレー",
+    "dex": 708,
+    "baseAttack": 125,
+    "baseDefense": 103,
+    "baseStamina": 125
+  },
+  {
+    "name": "オーロット",
+    "dex": 709,
+    "baseAttack": 201,
+    "baseDefense": 154,
+    "baseStamina": 198
+  },
+  {
+    "name": "バケッチャ(おおきい)",
+    "dex": 710,
+    "baseAttack": 120,
+    "baseDefense": 122,
+    "baseStamina": 144
+  },
+  {
+    "name": "バケッチャ(ちいさい)",
+    "dex": 710,
+    "baseAttack": 122,
+    "baseDefense": 124,
+    "baseStamina": 127
+  },
+  {
+    "name": "バケッチャ(とくだい)",
+    "dex": 710,
+    "baseAttack": 118,
+    "baseDefense": 120,
+    "baseStamina": 153
+  },
+  {
+    "name": "バケッチャ(ふつう)",
+    "dex": 710,
+    "baseAttack": 121,
+    "baseDefense": 123,
+    "baseStamina": 135
+  },
+  {
+    "name": "パンプジン(おおきい)",
+    "dex": 711,
+    "baseAttack": 179,
+    "baseDefense": 206,
+    "baseStamina": 181
+  },
+  {
+    "name": "パンプジン(ちいさい)",
+    "dex": 711,
+    "baseAttack": 171,
+    "baseDefense": 219,
+    "baseStamina": 146
+  },
+  {
+    "name": "パンプジン(とくだい)",
+    "dex": 711,
+    "baseAttack": 182,
+    "baseDefense": 200,
+    "baseStamina": 198
+  },
+  {
+    "name": "パンプジン(ふつう)",
+    "dex": 711,
+    "baseAttack": 175,
+    "baseDefense": 213,
+    "baseStamina": 163
+  },
+  {
+    "name": "カチコール",
+    "dex": 712,
+    "baseAttack": 117,
+    "baseDefense": 120,
+    "baseStamina": 146
+  },
+  {
+    "name": "クレベース",
+    "dex": 713,
+    "baseAttack": 196,
+    "baseDefense": 240,
+    "baseStamina": 216
+  },
+  {
+    "name": "クレベース(ヒスイ)",
+    "dex": 713,
+    "baseAttack": 214,
+    "baseDefense": 238,
+    "baseStamina": 216
+  },
+  {
+    "name": "オンバット",
+    "dex": 714,
+    "baseAttack": 83,
+    "baseDefense": 73,
+    "baseStamina": 120
+  },
+  {
+    "name": "オンバーン",
+    "dex": 715,
+    "baseAttack": 205,
+    "baseDefense": 175,
+    "baseStamina": 198
+  },
+  {
+    "name": "ゼルネアス",
+    "dex": 716,
+    "baseAttack": 250,
+    "baseDefense": 185,
+    "baseStamina": 246
+  },
+  {
+    "name": "イベルタル",
+    "dex": 717,
+    "baseAttack": 250,
+    "baseDefense": 185,
+    "baseStamina": 246
+  },
+  {
+    "name": "ジガルデ",
+    "dex": 718,
+    "baseAttack": 203,
+    "baseDefense": 232,
+    "baseStamina": 239
+  },
+  {
+    "name": "ジガルデ(パーフェクト)",
+    "dex": 718,
+    "baseAttack": 184,
+    "baseDefense": 207,
+    "baseStamina": 389
+  },
+  {
+    "name": "ジガルデ(１０％)",
+    "dex": 718,
+    "baseAttack": 205,
+    "baseDefense": 173,
+    "baseStamina": 144
+  },
+  {
+    "name": "ディアンシー",
+    "dex": 719,
+    "baseAttack": 190,
+    "baseDefense": 285,
+    "baseStamina": 137
+  },
+  {
+    "name": "フーパ",
+    "dex": 720,
+    "baseAttack": 261,
+    "baseDefense": 187,
+    "baseStamina": 173
+  },
+  {
+    "name": "フーパ(ときはなたれし)",
+    "dex": 720,
+    "baseAttack": 311,
+    "baseDefense": 191,
+    "baseStamina": 173
+  },
+  {
+    "name": "ボルケニオン",
+    "dex": 721,
+    "baseAttack": 252,
+    "baseDefense": 215,
+    "baseStamina": 190
+  },
+  {
+    "name": "モクロー",
+    "dex": 722,
+    "baseAttack": 102,
+    "baseDefense": 99,
+    "baseStamina": 169
+  },
+  {
+    "name": "フクスロー",
+    "dex": 723,
+    "baseAttack": 142,
+    "baseDefense": 139,
+    "baseStamina": 186
+  },
+  {
+    "name": "ジュナイパー",
+    "dex": 724,
+    "baseAttack": 210,
+    "baseDefense": 179,
+    "baseStamina": 186
+  },
+  {
+    "name": "ジュナイパー(ヒスイ)",
+    "dex": 724,
+    "baseAttack": 213,
+    "baseDefense": 174,
+    "baseStamina": 204
+  },
+  {
+    "name": "ニャビー",
+    "dex": 725,
+    "baseAttack": 128,
+    "baseDefense": 79,
+    "baseStamina": 128
+  },
+  {
+    "name": "ニャヒート",
+    "dex": 726,
+    "baseAttack": 174,
+    "baseDefense": 103,
+    "baseStamina": 163
+  },
+  {
+    "name": "ガオガエン",
+    "dex": 727,
+    "baseAttack": 214,
+    "baseDefense": 175,
+    "baseStamina": 216
+  },
+  {
+    "name": "アシマリ",
+    "dex": 728,
+    "baseAttack": 120,
+    "baseDefense": 103,
+    "baseStamina": 137
+  },
+  {
+    "name": "オシャマリ",
+    "dex": 729,
+    "baseAttack": 168,
+    "baseDefense": 145,
+    "baseStamina": 155
+  },
+  {
+    "name": "アシレーヌ",
+    "dex": 730,
+    "baseAttack": 232,
+    "baseDefense": 195,
+    "baseStamina": 190
+  },
+  {
+    "name": "ツツケラ",
+    "dex": 731,
+    "baseAttack": 136,
+    "baseDefense": 59,
+    "baseStamina": 111
+  },
+  {
+    "name": "ケララッパ",
+    "dex": 732,
+    "baseAttack": 159,
+    "baseDefense": 100,
+    "baseStamina": 146
+  },
+  {
+    "name": "ドデカバシ",
+    "dex": 733,
+    "baseAttack": 222,
+    "baseDefense": 146,
+    "baseStamina": 190
+  },
+  {
+    "name": "ヤングース",
+    "dex": 734,
+    "baseAttack": 122,
+    "baseDefense": 56,
+    "baseStamina": 134
+  },
+  {
+    "name": "デカグース",
+    "dex": 735,
+    "baseAttack": 194,
+    "baseDefense": 113,
+    "baseStamina": 204
+  },
+  {
+    "name": "アゴジムシ",
+    "dex": 736,
+    "baseAttack": 115,
+    "baseDefense": 85,
+    "baseStamina": 132
+  },
+  {
+    "name": "デンヂムシ",
+    "dex": 737,
+    "baseAttack": 145,
+    "baseDefense": 161,
+    "baseStamina": 149
+  },
+  {
+    "name": "クワガノン",
+    "dex": 738,
+    "baseAttack": 254,
+    "baseDefense": 158,
+    "baseStamina": 184
+  },
+  {
+    "name": "マケンカニ",
+    "dex": 739,
+    "baseAttack": 150,
+    "baseDefense": 104,
+    "baseStamina": 132
+  },
+  {
+    "name": "ケケンカニ",
+    "dex": 740,
+    "baseAttack": 231,
+    "baseDefense": 138,
+    "baseStamina": 219
+  },
+  {
+    "name": "オドリドリ(ぱちぱち)",
+    "dex": 741,
+    "baseAttack": 196,
+    "baseDefense": 145,
+    "baseStamina": 181
+  },
+  {
+    "name": "オドリドリ(ふらふら)",
+    "dex": 741,
+    "baseAttack": 196,
+    "baseDefense": 145,
+    "baseStamina": 181
+  },
+  {
+    "name": "オドリドリ(まいまい)",
+    "dex": 741,
+    "baseAttack": 196,
+    "baseDefense": 145,
+    "baseStamina": 181
+  },
+  {
+    "name": "オドリドリ(めらめら)",
+    "dex": 741,
+    "baseAttack": 196,
+    "baseDefense": 145,
+    "baseStamina": 181
+  },
+  {
+    "name": "アブリー",
+    "dex": 742,
+    "baseAttack": 110,
+    "baseDefense": 81,
+    "baseStamina": 120
+  },
+  {
+    "name": "アブリボン",
+    "dex": 743,
+    "baseAttack": 198,
+    "baseDefense": 146,
+    "baseStamina": 155
+  },
+  {
+    "name": "イワンコ",
+    "dex": 744,
+    "baseAttack": 117,
+    "baseDefense": 78,
+    "baseStamina": 128
+  },
+  {
+    "name": "イワンコ(たそがれに進化)",
+    "dex": 744,
+    "baseAttack": 117,
+    "baseDefense": 78,
+    "baseStamina": 128
+  },
+  {
+    "name": "ルガルガン(たそがれ)",
+    "dex": 745,
+    "baseAttack": 234,
+    "baseDefense": 139,
+    "baseStamina": 181
+  },
+  {
+    "name": "ルガルガン(まひる)",
+    "dex": 745,
+    "baseAttack": 231,
+    "baseDefense": 140,
+    "baseStamina": 181
+  },
+  {
+    "name": "ルガルガン(まよなか)",
+    "dex": 745,
+    "baseAttack": 218,
+    "baseDefense": 152,
+    "baseStamina": 198
+  },
+  {
+    "name": "ヨワシ(たんどく)",
+    "dex": 746,
+    "baseAttack": 46,
+    "baseDefense": 43,
+    "baseStamina": 128
+  },
+  {
+    "name": "ヨワシ(むれ)",
+    "dex": 746,
+    "baseAttack": 255,
+    "baseDefense": 242,
+    "baseStamina": 128
+  },
+  {
+    "name": "ヒドイデ",
+    "dex": 747,
+    "baseAttack": 98,
+    "baseDefense": 110,
+    "baseStamina": 137
+  },
+  {
+    "name": "ドヒドイデ",
+    "dex": 748,
+    "baseAttack": 114,
+    "baseDefense": 273,
+    "baseStamina": 137
+  },
+  {
+    "name": "ドロバンコ",
+    "dex": 749,
+    "baseAttack": 175,
+    "baseDefense": 121,
+    "baseStamina": 172
+  },
+  {
+    "name": "バンバドロ",
+    "dex": 750,
+    "baseAttack": 214,
+    "baseDefense": 174,
+    "baseStamina": 225
+  },
+  {
+    "name": "シズクモ",
+    "dex": 751,
+    "baseAttack": 72,
+    "baseDefense": 117,
+    "baseStamina": 116
+  },
+  {
+    "name": "オニシズクモ",
+    "dex": 752,
+    "baseAttack": 126,
+    "baseDefense": 219,
+    "baseStamina": 169
+  },
+  {
+    "name": "カリキリ",
+    "dex": 753,
+    "baseAttack": 100,
+    "baseDefense": 64,
+    "baseStamina": 120
+  },
+  {
+    "name": "ラランテス",
+    "dex": 754,
+    "baseAttack": 192,
+    "baseDefense": 169,
+    "baseStamina": 172
+  },
+  {
+    "name": "ネマシュ",
+    "dex": 755,
+    "baseAttack": 108,
+    "baseDefense": 119,
+    "baseStamina": 120
+  },
+  {
+    "name": "マシェード",
+    "dex": 756,
+    "baseAttack": 154,
+    "baseDefense": 168,
+    "baseStamina": 155
+  },
+  {
+    "name": "ヤトウモリ",
+    "dex": 757,
+    "baseAttack": 136,
+    "baseDefense": 80,
+    "baseStamina": 134
+  },
+  {
+    "name": "エンニュート",
+    "dex": 758,
+    "baseAttack": 228,
+    "baseDefense": 130,
+    "baseStamina": 169
+  },
+  {
+    "name": "ヌイコグマ",
+    "dex": 759,
+    "baseAttack": 136,
+    "baseDefense": 95,
+    "baseStamina": 172
+  },
+  {
+    "name": "キテルグマ",
+    "dex": 760,
+    "baseAttack": 226,
+    "baseDefense": 141,
+    "baseStamina": 260
+  },
+  {
+    "name": "アマカジ",
+    "dex": 761,
+    "baseAttack": 55,
+    "baseDefense": 69,
+    "baseStamina": 123
+  },
+  {
+    "name": "アママイコ",
+    "dex": 762,
+    "baseAttack": 78,
+    "baseDefense": 94,
+    "baseStamina": 141
+  },
+  {
+    "name": "アマージョ",
+    "dex": 763,
+    "baseAttack": 222,
+    "baseDefense": 195,
+    "baseStamina": 176
+  },
+  {
+    "name": "キュワワー",
+    "dex": 764,
+    "baseAttack": 165,
+    "baseDefense": 215,
+    "baseStamina": 139
+  },
+  {
+    "name": "ヤレユータン",
+    "dex": 765,
+    "baseAttack": 168,
+    "baseDefense": 192,
+    "baseStamina": 207
+  },
+  {
+    "name": "ナゲツケサル",
+    "dex": 766,
+    "baseAttack": 222,
+    "baseDefense": 160,
+    "baseStamina": 225
+  },
+  {
+    "name": "コソクムシ",
+    "dex": 767,
+    "baseAttack": 67,
+    "baseDefense": 74,
+    "baseStamina": 93
+  },
+  {
+    "name": "グソクムシャ",
+    "dex": 768,
+    "baseAttack": 218,
+    "baseDefense": 226,
+    "baseStamina": 181
+  },
+  {
+    "name": "スナバァ",
+    "dex": 769,
+    "baseAttack": 120,
+    "baseDefense": 118,
+    "baseStamina": 146
+  },
+  {
+    "name": "シロデスナ",
+    "dex": 770,
+    "baseAttack": 178,
+    "baseDefense": 178,
+    "baseStamina": 198
+  },
+  {
+    "name": "ナマコブシ",
+    "dex": 771,
+    "baseAttack": 97,
+    "baseDefense": 224,
+    "baseStamina": 146
+  },
+  {
+    "name": "タイプ：ヌル",
+    "dex": 772,
+    "baseAttack": 184,
+    "baseDefense": 184,
+    "baseStamina": 216
+  },
+  {
+    "name": "シルヴァディ",
+    "dex": 773,
+    "baseAttack": 198,
+    "baseDefense": 198,
+    "baseStamina": 216
+  },
+  {
+    "name": "メテノ(りゅうせい)",
+    "dex": 774,
+    "baseAttack": 116,
+    "baseDefense": 194,
+    "baseStamina": 155
+  },
+  {
+    "name": "メテノ(コア)",
+    "dex": 774,
+    "baseAttack": 218,
+    "baseDefense": 131,
+    "baseStamina": 155
+  },
+  {
+    "name": "ネッコアラ",
+    "dex": 775,
+    "baseAttack": 216,
+    "baseDefense": 165,
+    "baseStamina": 163
+  },
+  {
+    "name": "バクガメス",
+    "dex": 776,
+    "baseAttack": 165,
+    "baseDefense": 215,
+    "baseStamina": 155
+  },
+  {
+    "name": "トゲデマル",
+    "dex": 777,
+    "baseAttack": 190,
+    "baseDefense": 145,
+    "baseStamina": 163
+  },
+  {
+    "name": "ミミッキュ(ばけたすがた)",
+    "dex": 778,
+    "baseAttack": 177,
+    "baseDefense": 199,
+    "baseStamina": 146
+  },
+  {
+    "name": "ミミッキュ(ばれたすがた)",
+    "dex": 778,
+    "baseAttack": 177,
+    "baseDefense": 199,
+    "baseStamina": 146
+  },
+  {
+    "name": "ハギギシリ",
+    "dex": 779,
+    "baseAttack": 208,
+    "baseDefense": 145,
+    "baseStamina": 169
+  },
+  {
+    "name": "ジジーロン",
+    "dex": 780,
+    "baseAttack": 231,
+    "baseDefense": 164,
+    "baseStamina": 186
+  },
+  {
+    "name": "ダダリン",
+    "dex": 781,
+    "baseAttack": 233,
+    "baseDefense": 179,
+    "baseStamina": 172
+  },
+  {
+    "name": "ジャラコ",
+    "dex": 782,
+    "baseAttack": 102,
+    "baseDefense": 108,
+    "baseStamina": 128
+  },
+  {
+    "name": "ジャランゴ",
+    "dex": 783,
+    "baseAttack": 145,
+    "baseDefense": 162,
+    "baseStamina": 146
+  },
+  {
+    "name": "ジャラランガ",
+    "dex": 784,
+    "baseAttack": 222,
+    "baseDefense": 240,
+    "baseStamina": 181
+  },
+  {
+    "name": "カプ・コケコ",
+    "dex": 785,
+    "baseAttack": 250,
+    "baseDefense": 181,
+    "baseStamina": 172
+  },
+  {
+    "name": "カプ・テテフ",
+    "dex": 786,
+    "baseAttack": 259,
+    "baseDefense": 208,
+    "baseStamina": 172
+  },
+  {
+    "name": "カプ・ブルル",
+    "dex": 787,
+    "baseAttack": 249,
+    "baseDefense": 215,
+    "baseStamina": 172
+  },
+  {
+    "name": "カプ・レヒレ",
+    "dex": 788,
+    "baseAttack": 189,
+    "baseDefense": 254,
+    "baseStamina": 172
+  },
+  {
+    "name": "コスモッグ",
+    "dex": 789,
+    "baseAttack": 54,
+    "baseDefense": 57,
+    "baseStamina": 125
+  },
+  {
+    "name": "コスモウム",
+    "dex": 790,
+    "baseAttack": 54,
+    "baseDefense": 242,
+    "baseStamina": 125
+  },
+  {
+    "name": "ソルガレオ",
+    "dex": 791,
+    "baseAttack": 255,
+    "baseDefense": 191,
+    "baseStamina": 264
+  },
+  {
+    "name": "ルナアーラ",
+    "dex": 792,
+    "baseAttack": 255,
+    "baseDefense": 191,
+    "baseStamina": 264
+  },
+  {
+    "name": "ウツロイド",
+    "dex": 793,
+    "baseAttack": 249,
+    "baseDefense": 210,
+    "baseStamina": 240
+  },
+  {
+    "name": "マッシブーン",
+    "dex": 794,
+    "baseAttack": 236,
+    "baseDefense": 196,
+    "baseStamina": 216
+  },
+  {
+    "name": "フェローチェ",
+    "dex": 795,
+    "baseAttack": 316,
+    "baseDefense": 85,
+    "baseStamina": 174
+  },
+  {
+    "name": "デンジュモク",
+    "dex": 796,
+    "baseAttack": 330,
+    "baseDefense": 144,
+    "baseStamina": 195
+  },
+  {
+    "name": "テッカグヤ",
+    "dex": 797,
+    "baseAttack": 207,
+    "baseDefense": 199,
+    "baseStamina": 219
+  },
+  {
+    "name": "カミツルギ",
+    "dex": 798,
+    "baseAttack": 323,
+    "baseDefense": 182,
+    "baseStamina": 139
+  },
+  {
+    "name": "アクジキング",
+    "dex": 799,
+    "baseAttack": 188,
+    "baseDefense": 99,
+    "baseStamina": 440
+  },
+  {
+    "name": "ネクロズマ",
+    "dex": 800,
+    "baseAttack": 251,
+    "baseDefense": 195,
+    "baseStamina": 219
+  },
+  {
+    "name": "ネクロズマ(あかつき)",
+    "dex": 800,
+    "baseAttack": 277,
+    "baseDefense": 220,
+    "baseStamina": 200
+  },
+  {
+    "name": "ネクロズマ(たそがれ)",
+    "dex": 800,
+    "baseAttack": 277,
+    "baseDefense": 220,
+    "baseStamina": 200
+  },
+  {
+    "name": "マーシャドー",
+    "dex": 802,
+    "baseAttack": 265,
+    "baseDefense": 190,
+    "baseStamina": 207
+  },
+  {
+    "name": "ベベノム",
+    "dex": 803,
+    "baseAttack": 145,
+    "baseDefense": 133,
+    "baseStamina": 167
+  },
+  {
+    "name": "アーゴヨン",
+    "dex": 804,
+    "baseAttack": 263,
+    "baseDefense": 159,
+    "baseStamina": 177
+  },
+  {
+    "name": "ツンデツンデ",
+    "dex": 805,
+    "baseAttack": 213,
+    "baseDefense": 298,
+    "baseStamina": 156
+  },
+  {
+    "name": "ズガドーン",
+    "dex": 806,
+    "baseAttack": 315,
+    "baseDefense": 148,
+    "baseStamina": 142
+  },
+  {
+    "name": "メルタン",
+    "dex": 808,
+    "baseAttack": 118,
+    "baseDefense": 99,
+    "baseStamina": 130
+  },
+  {
+    "name": "メルメタル",
+    "dex": 809,
+    "baseAttack": 226,
+    "baseDefense": 190,
+    "baseStamina": 264
+  },
+  {
+    "name": "サルノリ",
+    "dex": 810,
+    "baseAttack": 122,
+    "baseDefense": 91,
+    "baseStamina": 137
+  },
+  {
+    "name": "バチンキー",
+    "dex": 811,
+    "baseAttack": 165,
+    "baseDefense": 134,
+    "baseStamina": 172
+  },
+  {
+    "name": "ゴリランダー",
+    "dex": 812,
+    "baseAttack": 239,
+    "baseDefense": 168,
+    "baseStamina": 225
+  },
+  {
+    "name": "ゴリランダー(キョダイ)",
+    "dex": 812,
+    "baseAttack": 239,
+    "baseDefense": 168,
+    "baseStamina": 225
+  },
+  {
+    "name": "ヒバニー",
+    "dex": 813,
+    "baseAttack": 132,
+    "baseDefense": 79,
+    "baseStamina": 137
+  },
+  {
+    "name": "ラビフット",
+    "dex": 814,
+    "baseAttack": 170,
+    "baseDefense": 125,
+    "baseStamina": 163
+  },
+  {
+    "name": "エースバーン",
+    "dex": 815,
+    "baseAttack": 238,
+    "baseDefense": 163,
+    "baseStamina": 190
+  },
+  {
+    "name": "エースバーン(キョダイ)",
+    "dex": 815,
+    "baseAttack": 238,
+    "baseDefense": 163,
+    "baseStamina": 190
+  },
+  {
+    "name": "メッソン",
+    "dex": 816,
+    "baseAttack": 132,
+    "baseDefense": 79,
+    "baseStamina": 137
+  },
+  {
+    "name": "ジメレオン",
+    "dex": 817,
+    "baseAttack": 186,
+    "baseDefense": 113,
+    "baseStamina": 163
+  },
+  {
+    "name": "インテレオン",
+    "dex": 818,
+    "baseAttack": 262,
+    "baseDefense": 142,
+    "baseStamina": 172
+  },
+  {
+    "name": "インテレオン(キョダイ)",
+    "dex": 818,
+    "baseAttack": 262,
+    "baseDefense": 142,
+    "baseStamina": 172
+  },
+  {
+    "name": "ホシガリス",
+    "dex": 819,
+    "baseAttack": 95,
+    "baseDefense": 86,
+    "baseStamina": 172
+  },
+  {
+    "name": "ヨクバリス",
+    "dex": 820,
+    "baseAttack": 160,
+    "baseDefense": 156,
+    "baseStamina": 260
+  },
+  {
+    "name": "ココガラ",
+    "dex": 821,
+    "baseAttack": 88,
+    "baseDefense": 67,
+    "baseStamina": 116
+  },
+  {
+    "name": "アオガラス",
+    "dex": 822,
+    "baseAttack": 129,
+    "baseDefense": 110,
+    "baseStamina": 169
+  },
+  {
+    "name": "アーマーガア",
+    "dex": 823,
+    "baseAttack": 163,
+    "baseDefense": 192,
+    "baseStamina": 221
+  },
+  {
+    "name": "レドームシ",
+    "dex": 825,
+    "baseAttack": 87,
+    "baseDefense": 157,
+    "baseStamina": 137
+  },
+  {
+    "name": "イオルブ",
+    "dex": 826,
+    "baseAttack": 156,
+    "baseDefense": 240,
+    "baseStamina": 155
+  },
+  {
+    "name": "クスネ",
+    "dex": 827,
+    "baseAttack": 85,
+    "baseDefense": 82,
+    "baseStamina": 120
+  },
+  {
+    "name": "フォクスライ",
+    "dex": 828,
+    "baseAttack": 172,
+    "baseDefense": 164,
+    "baseStamina": 172
+  },
+  {
+    "name": "ヒメンカ",
+    "dex": 829,
+    "baseAttack": 70,
+    "baseDefense": 104,
+    "baseStamina": 120
+  },
+  {
+    "name": "ワタシラガ",
+    "dex": 830,
+    "baseAttack": 148,
+    "baseDefense": 211,
+    "baseStamina": 155
+  },
+  {
+    "name": "ウールー",
+    "dex": 831,
+    "baseAttack": 76,
+    "baseDefense": 97,
+    "baseStamina": 123
+  },
+  {
+    "name": "バイウールー",
+    "dex": 832,
+    "baseAttack": 159,
+    "baseDefense": 198,
+    "baseStamina": 176
+  },
+  {
+    "name": "カムカメ",
+    "dex": 833,
+    "baseAttack": 114,
+    "baseDefense": 85,
+    "baseStamina": 137
+  },
+  {
+    "name": "カジリガメ",
+    "dex": 834,
+    "baseAttack": 213,
+    "baseDefense": 164,
+    "baseStamina": 207
+  },
+  {
+    "name": "ワンパチ",
+    "dex": 835,
+    "baseAttack": 80,
+    "baseDefense": 90,
+    "baseStamina": 153
+  },
+  {
+    "name": "パルスワン",
+    "dex": 836,
+    "baseAttack": 197,
+    "baseDefense": 131,
+    "baseStamina": 170
+  },
+  {
+    "name": "タンドン",
+    "dex": 837,
+    "baseAttack": 73,
+    "baseDefense": 91,
+    "baseStamina": 102
+  },
+  {
+    "name": "トロッゴン",
+    "dex": 838,
+    "baseAttack": 114,
+    "baseDefense": 157,
+    "baseStamina": 190
+  },
+  {
+    "name": "セキタンザン",
+    "dex": 839,
+    "baseAttack": 146,
+    "baseDefense": 198,
+    "baseStamina": 242
+  },
+  {
+    "name": "カジッチュ",
+    "dex": 840,
+    "baseAttack": 71,
+    "baseDefense": 116,
+    "baseStamina": 120
+  },
+  {
+    "name": "アップリュー",
+    "dex": 841,
+    "baseAttack": 214,
+    "baseDefense": 144,
+    "baseStamina": 172
+  },
+  {
+    "name": "タルップル",
+    "dex": 842,
+    "baseAttack": 178,
+    "baseDefense": 146,
+    "baseStamina": 242
+  },
+  {
+    "name": "スナヘビ",
+    "dex": 843,
+    "baseAttack": 103,
+    "baseDefense": 123,
+    "baseStamina": 141
+  },
+  {
+    "name": "サダイジャ",
+    "dex": 844,
+    "baseAttack": 202,
+    "baseDefense": 207,
+    "baseStamina": 176
+  },
+  {
+    "name": "ウッウ",
+    "dex": 845,
+    "baseAttack": 173,
+    "baseDefense": 163,
+    "baseStamina": 172
+  },
+  {
+    "name": "サシカマス",
+    "dex": 846,
+    "baseAttack": 118,
+    "baseDefense": 72,
+    "baseStamina": 121
+  },
+  {
+    "name": "カマスジョー",
+    "dex": 847,
+    "baseAttack": 258,
+    "baseDefense": 127,
+    "baseStamina": 156
+  },
+  {
+    "name": "エレズン",
+    "dex": 848,
+    "baseAttack": 97,
+    "baseDefense": 65,
+    "baseStamina": 120
+  },
+  {
+    "name": "ストリンダー(キョダイ)",
+    "dex": 849,
+    "baseAttack": 224,
+    "baseDefense": 140,
+    "baseStamina": 181
+  },
+  {
+    "name": "ストリンダー(ハイ)",
+    "dex": 849,
+    "baseAttack": 224,
+    "baseDefense": 140,
+    "baseStamina": 181
+  },
+  {
+    "name": "ストリンダー(ロー)",
+    "dex": 849,
+    "baseAttack": 224,
+    "baseDefense": 140,
+    "baseStamina": 181
+  },
+  {
+    "name": "ヤクデ",
+    "dex": 850,
+    "baseAttack": 118,
+    "baseDefense": 90,
+    "baseStamina": 137
+  },
+  {
+    "name": "マルヤクデ",
+    "dex": 851,
+    "baseAttack": 220,
+    "baseDefense": 158,
+    "baseStamina": 225
+  },
+  {
+    "name": "タタッコ",
+    "dex": 852,
+    "baseAttack": 121,
+    "baseDefense": 103,
+    "baseStamina": 137
+  },
+  {
+    "name": "オトスパス",
+    "dex": 853,
+    "baseAttack": 209,
+    "baseDefense": 162,
+    "baseStamina": 190
+  },
+  {
+    "name": "ヤバチャ",
+    "dex": 854,
+    "baseAttack": 134,
+    "baseDefense": 96,
+    "baseStamina": 120
+  },
+  {
+    "name": "ポットデス",
+    "dex": 855,
+    "baseAttack": 248,
+    "baseDefense": 189,
+    "baseStamina": 155
+  },
+  {
+    "name": "ミブリム",
+    "dex": 856,
+    "baseAttack": 98,
+    "baseDefense": 93,
+    "baseStamina": 123
+  },
+  {
+    "name": "テブリム",
+    "dex": 857,
+    "baseAttack": 153,
+    "baseDefense": 133,
+    "baseStamina": 149
+  },
+  {
+    "name": "ブリムオン",
+    "dex": 858,
+    "baseAttack": 237,
+    "baseDefense": 182,
+    "baseStamina": 149
+  },
+  {
+    "name": "ベロバー",
+    "dex": 859,
+    "baseAttack": 103,
+    "baseDefense": 69,
+    "baseStamina": 128
+  },
+  {
+    "name": "ギモー",
+    "dex": 860,
+    "baseAttack": 145,
+    "baseDefense": 102,
+    "baseStamina": 163
+  },
+  {
+    "name": "オーロンゲ",
+    "dex": 861,
+    "baseAttack": 227,
+    "baseDefense": 139,
+    "baseStamina": 216
+  },
+  {
+    "name": "オーロンゲ(キョダイ)",
+    "dex": 861,
+    "baseAttack": 227,
+    "baseDefense": 139,
+    "baseStamina": 216
+  },
+  {
+    "name": "タチフサグマ",
+    "dex": 862,
+    "baseAttack": 180,
+    "baseDefense": 194,
+    "baseStamina": 212
+  },
+  {
+    "name": "ニャイキング",
+    "dex": 863,
+    "baseAttack": 195,
+    "baseDefense": 162,
+    "baseStamina": 172
+  },
+  {
+    "name": "サニゴーン",
+    "dex": 864,
+    "baseAttack": 253,
+    "baseDefense": 182,
+    "baseStamina": 155
+  },
+  {
+    "name": "ネギガナイト",
+    "dex": 865,
+    "baseAttack": 248,
+    "baseDefense": 176,
+    "baseStamina": 158
+  },
+  {
+    "name": "バリコオル",
+    "dex": 866,
+    "baseAttack": 212,
+    "baseDefense": 179,
+    "baseStamina": 190
+  },
+  {
+    "name": "デスバーン",
+    "dex": 867,
+    "baseAttack": 163,
+    "baseDefense": 237,
+    "baseStamina": 151
+  },
+  {
+    "name": "マホミル",
+    "dex": 868,
+    "baseAttack": 90,
+    "baseDefense": 97,
+    "baseStamina": 128
+  },
+  {
+    "name": "マホイップ",
+    "dex": 869,
+    "baseAttack": 203,
+    "baseDefense": 203,
+    "baseStamina": 163
+  },
+  {
+    "name": "タイレーツ",
+    "dex": 870,
+    "baseAttack": 193,
+    "baseDefense": 170,
+    "baseStamina": 163
+  },
+  {
+    "name": "バチンウニ",
+    "dex": 871,
+    "baseAttack": 176,
+    "baseDefense": 161,
+    "baseStamina": 134
+  },
+  {
+    "name": "ユキハミ",
+    "dex": 872,
+    "baseAttack": 76,
+    "baseDefense": 59,
+    "baseStamina": 102
+  },
+  {
+    "name": "モスノウ",
+    "dex": 873,
+    "baseAttack": 230,
+    "baseDefense": 155,
+    "baseStamina": 172
+  },
+  {
+    "name": "イシヘンジン",
+    "dex": 874,
+    "baseAttack": 222,
+    "baseDefense": 182,
+    "baseStamina": 225
+  },
+  {
+    "name": "コオリッポ(アイス)",
+    "dex": 875,
+    "baseAttack": 148,
+    "baseDefense": 195,
+    "baseStamina": 181
+  },
+  {
+    "name": "コオリッポ(ナイス)",
+    "dex": 875,
+    "baseAttack": 173,
+    "baseDefense": 139,
+    "baseStamina": 181
+  },
+  {
+    "name": "イエッサン(オス)",
+    "dex": 876,
+    "baseAttack": 208,
+    "baseDefense": 166,
+    "baseStamina": 155
+  },
+  {
+    "name": "イエッサン(メス)",
+    "dex": 876,
+    "baseAttack": 184,
+    "baseDefense": 184,
+    "baseStamina": 172
+  },
+  {
+    "name": "モルペコ(はらぺこ)",
+    "dex": 877,
+    "baseAttack": 192,
+    "baseDefense": 121,
+    "baseStamina": 151
+  },
+  {
+    "name": "モルペコ(まんぷく)",
+    "dex": 877,
+    "baseAttack": 192,
+    "baseDefense": 121,
+    "baseStamina": 151
+  },
+  {
+    "name": "ゾウドウ",
+    "dex": 878,
+    "baseAttack": 140,
+    "baseDefense": 91,
+    "baseStamina": 176
+  },
+  {
+    "name": "ダイオウドウ",
+    "dex": 879,
+    "baseAttack": 226,
+    "baseDefense": 126,
+    "baseStamina": 263
+  },
+  {
+    "name": "パッチラゴン",
+    "dex": 880,
+    "baseAttack": 195,
+    "baseDefense": 165,
+    "baseStamina": 207
+  },
+  {
+    "name": "パッチルドン",
+    "dex": 881,
+    "baseAttack": 190,
+    "baseDefense": 166,
+    "baseStamina": 207
+  },
+  {
+    "name": "ウオノラゴン",
+    "dex": 882,
+    "baseAttack": 175,
+    "baseDefense": 185,
+    "baseStamina": 207
+  },
+  {
+    "name": "ウオチルドン",
+    "dex": 883,
+    "baseAttack": 171,
+    "baseDefense": 185,
+    "baseStamina": 207
+  },
+  {
+    "name": "ジュラルドン",
+    "dex": 884,
+    "baseAttack": 239,
+    "baseDefense": 185,
+    "baseStamina": 172
+  },
+  {
+    "name": "ドラメシヤ",
+    "dex": 885,
+    "baseAttack": 117,
+    "baseDefense": 61,
+    "baseStamina": 99
+  },
+  {
+    "name": "ドロンチ",
+    "dex": 886,
+    "baseAttack": 163,
+    "baseDefense": 105,
+    "baseStamina": 169
+  },
+  {
+    "name": "ドラパルト",
+    "dex": 887,
+    "baseAttack": 266,
+    "baseDefense": 170,
+    "baseStamina": 204
+  },
+  {
+    "name": "ザシアン(けんのおう)",
+    "dex": 888,
+    "baseAttack": 332,
+    "baseDefense": 240,
+    "baseStamina": 192
+  },
+  {
+    "name": "ザシアン(れきせんのゆうしゃ)",
+    "dex": 888,
+    "baseAttack": 254,
+    "baseDefense": 236,
+    "baseStamina": 192
+  },
+  {
+    "name": "ザマゼンタ(たてのおう)",
+    "dex": 889,
+    "baseAttack": 250,
+    "baseDefense": 292,
+    "baseStamina": 192
+  },
+  {
+    "name": "ザマゼンタ(れきせんのゆうしゃ)",
+    "dex": 889,
+    "baseAttack": 254,
+    "baseDefense": 236,
+    "baseStamina": 192
+  },
+  {
+    "name": "ムゲンダイナ",
+    "dex": 890,
+    "baseAttack": 278,
+    "baseDefense": 192,
+    "baseStamina": 268
+  },
+  {
+    "name": "ムゲンダイナ(ムゲン)",
+    "dex": 890,
+    "baseAttack": 251,
+    "baseDefense": 505,
+    "baseStamina": 452
+  },
+  {
+    "name": "ダクマ",
+    "dex": 891,
+    "baseAttack": 170,
+    "baseDefense": 112,
+    "baseStamina": 155
+  },
+  {
+    "name": "ウーラオス(いちげき)",
+    "dex": 892,
+    "baseAttack": 254,
+    "baseDefense": 177,
+    "baseStamina": 225
+  },
+  {
+    "name": "ウーラオス(れんげき)",
+    "dex": 892,
+    "baseAttack": 254,
+    "baseDefense": 177,
+    "baseStamina": 225
+  },
+  {
+    "name": "ザルード",
+    "dex": 893,
+    "baseAttack": 242,
+    "baseDefense": 215,
+    "baseStamina": 233
+  },
+  {
+    "name": "レジエレキ",
+    "dex": 894,
+    "baseAttack": 250,
+    "baseDefense": 125,
+    "baseStamina": 190
+  },
+  {
+    "name": "レジドラゴ",
+    "dex": 895,
+    "baseAttack": 202,
+    "baseDefense": 101,
+    "baseStamina": 400
+  },
+  {
+    "name": "ブリザポス",
+    "dex": 896,
+    "baseAttack": 224,
+    "baseDefense": 203,
+    "baseStamina": 205
+  },
+  {
+    "name": "レイスポス",
+    "dex": 897,
+    "baseAttack": 273,
+    "baseDefense": 146,
+    "baseStamina": 205
+  },
+  {
+    "name": "バドレックス",
+    "dex": 898,
+    "baseAttack": 147,
+    "baseDefense": 147,
+    "baseStamina": 205
+  },
+  {
+    "name": "バドレックス(こくば)",
+    "dex": 898,
+    "baseAttack": 324,
+    "baseDefense": 194,
+    "baseStamina": 205
+  },
+  {
+    "name": "バドレックス(はくば)",
+    "dex": 898,
+    "baseAttack": 268,
+    "baseDefense": 246,
+    "baseStamina": 205
+  },
+  {
+    "name": "アヤシシ",
+    "dex": 899,
+    "baseAttack": 206,
+    "baseDefense": 145,
+    "baseStamina": 230
+  },
+  {
+    "name": "バサギリ",
+    "dex": 900,
+    "baseAttack": 253,
+    "baseDefense": 174,
+    "baseStamina": 172
+  },
+  {
+    "name": "ガチグマ",
+    "dex": 901,
+    "baseAttack": 243,
+    "baseDefense": 181,
+    "baseStamina": 277
+  },
+  {
+    "name": "オオニューラ",
+    "dex": 903,
+    "baseAttack": 259,
+    "baseDefense": 158,
+    "baseStamina": 190
+  },
+  {
+    "name": "ハリーマン",
+    "dex": 904,
+    "baseAttack": 222,
+    "baseDefense": 171,
+    "baseStamina": 198
+  },
+  {
+    "name": "ラブトロス",
+    "dex": 905,
+    "baseAttack": 281,
+    "baseDefense": 162,
+    "baseStamina": 179
+  },
+  {
+    "name": "ラブトロス(れいじゅう)",
+    "dex": 905,
+    "baseAttack": 250,
+    "baseDefense": 201,
+    "baseStamina": 179
+  },
+  {
+    "name": "ニャオハ",
+    "dex": 906,
+    "baseAttack": 116,
+    "baseDefense": 99,
+    "baseStamina": 120
+  },
+  {
+    "name": "ニャローテ",
+    "dex": 907,
+    "baseAttack": 157,
+    "baseDefense": 128,
+    "baseStamina": 156
+  },
+  {
+    "name": "マスカーニャ",
+    "dex": 908,
+    "baseAttack": 233,
+    "baseDefense": 153,
+    "baseStamina": 183
+  },
+  {
+    "name": "ホゲータ",
+    "dex": 909,
+    "baseAttack": 112,
+    "baseDefense": 96,
+    "baseStamina": 167
+  },
+  {
+    "name": "アチゲータ",
+    "dex": 910,
+    "baseAttack": 162,
+    "baseDefense": 134,
+    "baseStamina": 191
+  },
+  {
+    "name": "ラウドボーン",
+    "dex": 911,
+    "baseAttack": 207,
+    "baseDefense": 178,
+    "baseStamina": 232
+  },
+  {
+    "name": "クワッス",
+    "dex": 912,
+    "baseAttack": 120,
+    "baseDefense": 86,
+    "baseStamina": 146
+  },
+  {
+    "name": "ウェルカモ",
+    "dex": 913,
+    "baseAttack": 162,
+    "baseDefense": 123,
+    "baseStamina": 172
+  },
+  {
+    "name": "ウェーニバル",
+    "dex": 914,
+    "baseAttack": 236,
+    "baseDefense": 159,
+    "baseStamina": 198
+  },
+  {
+    "name": "グルトン",
+    "dex": 915,
+    "baseAttack": 81,
+    "baseDefense": 79,
+    "baseStamina": 144
+  },
+  {
+    "name": "パフュートン(オス)",
+    "dex": 916,
+    "baseAttack": 186,
+    "baseDefense": 153,
+    "baseStamina": 242
+  },
+  {
+    "name": "パフュートン(メス)",
+    "dex": 916,
+    "baseAttack": 169,
+    "baseDefense": 162,
+    "baseStamina": 251
+  },
+  {
+    "name": "タマンチュラ",
+    "dex": 917,
+    "baseAttack": 70,
+    "baseDefense": 77,
+    "baseStamina": 111
+  },
+  {
+    "name": "ワナイダー",
+    "dex": 918,
+    "baseAttack": 139,
+    "baseDefense": 166,
+    "baseStamina": 155
+  },
+  {
+    "name": "マメバッタ",
+    "dex": 919,
+    "baseAttack": 81,
+    "baseDefense": 65,
+    "baseStamina": 107
+  },
+  {
+    "name": "エクスレッグ",
+    "dex": 920,
+    "baseAttack": 199,
+    "baseDefense": 144,
+    "baseStamina": 174
+  },
+  {
+    "name": "パモ",
+    "dex": 921,
+    "baseAttack": 95,
+    "baseDefense": 45,
+    "baseStamina": 128
+  },
+  {
+    "name": "パモット",
+    "dex": 922,
+    "baseAttack": 147,
+    "baseDefense": 82,
+    "baseStamina": 155
+  },
+  {
+    "name": "パーモット",
+    "dex": 923,
+    "baseAttack": 232,
+    "baseDefense": 141,
+    "baseStamina": 172
+  },
+  {
+    "name": "ワッカネズミ",
+    "dex": 924,
+    "baseAttack": 98,
+    "baseDefense": 90,
+    "baseStamina": 137
+  },
+  {
+    "name": "イッカネズミ",
+    "dex": 925,
+    "baseAttack": 159,
+    "baseDefense": 157,
+    "baseStamina": 179
+  },
+  {
+    "name": "パピモッチ",
+    "dex": 926,
+    "baseAttack": 102,
+    "baseDefense": 126,
+    "baseStamina": 114
+  },
+  {
+    "name": "バウッツェル",
+    "dex": 927,
+    "baseAttack": 159,
+    "baseDefense": 212,
+    "baseStamina": 149
+  },
+  {
+    "name": "ミニーブ",
+    "dex": 928,
+    "baseAttack": 100,
+    "baseDefense": 89,
+    "baseStamina": 121
+  },
+  {
+    "name": "オリーニョ",
+    "dex": 929,
+    "baseAttack": 137,
+    "baseDefense": 131,
+    "baseStamina": 141
+  },
+  {
+    "name": "オリーヴァ",
+    "dex": 930,
+    "baseAttack": 219,
+    "baseDefense": 189,
+    "baseStamina": 186
+  },
+  {
+    "name": "イキリンコ",
+    "dex": 931,
+    "baseAttack": 185,
+    "baseDefense": 105,
+    "baseStamina": 193
+  },
+  {
+    "name": "コジオ",
+    "dex": 932,
+    "baseAttack": 95,
+    "baseDefense": 108,
+    "baseStamina": 146
+  },
+  {
+    "name": "ジオヅム",
+    "dex": 933,
+    "baseAttack": 105,
+    "baseDefense": 160,
+    "baseStamina": 155
+  },
+  {
+    "name": "キョジオーン",
+    "dex": 934,
+    "baseAttack": 171,
+    "baseDefense": 212,
+    "baseStamina": 225
+  },
+  {
+    "name": "カルボウ",
+    "dex": 935,
+    "baseAttack": 92,
+    "baseDefense": 74,
+    "baseStamina": 120
+  },
+  {
+    "name": "グレンアルマ",
+    "dex": 936,
+    "baseAttack": 234,
+    "baseDefense": 185,
+    "baseStamina": 198
+  },
+  {
+    "name": "ソウブレイズ",
+    "dex": 937,
+    "baseAttack": 239,
+    "baseDefense": 189,
+    "baseStamina": 181
+  },
+  {
+    "name": "ズピカ",
+    "dex": 938,
+    "baseAttack": 104,
+    "baseDefense": 73,
+    "baseStamina": 156
+  },
+  {
+    "name": "ハラバリー",
+    "dex": 939,
+    "baseAttack": 184,
+    "baseDefense": 165,
+    "baseStamina": 240
+  },
+  {
+    "name": "カイデン",
+    "dex": 940,
+    "baseAttack": 105,
+    "baseDefense": 75,
+    "baseStamina": 120
+  },
+  {
+    "name": "タイカイデン",
+    "dex": 941,
+    "baseAttack": 221,
+    "baseDefense": 132,
+    "baseStamina": 172
+  },
+  {
+    "name": "オラチフ",
+    "dex": 942,
+    "baseAttack": 140,
+    "baseDefense": 108,
+    "baseStamina": 155
+  },
+  {
+    "name": "マフィティフ",
+    "dex": 943,
+    "baseAttack": 230,
+    "baseDefense": 168,
+    "baseStamina": 190
+  },
+  {
+    "name": "シルシュルー",
+    "dex": 944,
+    "baseAttack": 124,
+    "baseDefense": 70,
+    "baseStamina": 120
+  },
+  {
+    "name": "タギングル",
+    "dex": 945,
+    "baseAttack": 199,
+    "baseDefense": 149,
+    "baseStamina": 160
+  },
+  {
+    "name": "アノクサ",
+    "dex": 946,
+    "baseAttack": 121,
+    "baseDefense": 64,
+    "baseStamina": 120
+  },
+  {
+    "name": "アノホラグサ",
+    "dex": 947,
+    "baseAttack": 228,
+    "baseDefense": 144,
+    "baseStamina": 146
+  },
+  {
+    "name": "ノノクラゲ",
+    "dex": 948,
+    "baseAttack": 97,
+    "baseDefense": 149,
+    "baseStamina": 120
+  },
+  {
+    "name": "リククラゲ",
+    "dex": 949,
+    "baseAttack": 166,
+    "baseDefense": 209,
+    "baseStamina": 190
+  },
+  {
+    "name": "ガケガニ",
+    "dex": 950,
+    "baseAttack": 184,
+    "baseDefense": 185,
+    "baseStamina": 172
+  },
+  {
+    "name": "カプサイジ",
+    "dex": 951,
+    "baseAttack": 118,
+    "baseDefense": 76,
+    "baseStamina": 137
+  },
+  {
+    "name": "スコヴィラン",
+    "dex": 952,
+    "baseAttack": 216,
+    "baseDefense": 130,
+    "baseStamina": 163
+  },
+  {
+    "name": "シガロコ",
+    "dex": 953,
+    "baseAttack": 86,
+    "baseDefense": 108,
+    "baseStamina": 121
+  },
+  {
+    "name": "ベラカス",
+    "dex": 954,
+    "baseAttack": 201,
+    "baseDefense": 178,
+    "baseStamina": 181
+  },
+  {
+    "name": "ヒラヒナ",
+    "dex": 955,
+    "baseAttack": 105,
+    "baseDefense": 60,
+    "baseStamina": 102
+  },
+  {
+    "name": "クエスパトラ",
+    "dex": 956,
+    "baseAttack": 204,
+    "baseDefense": 127,
+    "baseStamina": 216
+  },
+  {
+    "name": "カヌチャン",
+    "dex": 957,
+    "baseAttack": 85,
+    "baseDefense": 110,
+    "baseStamina": 137
+  },
+  {
+    "name": "ナカヌチャン",
+    "dex": 958,
+    "baseAttack": 109,
+    "baseDefense": 145,
+    "baseStamina": 163
+  },
+  {
+    "name": "デカヌチャン",
+    "dex": 959,
+    "baseAttack": 155,
+    "baseDefense": 196,
+    "baseStamina": 198
+  },
+  {
+    "name": "ウミディグダ",
+    "dex": 960,
+    "baseAttack": 109,
+    "baseDefense": 52,
+    "baseStamina": 67
+  },
+  {
+    "name": "ウミトリオ",
+    "dex": 961,
+    "baseAttack": 205,
+    "baseDefense": 136,
+    "baseStamina": 111
+  },
+  {
+    "name": "オトシドリ",
+    "dex": 962,
+    "baseAttack": 198,
+    "baseDefense": 172,
+    "baseStamina": 172
+  },
+  {
+    "name": "ナミイルカ",
+    "dex": 963,
+    "baseAttack": 90,
+    "baseDefense": 80,
+    "baseStamina": 172
+  },
+  {
+    "name": "イルカマン(ナイーブ)",
+    "dex": 964,
+    "baseAttack": 143,
+    "baseDefense": 144,
+    "baseStamina": 225
+  },
+  {
+    "name": "イルカマン(マイティ)",
+    "dex": 964,
+    "baseAttack": 322,
+    "baseDefense": 196,
+    "baseStamina": 225
+  },
+  {
+    "name": "ブロロン",
+    "dex": 965,
+    "baseAttack": 123,
+    "baseDefense": 107,
+    "baseStamina": 128
+  },
+  {
+    "name": "ブロロローム",
+    "dex": 966,
+    "baseAttack": 229,
+    "baseDefense": 168,
+    "baseStamina": 190
+  },
+  {
+    "name": "モトトカゲ",
+    "dex": 967,
+    "baseAttack": 205,
+    "baseDefense": 142,
+    "baseStamina": 172
+  },
+  {
+    "name": "ミミズズ",
+    "dex": 968,
+    "baseAttack": 161,
+    "baseDefense": 219,
+    "baseStamina": 172
+  },
+  {
+    "name": "キラーメ",
+    "dex": 969,
+    "baseAttack": 187,
+    "baseDefense": 104,
+    "baseStamina": 134
+  },
+  {
+    "name": "キラフロル",
+    "dex": 970,
+    "baseAttack": 246,
+    "baseDefense": 177,
+    "baseStamina": 195
+  },
+  {
+    "name": "ボチ",
+    "dex": 971,
+    "baseAttack": 105,
+    "baseDefense": 106,
+    "baseStamina": 137
+  },
+  {
+    "name": "ハカドッグ",
+    "dex": 972,
+    "baseAttack": 186,
+    "baseDefense": 195,
+    "baseStamina": 176
+  },
+  {
+    "name": "カラミンゴ",
+    "dex": 973,
+    "baseAttack": 227,
+    "baseDefense": 145,
+    "baseStamina": 193
+  },
+  {
+    "name": "アルクジラ",
+    "dex": 974,
+    "baseAttack": 119,
+    "baseDefense": 80,
+    "baseStamina": 239
+  },
+  {
+    "name": "ハルクジラ",
+    "dex": 975,
+    "baseAttack": 208,
+    "baseDefense": 123,
+    "baseStamina": 347
+  },
+  {
+    "name": "ミガルーサ",
+    "dex": 976,
+    "baseAttack": 196,
+    "baseDefense": 139,
+    "baseStamina": 207
+  },
+  {
+    "name": "ヘイラッシャ",
+    "dex": 977,
+    "baseAttack": 176,
+    "baseDefense": 178,
+    "baseStamina": 312
+  },
+  {
+    "name": "シャリタツ(そったすがた)",
+    "dex": 978,
+    "baseAttack": 226,
+    "baseDefense": 166,
+    "baseStamina": 169
+  },
+  {
+    "name": "シャリタツ(たれたすがた)",
+    "dex": 978,
+    "baseAttack": 226,
+    "baseDefense": 166,
+    "baseStamina": 169
+  },
+  {
+    "name": "シャリタツ(のびたすがた)",
+    "dex": 978,
+    "baseAttack": 226,
+    "baseDefense": 166,
+    "baseStamina": 169
+  },
+  {
+    "name": "コノヨザル",
+    "dex": 979,
+    "baseAttack": 220,
+    "baseDefense": 178,
+    "baseStamina": 242
+  },
+  {
+    "name": "ドオー",
+    "dex": 980,
+    "baseAttack": 127,
+    "baseDefense": 151,
+    "baseStamina": 277
+  },
+  {
+    "name": "リキキリン",
+    "dex": 981,
+    "baseAttack": 209,
+    "baseDefense": 136,
+    "baseStamina": 260
+  },
+  {
+    "name": "ノココッチ",
+    "dex": 982,
+    "baseAttack": 188,
+    "baseDefense": 150,
+    "baseStamina": 268
+  },
+  {
+    "name": "ドドゲザン",
+    "dex": 983,
+    "baseAttack": 238,
+    "baseDefense": 203,
+    "baseStamina": 225
+  },
+  {
+    "name": "セビエ",
+    "dex": 996,
+    "baseAttack": 134,
+    "baseDefense": 86,
+    "baseStamina": 163
+  },
+  {
+    "name": "セゴール",
+    "dex": 997,
+    "baseAttack": 173,
+    "baseDefense": 128,
+    "baseStamina": 207
+  },
+  {
+    "name": "セグレイブ",
+    "dex": 998,
+    "baseAttack": 254,
+    "baseDefense": 168,
+    "baseStamina": 229
+  },
+  {
+    "name": "コレクレー(とほ)",
+    "dex": 999,
+    "baseAttack": 140,
+    "baseDefense": 76,
+    "baseStamina": 128
+  },
+  {
+    "name": "サーフゴー",
+    "dex": 1000,
+    "baseAttack": 252,
+    "baseDefense": 190,
+    "baseStamina": 202
+  },
+  {
+    "name": "ウネルミナモ",
+    "dex": 1009,
+    "baseAttack": 233,
+    "baseDefense": 171,
+    "baseStamina": 203
+  },
+  {
+    "name": "カミッチュ",
+    "dex": 1011,
+    "baseAttack": 173,
+    "baseDefense": 184,
+    "baseStamina": 190
+  },
+  {
+    "name": "チャデス",
+    "dex": 1012,
+    "baseAttack": 134,
+    "baseDefense": 96,
+    "baseStamina": 120
+  },
+  {
+    "name": "ヤバソチャ",
+    "dex": 1013,
+    "baseAttack": 225,
+    "baseDefense": 191,
+    "baseStamina": 174
+  },
+  {
+    "name": "イイネイヌ",
+    "dex": 1014,
+    "baseAttack": 220,
+    "baseDefense": 191,
+    "baseStamina": 186
+  },
+  {
+    "name": "マシマシラ",
+    "dex": 1015,
+    "baseAttack": 238,
+    "baseDefense": 157,
+    "baseStamina": 186
+  },
+  {
+    "name": "キチキギス",
+    "dex": 1016,
+    "baseAttack": 169,
+    "baseDefense": 208,
+    "baseStamina": 186
+  },
+  {
+    "name": "オーガポン(みどりのめん)",
+    "dex": 1017,
+    "baseAttack": 219,
+    "baseDefense": 178,
+    "baseStamina": 173
+  },
+  {
+    "name": "ブリジュラス",
+    "dex": 1018,
+    "baseAttack": 250,
+    "baseDefense": 215,
+    "baseStamina": 207
+  },
+  {
+    "name": "カミツオロチ",
+    "dex": 1019,
+    "baseAttack": 216,
+    "baseDefense": 186,
+    "baseStamina": 235
+  },
+  {
+    "name": "モモワロウ",
+    "dex": 1025,
+    "baseAttack": 164,
+    "baseDefense": 248,
+    "baseStamina": 186
+  }
+]

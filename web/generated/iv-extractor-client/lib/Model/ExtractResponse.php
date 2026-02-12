@@ -60,6 +60,7 @@ class ExtractResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         'pokemon' => 'string',
         'pokemon_en' => 'string',
         'dex' => 'int',
+        'cp' => 'int',
         'iv' => '\IvExtractorClient\Model\IV'
     ];
 
@@ -74,6 +75,7 @@ class ExtractResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         'pokemon' => null,
         'pokemon_en' => null,
         'dex' => null,
+        'cp' => null,
         'iv' => null
     ];
 
@@ -86,6 +88,7 @@ class ExtractResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         'pokemon' => true,
         'pokemon_en' => true,
         'dex' => true,
+        'cp' => true,
         'iv' => false
     ];
 
@@ -178,6 +181,7 @@ class ExtractResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         'pokemon' => 'pokemon',
         'pokemon_en' => 'pokemon_en',
         'dex' => 'dex',
+        'cp' => 'cp',
         'iv' => 'iv'
     ];
 
@@ -190,6 +194,7 @@ class ExtractResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         'pokemon' => 'setPokemon',
         'pokemon_en' => 'setPokemonEn',
         'dex' => 'setDex',
+        'cp' => 'setCp',
         'iv' => 'setIv'
     ];
 
@@ -202,6 +207,7 @@ class ExtractResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         'pokemon' => 'getPokemon',
         'pokemon_en' => 'getPokemonEn',
         'dex' => 'getDex',
+        'cp' => 'getCp',
         'iv' => 'getIv'
     ];
 
@@ -265,6 +271,7 @@ class ExtractResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         $this->setIfExists('pokemon', $data ?? [], null);
         $this->setIfExists('pokemon_en', $data ?? [], null);
         $this->setIfExists('dex', $data ?? [], null);
+        $this->setIfExists('cp', $data ?? [], null);
         $this->setIfExists('iv', $data ?? [], null);
     }
 
@@ -303,6 +310,9 @@ class ExtractResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         }
         if ($this->container['dex'] === null && !$this->isNullableSetToNull('dex')) {
             $invalidProperties[] = "'dex' can't be null";
+        }
+        if ($this->container['cp'] === null && !$this->isNullableSetToNull('cp')) {
+            $invalidProperties[] = "'cp' can't be null";
         }
         if ($this->container['iv'] === null) {
             $invalidProperties[] = "'iv' can't be null";
@@ -420,6 +430,40 @@ class ExtractResponse implements ModelInterface, ArrayAccess, \JsonSerializable
             }
         }
         $this->container['dex'] = $dex;
+
+        return $this;
+    }
+
+    /**
+     * Gets cp
+     *
+     * @return int|null
+     */
+    public function getCp()
+    {
+        return $this->container['cp'];
+    }
+
+    /**
+     * Sets cp
+     *
+     * @param int|null $cp CP（Combat Power）
+     *
+     * @return self
+     */
+    public function setCp($cp)
+    {
+        if (is_null($cp)) {
+            array_push($this->openAPINullablesSetToNull, 'cp');
+        } else {
+            $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
+            $index = array_search('cp', $nullablesSetToNull);
+            if ($index !== FALSE) {
+                unset($nullablesSetToNull[$index]);
+                $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
+            }
+        }
+        $this->container['cp'] = $cp;
 
         return $this;
     }
