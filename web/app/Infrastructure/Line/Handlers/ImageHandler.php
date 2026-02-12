@@ -69,8 +69,8 @@ final class ImageHandler extends BaseEventHandler
                 stamina: $ivData->getStamina(),
             );
 
-            $pokemon = PokemonDatabase::findByName($pokemonName);
-            $dex = $pokemon !== null ? $pokemon->dex : 0;
+            $dex = $result->getDex() ?? 0;
+            $pokemon = $dex !== 0 ? PokemonDatabase::findByDex($dex) : null;
 
             $leagueRankings = [];
             $leagues = [League::GREAT, League::ULTRA, League::MASTER];
