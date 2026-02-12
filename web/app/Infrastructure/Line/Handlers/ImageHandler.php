@@ -58,6 +58,7 @@ final class ImageHandler extends BaseEventHandler
 
             $ivData = $result->getIv();
             $pokemonName = $result->getPokemon() ?? '不明';
+            $cp = $result->getCp();
 
             $t = microtime(true);
 
@@ -81,7 +82,7 @@ final class ImageHandler extends BaseEventHandler
             }
 
             // メインポケモンのbubble
-            $mainBubble = RankingFlex::buildBubble($pokemonName, $dex, $iv, $leagueRankings);
+            $mainBubble = RankingFlex::buildBubble($pokemonName, $dex, $iv, $leagueRankings, $cp);
 
             // 進化先のBubble（最終進化から表示するため逆順）
             $evoBubbles = [];
