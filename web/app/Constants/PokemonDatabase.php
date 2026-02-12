@@ -42,6 +42,24 @@ final class PokemonDatabase
     }
 
     /**
+     * 図鑑番号から全フォームを取得.
+     *
+     * @return list<Pokemon>
+     */
+    public static function findAllByDex(int $dex): array
+    {
+        $results = [];
+
+        foreach (self::getDatabase() as $pokemon) {
+            if ($pokemon->dex === $dex) {
+                $results[] = $pokemon;
+            }
+        }
+
+        return $results;
+    }
+
+    /**
      * @return array<string, Pokemon>
      */
     private static function getDatabase(): array
