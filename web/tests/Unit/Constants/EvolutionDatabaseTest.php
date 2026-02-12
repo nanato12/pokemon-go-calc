@@ -8,7 +8,7 @@ use App\Constants\EvolutionDatabase;
 use App\Constants\PokemonDatabase;
 use App\Domain\Pokemon;
 use PHPUnit\Framework\TestCase;
-use ReflectionClass;
+use RuntimeException;
 
 /**
  * @internal
@@ -34,7 +34,7 @@ class EvolutionDatabaseTest extends TestCase
     }
 
     /**
-     * イーブイ → 7体の分岐進化.
+     * イーブイ → 8体の分岐進化.
      */
     public function testBranchingEvolutionEevee(): void
     {
@@ -45,7 +45,7 @@ class EvolutionDatabaseTest extends TestCase
             $evolutions
         );
 
-        $this->assertCount(7, $evolutions);
+        $this->assertCount(8, $evolutions);
         $this->assertContains('シャワーズ', $names);
         $this->assertContains('サンダース', $names);
         $this->assertContains('ブースター', $names);
@@ -53,6 +53,7 @@ class EvolutionDatabaseTest extends TestCase
         $this->assertContains('ブラッキー', $names);
         $this->assertContains('リーフィア', $names);
         $this->assertContains('グレイシア', $names);
+        $this->assertContains('ニンフィア', $names);
     }
 
     /**
@@ -105,12 +106,15 @@ class EvolutionDatabaseTest extends TestCase
      */
     public function testAllEvolutionTargetsExistInDatabase(): void
     {
-        $reflection = new ReflectionClass(EvolutionDatabase::class);
-        $constant = $reflection->getReflectionConstant('EVOLUTIONS');
-        $this->assertNotFalse($constant);
+        $jsonPath = __DIR__ . '/../../../app/Constants/evolution_database.json';
+        $json = file_get_contents($jsonPath);
+
+        if ($json === false) {
+            throw new RuntimeException('Failed to read evolution_database.json');
+        }
 
         /** @var array<string, list<string>> $evolutions */
-        $evolutions = $constant->getValue();
+        $evolutions = json_decode($json, true);
 
         foreach ($evolutions as $from => $targets) {
             foreach ($targets as $target) {
