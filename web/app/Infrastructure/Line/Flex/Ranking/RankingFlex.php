@@ -13,7 +13,15 @@ final class RankingFlex extends BaseFlex
 {
     public const ALT_MESSAGE = 'IV ランキング';
 
-    private const POKEMON_IMAGE_URL = 'https://pokemongo-get.com/wp-content/themes/simplicity2-child/images/pokemongo/%d-1.png?1';
+    private const POKEMON_IMAGE_PATH = '/images/pokemon/%d.png';
+
+    private const LEAGUE_ICON_PATH = '/images/league/%d.png';
+
+    private const LEAGUE_ICON_INDEX = [
+        'great' => 1,
+        'ultra' => 2,
+        'master' => 3,
+    ];
 
     /**
      * Build a single bubble with ranking data.
@@ -27,8 +35,10 @@ final class RankingFlex extends BaseFlex
         $bubble = self::get();
 
         // Inject pokemon image
+        /** @var string $appUrl */
+        $appUrl = config('app.url', '');
         // @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible
-        $bubble['header']['contents'][0]['url'] = sprintf(self::POKEMON_IMAGE_URL, $dex);
+        $bubble['header']['contents'][0]['url'] = $appUrl . sprintf(self::POKEMON_IMAGE_PATH, $dex);
 
         // Inject pokemon name
         // @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible
@@ -65,6 +75,10 @@ final class RankingFlex extends BaseFlex
             // Clone and inject the league box from template
             // @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible
             $leagueBox = $bubble['body']['contents'][$index];
+            // inject league icon
+            $iconIndex = self::LEAGUE_ICON_INDEX[$value];
+            // @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible
+            $leagueBox['contents'][0]['url'] = $appUrl . sprintf(self::LEAGUE_ICON_PATH, $iconIndex);
             // inject rank text + color
             // @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible
             $leagueBox['contents'][1]['contents'][0]['contents'][0]['text'] = sprintf('%d位', $ranked->rank);
