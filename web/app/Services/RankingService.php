@@ -17,7 +17,9 @@ use App\Domain\RankedIv;
 final class RankingService
 {
     private const IV_MIN = 0;
+
     private const IV_MAX = 15;
+
     private const PERCENTAGE_MULTIPLIER = 100;
 
     /**

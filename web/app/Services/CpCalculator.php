@@ -17,7 +17,9 @@ use App\Domain\PokemonStats;
 final class CpCalculator
 {
     private const MIN_CP = 10;
+
     private const CP_DIVISOR = 10;
+
     private const STAT_PRODUCT_DIVISOR = 1000;
 
     /**

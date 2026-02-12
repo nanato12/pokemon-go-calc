@@ -12,6 +12,7 @@ use Throwable;
 class DiscordHandler extends AbstractProcessingHandler
 {
     private string $webhookUrl;
+
     private string $username;
 
     public function __construct(

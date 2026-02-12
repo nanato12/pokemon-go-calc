@@ -12,6 +12,7 @@ use InvalidArgumentException;
 final readonly class IV
 {
     private const MIN = 0;
+
     private const MAX = 15;
 
     public function __construct(

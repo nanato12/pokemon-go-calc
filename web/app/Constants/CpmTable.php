@@ -14,6 +14,7 @@ use InvalidArgumentException;
 final class CpmTable
 {
     public const MIN_LEVEL = 1.0;
+
     public const MAX_LEVEL = 51.0;
 
     /** @var array<string, float> */
