@@ -70,6 +70,11 @@ final class ImageHandler extends BaseEventHandler
             );
 
             $dex = $result->getDex() ?? 0;
+
+            if ($dex === 0) {
+                error_log(sprintf('[ImageHandler] WARNING: dex=null (pokemon=%s)', $pokemonName));
+            }
+
             $forms = $dex !== 0 ? PokemonDatabase::findAllByDex($dex) : [];
             $leagues = [League::GREAT, League::ULTRA, League::MASTER];
 
