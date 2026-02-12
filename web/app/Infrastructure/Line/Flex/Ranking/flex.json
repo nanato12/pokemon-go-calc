@@ -1,0 +1,208 @@
+{
+  "type": "bubble",
+  "size": "kilo",
+  "header": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://pokemongo-get.com/wp-content/themes/simplicity2-child/images/pokemongo/248-1.png?1",
+        "size": "60px",
+        "aspectMode": "fit",
+        "flex": 0
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "バンギラス",
+            "weight": "bold",
+            "color": "#ffffff",
+            "size": "lg"
+          },
+          {
+            "type": "text",
+            "text": "攻撃:1 防御:10 HP:15",
+            "size": "xs",
+            "color": "#ffffffaa"
+          }
+        ],
+        "paddingStart": "12px",
+        "justifyContent": "center"
+      }
+    ],
+    "backgroundColor": "#263238",
+    "paddingAll": "12px",
+    "alignItems": "center"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://pokemongo-get.com/wp-content/themes/simplicity2-child/images/ivcheck_league_icon/1.png",
+            "size": "24px",
+            "aspectMode": "fit",
+            "flex": 0
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "71位",
+                    "weight": "bold",
+                    "size": "md",
+                    "color": "#666666",
+                    "flex": 0
+                  },
+                  {
+                    "type": "text",
+                    "text": "CP1488 / Lv23.5",
+                    "size": "xs",
+                    "color": "#999999",
+                    "flex": 0,
+                    "margin": "md"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "SP: 2298.2 (93.7%)",
+                "size": "xxs",
+                "color": "#999999",
+                "margin": "xs"
+              }
+            ],
+            "paddingStart": "10px"
+          }
+        ],
+        "alignItems": "center"
+      },
+      {
+        "type": "separator",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://pokemongo-get.com/wp-content/themes/simplicity2-child/images/ivcheck_league_icon/2.png",
+            "size": "24px",
+            "aspectMode": "fit",
+            "flex": 0
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "1位",
+                    "weight": "bold",
+                    "size": "md",
+                    "color": "#FFD700",
+                    "flex": 0
+                  },
+                  {
+                    "type": "text",
+                    "text": "CP2489 / Lv40",
+                    "size": "xs",
+                    "color": "#999999",
+                    "flex": 0,
+                    "margin": "md"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "SP: 3456.7 (100.0%)",
+                "size": "xxs",
+                "color": "#999999",
+                "margin": "xs"
+              }
+            ],
+            "paddingStart": "10px"
+          }
+        ],
+        "alignItems": "center",
+        "margin": "md"
+      },
+      {
+        "type": "separator",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://pokemongo-get.com/wp-content/themes/simplicity2-child/images/ivcheck_league_icon/3.png",
+            "size": "24px",
+            "aspectMode": "fit",
+            "flex": 0
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "1位",
+                    "weight": "bold",
+                    "size": "md",
+                    "color": "#FFD700",
+                    "flex": 0
+                  },
+                  {
+                    "type": "text",
+                    "text": "CP3670 / Lv51",
+                    "size": "xs",
+                    "color": "#999999",
+                    "flex": 0,
+                    "margin": "md"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "SP: 4567.8 (100.0%)",
+                "size": "xxs",
+                "color": "#999999",
+                "margin": "xs"
+              }
+            ],
+            "paddingStart": "10px"
+          }
+        ],
+        "alignItems": "center",
+        "margin": "md"
+      }
+    ],
+    "paddingAll": "12px"
+  }
+}

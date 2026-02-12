@@ -9,7 +9,7 @@ use LINE\Webhook\Model\MessageEvent;
 use LINE\Webhook\Model\TextMessageContent;
 use Phine\Client;
 use Phine\Handlers\BaseCommandHandler;
-use Phine\Helpers\MessageBuilders\TextMessageBuilder;
+use Phine\MessageBuilders\TextMessageBuilder;
 
 /**
  * テストハンドラ.
