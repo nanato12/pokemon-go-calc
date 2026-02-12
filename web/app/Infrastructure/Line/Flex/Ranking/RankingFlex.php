@@ -30,7 +30,7 @@ final class RankingFlex extends BaseFlex
      *
      * @return array<string, mixed>
      */
-    public static function buildBubble(string $pokemonName, int $dex, IV $iv, array $leagueRankings): array
+    public static function buildBubble(string $pokemonName, int $dex, IV $iv, array $leagueRankings, ?int $cp = null): array
     {
         $bubble = self::get();
 
@@ -45,13 +45,13 @@ final class RankingFlex extends BaseFlex
         $bubble['header']['contents'][1]['contents'][0]['text'] = $pokemonName;
 
         // Inject IV values
+        $ivText = sprintf('攻撃:%d 防御:%d HP:%d', $iv->attack, $iv->defense, $iv->stamina);
+
+        if ($cp !== null) {
+            $ivText = sprintf('CP%d | %s', $cp, $ivText);
+        }
         // @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible
-        $bubble['header']['contents'][1]['contents'][1]['text'] = sprintf(
-            '攻撃:%d 防御:%d HP:%d',
-            $iv->attack,
-            $iv->defense,
-            $iv->stamina
-        );
+        $bubble['header']['contents'][1]['contents'][1]['text'] = $ivText;
 
         // Build new body contents excluding null leagues
         $newContents = [];

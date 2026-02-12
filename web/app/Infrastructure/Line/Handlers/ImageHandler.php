@@ -58,6 +58,7 @@ final class ImageHandler extends BaseEventHandler
 
             $ivData = $result->getIv();
             $pokemonName = $result->getPokemon() ?? '不明';
+            $cp = $result->getCp();
 
             $t = microtime(true);
 
@@ -68,26 +69,39 @@ final class ImageHandler extends BaseEventHandler
                 stamina: $ivData->getStamina(),
             );
 
-            $pokemon = PokemonDatabase::findByName($pokemonName);
-            $dex = $pokemon !== null ? $pokemon->dex : 0;
-
-            $leagueRankings = [];
+            $dex = $result->getDex() ?? 0;
+            $forms = $dex !== 0 ? PokemonDatabase::findAllByDex($dex) : [];
             $leagues = [League::GREAT, League::ULTRA, League::MASTER];
 
-            if ($pokemon !== null) {
+            // 全フォームのbubble
+            $formBubbles = [];
+
+            foreach ($forms as $form) {
+                $formRankings = [];
+
                 foreach ($leagues as $league) {
-                    $leagueRankings[$league->value] = RankingService::getIvRank($pokemon, $iv, $league);
+                    $formRankings[$league->value] = RankingService::getIvRank($form, $iv, $league);
                 }
+                $formBubbles[] = RankingFlex::buildBubble(
+                    $form->name,
+                    $form->dex,
+                    $iv,
+                    $formRankings,
+                    $form->name === $pokemonName ? $cp : null,
+                );
             }
 
-            // メインポケモンのbubble
-            $mainBubble = RankingFlex::buildBubble($pokemonName, $dex, $iv, $leagueRankings);
+            // フォームが見つからなかった場合はOCR名でbubble作成
+            if ($formBubbles === []) {
+                $formBubbles[] = RankingFlex::buildBubble($pokemonName, $dex, $iv, [], $cp);
+            }
 
             // 進化先のBubble（最終進化から表示するため逆順）
             $evoBubbles = [];
+            $firstForm = $forms[0] ?? null;
 
-            if ($pokemon !== null) {
-                $evolutions = EvolutionDatabase::getForwardEvolutions($pokemonName);
+            if ($firstForm !== null) {
+                $evolutions = EvolutionDatabase::getForwardEvolutions($firstForm->name);
 
                 foreach ($evolutions as $evolution) {
                     $evoRankings = [];
@@ -99,8 +113,8 @@ final class ImageHandler extends BaseEventHandler
                 }
             }
 
-            // 最終進化先を先頭に（逆順）、スキャン元を最後に
-            $bubbles = [...array_reverse($evoBubbles), $mainBubble];
+            // 最終進化先を先頭に（逆順）、フォーム全種を最後に
+            $bubbles = [...array_reverse($evoBubbles), ...$formBubbles];
 
             error_log(sprintf('[ImageHandler] ランキング計算 + Flex構築: %.2fs', microtime(true) - $t));
 
