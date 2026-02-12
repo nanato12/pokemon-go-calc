@@ -24,8 +24,8 @@ class BarIvExtractor(IvExtractor):
         """
         h, w = image.shape[:2]
 
-        # 個体値バー領域を切り出し（広めに取る）
-        y1, y2 = int(h * 0.65), int(h * 0.87)
+        # 個体値バー領域を切り出し（トリミング画像にも対応）
+        y1, y2 = int(h * 0.65), int(h * 0.95)
         x1, x2 = int(w * 0.12), int(w * 0.48)
         bar_region = image[y1:y2, x1:x2]
         bar_hsv = cv2.cvtColor(bar_region, cv2.COLOR_BGR2HSV)
