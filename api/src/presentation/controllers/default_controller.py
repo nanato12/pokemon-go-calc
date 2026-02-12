@@ -8,6 +8,9 @@ from werkzeug.datastructures import FileStorage
 from src.application.usecases.extract_iv_usecase import ExtractIvUseCase
 from src.infrastructure.image.opencv_image_reader import OpenCvImageReader
 from src.infrastructure.ocr.bar_iv_extractor import BarIvExtractor
+from src.infrastructure.ocr.tesseract_cp_extractor import (
+    TesseractCpExtractor,
+)
 from src.infrastructure.ocr.tesseract_name_extractor import (
     TesseractNameExtractor,
 )
@@ -19,6 +22,7 @@ def _create_extract_iv_usecase() -> ExtractIvUseCase:
         image_reader=OpenCvImageReader(),
         name_extractor=TesseractNameExtractor(),
         iv_extractor=BarIvExtractor(),
+        cp_extractor=TesseractCpExtractor(),
     )
 
 
@@ -44,6 +48,7 @@ def extractIv(  # noqa: N802
         "pokemon": result.pokemon_name,
         "pokemon_en": result.pokemon_name_en,
         "dex": result.dex,
+        "cp": result.cp,
         "iv": {
             "attack": result.attack,
             "defense": result.defense,

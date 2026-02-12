@@ -3,6 +3,7 @@
 from typing import Any
 
 from src.application.dto.extract_iv_result import ExtractIvResult
+from src.application.ports.cp_extractor import CpExtractor
 from src.application.ports.image_reader import ImageReader
 from src.application.ports.iv_extractor import IvExtractor
 from src.application.ports.pokemon_name_extractor import (
@@ -46,15 +47,29 @@ class StubIvExtractor(IvExtractor):
         return self._iv
 
 
+class StubCpExtractor(CpExtractor):
+    """テスト用CP抽出."""
+
+    def __init__(self, cp: int | None) -> None:
+        """Initialize."""
+        self._cp = cp
+
+    def extract(self, image: Any) -> int | None:
+        """固定CPを返す."""
+        return self._cp
+
+
 def _create_usecase(
     name: str | None,
     iv: IV,
+    cp: int | None = None,
 ) -> ExtractIvUseCase:
     """テスト用ユースケースを生成."""
     return ExtractIvUseCase(
         image_reader=StubImageReader(),
         name_extractor=StubNameExtractor(name),
         iv_extractor=StubIvExtractor(iv),
+        cp_extractor=StubCpExtractor(cp),
     )
 
 
@@ -142,6 +157,7 @@ class TestExtractIvResult:
             pokemon_name="ピカチュウ",
             pokemon_name_en="Pikachu",
             dex=25,
+            cp=1500,
             attack=15,
             defense=15,
             stamina=15,
@@ -149,6 +165,7 @@ class TestExtractIvResult:
         assert result.pokemon_name == "ピカチュウ"
         assert result.pokemon_name_en == "Pikachu"
         assert result.dex == 25
+        assert result.cp == 1500
         assert result.attack == 15
         assert result.defense == 15
         assert result.stamina == 15
@@ -159,6 +176,7 @@ class TestExtractIvResult:
             pokemon_name=None,
             pokemon_name_en=None,
             dex=None,
+            cp=None,
             attack=0,
             defense=0,
             stamina=0,
@@ -166,6 +184,7 @@ class TestExtractIvResult:
         assert result.pokemon_name is None
         assert result.pokemon_name_en is None
         assert result.dex is None
+        assert result.cp is None
 
     def test_frozen(self) -> None:
         """不変であることの確認."""
@@ -173,6 +192,7 @@ class TestExtractIvResult:
             pokemon_name="test",
             pokemon_name_en="test",
             dex=1,
+            cp=500,
             attack=0,
             defense=0,
             stamina=0,
