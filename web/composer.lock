@@ -2257,16 +2257,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nanato12/phine.git",
-                "reference": "8a9f6c507bdd664ff528d4690256d6290578b4ba"
+                "reference": "10c1e29fb1d9c70cd322f8d5f09f1f95cf80d5e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nanato12/phine/zipball/8a9f6c507bdd664ff528d4690256d6290578b4ba",
-                "reference": "8a9f6c507bdd664ff528d4690256d6290578b4ba",
+                "url": "https://api.github.com/repos/nanato12/phine/zipball/10c1e29fb1d9c70cd322f8d5f09f1f95cf80d5e3",
+                "reference": "10c1e29fb1d9c70cd322f8d5f09f1f95cf80d5e3",
                 "shasum": ""
             },
             "require": {
-                "linecorp/line-bot-sdk": ">=9.9.0"
+                "linecorp/line-bot-sdk": "^12.4",
+                "php": ">=8.1"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.42",
@@ -2303,7 +2304,7 @@
                 "issues": "https://github.com/nanato12/phine/issues",
                 "source": "https://github.com/nanato12/phine/tree/develop"
             },
-            "time": "2024-07-14T02:41:29+00:00"
+            "time": "2026-02-11T18:23:04+00:00"
         },
         {
             "name": "nesbot/carbon",

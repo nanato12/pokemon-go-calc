@@ -27,7 +27,9 @@ def healthCheck() -> tuple[dict[str, str], int]:  # noqa: N802
     return {"status": "ok"}, 200
 
 
-def extractIv(image: FileStorage) -> tuple[dict[str, object], int]:  # noqa: N802
+def extractIv(  # noqa: N802
+    image: FileStorage,
+) -> tuple[dict[str, object], int]:
     """スクリーンショットからポケモン名と個体値を抽出する."""
     if image.filename == "":
         return {"error": "ファイルが選択されていません"}, 400
@@ -40,6 +42,8 @@ def extractIv(image: FileStorage) -> tuple[dict[str, object], int]:  # noqa: N80
 
     return {
         "pokemon": result.pokemon_name,
+        "pokemon_en": result.pokemon_name_en,
+        "dex": result.dex,
         "iv": {
             "attack": result.attack,
             "defense": result.defense,

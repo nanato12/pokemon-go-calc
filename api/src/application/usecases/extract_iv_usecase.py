@@ -1,9 +1,16 @@
 """IV抽出ユースケース."""
 
+import logging
+
 from src.application.dto.extract_iv_result import ExtractIvResult
 from src.application.ports.image_reader import ImageReader
 from src.application.ports.iv_extractor import IvExtractor
-from src.application.ports.pokemon_name_extractor import PokemonNameExtractor
+from src.application.ports.pokemon_name_extractor import (
+    PokemonNameExtractor,
+)
+from src.infrastructure.pokemon_data import find_by_japanese_name
+
+logger = logging.getLogger(__name__)
 
 
 class ExtractIvUseCase:
@@ -39,8 +46,21 @@ class ExtractIvUseCase:
         name = self._name_extractor.extract(image)
         iv = self._iv_extractor.extract(image)
 
+        pokemon_name_en: str | None = None
+        dex: int | None = None
+
+        if name is not None:
+            entry = find_by_japanese_name(name)
+            if entry is not None:
+                pokemon_name_en = entry.name_en
+                dex = entry.dex
+            else:
+                logger.warning("Pokemon mapping not found: %s", name)
+
         return ExtractIvResult(
             pokemon_name=name,
+            pokemon_name_en=pokemon_name_en,
+            dex=dex,
             attack=iv.attack,
             defense=iv.defense,
             stamina=iv.stamina,

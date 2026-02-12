@@ -1,0 +1,8 @@
+{
+  "pokemon": "バンギラス",
+  "iv": {
+    "attack": 1,
+    "defense": 10,
+    "stamina": 15
+  }
+}

@@ -47,7 +47,9 @@ class LineBotServiceProvider extends ServiceProvider
         // IV Extractor API Client
         $this->app->singleton(DefaultApi::class, function () {
             $config = new Configuration();
-            $config->setHost('https://pokemon-go-calc-4xmmm5azxa-an.a.run.app');
+            /** @var string $host */
+            $host = config('line-bot.iv_extractor_url', '');
+            $config->setHost($host);
 
             return new DefaultApi(
                 client: new GuzzleClient(),
