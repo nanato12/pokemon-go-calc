@@ -15,5 +15,6 @@ final readonly class Pokemon
         public int $baseAttack,
         public int $baseDefense,
         public int $baseStamina,
+        public string $image,
     ) {}
 }

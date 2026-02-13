@@ -13,7 +13,7 @@ final class RankingFlex extends BaseFlex
 {
     public const ALT_MESSAGE = 'IV ランキング';
 
-    private const POKEMON_IMAGE_PATH = '/images/pokemon/%d.png';
+    private const POKEMON_IMAGE_PATH = '/images/pokemon/%s';
 
     private const LEAGUE_ICON_PATH = '/images/league/%d.png';
 
@@ -30,7 +30,7 @@ final class RankingFlex extends BaseFlex
      *
      * @return array<string, mixed>
      */
-    public static function buildBubble(string $pokemonName, int $dex, IV $iv, array $leagueRankings, ?int $cp = null): array
+    public static function buildBubble(string $pokemonName, int $dex, string $image, IV $iv, array $leagueRankings, ?int $cp = null): array
     {
         $bubble = self::get();
 
@@ -38,7 +38,7 @@ final class RankingFlex extends BaseFlex
         /** @var string $appUrl */
         $appUrl = config('app.url', '');
         // @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible
-        $bubble['header']['contents'][0]['url'] = $appUrl . sprintf(self::POKEMON_IMAGE_PATH, $dex);
+        $bubble['header']['contents'][0]['url'] = $appUrl . sprintf(self::POKEMON_IMAGE_PATH, $image);
 
         // Inject pokemon name
         // @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible

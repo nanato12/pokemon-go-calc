@@ -85,7 +85,7 @@ final class PokemonDatabase
             throw new RuntimeException('Failed to read pokemon_database.json');
         }
 
-        /** @var list<array{name: string, dex: int, baseAttack: int, baseDefense: int, baseStamina: int}> $entries */
+        /** @var list<array{name: string, dex: int, baseAttack: int, baseDefense: int, baseStamina: int, image: string}> $entries */
         $entries = json_decode($json, true);
 
         $db = [];
@@ -97,6 +97,7 @@ final class PokemonDatabase
                 baseAttack: $entry['baseAttack'],
                 baseDefense: $entry['baseDefense'],
                 baseStamina: $entry['baseStamina'],
+                image: $entry['image'],
             );
         }
 

@@ -90,6 +90,7 @@ final class ImageHandler extends BaseEventHandler
                 $formBubbles[] = RankingFlex::buildBubble(
                     $form->name,
                     $form->dex,
+                    $form->image,
                     $iv,
                     $formRankings,
                     $form->name === $pokemonName ? $cp : null,
@@ -98,7 +99,7 @@ final class ImageHandler extends BaseEventHandler
 
             // フォームが見つからなかった場合はOCR名でbubble作成
             if ($formBubbles === []) {
-                $formBubbles[] = RankingFlex::buildBubble($pokemonName, $dex, $iv, [], $cp);
+                $formBubbles[] = RankingFlex::buildBubble($pokemonName, $dex, $dex . '-1.png', $iv, [], $cp);
             }
 
             // 進化先のBubble（最終進化から表示するため逆順）
@@ -114,7 +115,7 @@ final class ImageHandler extends BaseEventHandler
                     foreach ($leagues as $league) {
                         $evoRankings[$league->value] = RankingService::getIvRank($evolution, $iv, $league);
                     }
-                    $evoBubbles[] = RankingFlex::buildBubble($evolution->name, $evolution->dex, $iv, $evoRankings);
+                    $evoBubbles[] = RankingFlex::buildBubble($evolution->name, $evolution->dex, $evolution->image, $iv, $evoRankings);
                 }
             }
 
